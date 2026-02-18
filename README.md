@@ -1,54 +1,48 @@
 
-# CDKTF prebuilt bindings for hashicorp/helm provider version 3.1.1
+# CDKTN prebuilt bindings for hashicorp/helm provider version 3.1.1
 
-HashiCorp made the decision to stop publishing new versions of prebuilt [Terraform helm provider](https://registry.terraform.io/providers/hashicorp/helm/3.1.1) bindings for [CDK for Terraform](https://cdk.tf) on December 10, 2025. As such, this repository has been archived and is no longer supported in any way by HashiCorp. Previously-published versions of this prebuilt provider will still continue to be available on their respective package managers (e.g. npm, PyPi, Maven, NuGet), but these will not be compatible with new releases of `cdktf` past `0.21.0` and are no longer eligible for commercial support.
+This repo builds and publishes the [Terraform helm provider](https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs) bindings for [CDK Terrain](https://cdktn.io).
 
-As a reminder, you can continue to use the `hashicorp/helm` provider in your CDK for Terraform (CDKTF) projects, even with newer versions of CDKTF, but you will need to generate the bindings locally. The easiest way to do so is to use the [`provider add` command](https://developer.hashicorp.com/terraform/cdktf/cli-reference/commands#provider-add), optionally with the `--force-local` flag enabled:
-
-`cdktf provider add hashicorp/helm --force-local`
-
-For more information and additional examples, check out our documentation on [generating provider bindings manually](https://cdk.tf/imports).
-
-## Deprecated Packages
+## Available Packages
 
 ### NPM
 
-The npm package is available at [https://www.npmjs.com/package/@cdktf/provider-helm](https://www.npmjs.com/package/@cdktf/provider-helm).
+The npm package is available at [https://www.npmjs.com/package/@cdktn/provider-helm](https://www.npmjs.com/package/@cdktn/provider-helm).
 
-`npm install @cdktf/provider-helm`
+`npm install @cdktn/provider-helm`
 
 ### PyPI
 
-The PyPI package is available at [https://pypi.org/project/cdktf-cdktf-provider-helm](https://pypi.org/project/cdktf-cdktf-provider-helm).
+The PyPI package is available at [https://pypi.org/project/cdktn-provider-helm](https://pypi.org/project/cdktn-provider-helm).
 
-`pipenv install cdktf-cdktf-provider-helm`
+`pipenv install cdktn-provider-helm`
 
 ### Nuget
 
-The Nuget package is available at [https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Helm](https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Helm).
+The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Providers.Helm](https://www.nuget.org/packages/Io.Cdktn.Providers.Helm).
 
-`dotnet add package HashiCorp.Cdktf.Providers.Helm`
+`dotnet add package Io.Cdktn.Providers.Helm`
 
 ### Maven
 
-The Maven package is available at [https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-helm](https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-helm).
+The Maven package is available at [https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-helm](https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-helm).
 
 ```
 <dependency>
-    <groupId>com.hashicorp</groupId>
-    <artifactId>cdktf-provider-helm</artifactId>
+    <groupId>io.cdktn</groupId>
+    <artifactId>cdktn-provider-helm</artifactId>
     <version>[REPLACE WITH DESIRED VERSION]</version>
 </dependency>
 ```
 
 ### Go
 
-The go package is generated into the [`github.com/cdktf/cdktf-provider-helm-go`](https://github.com/cdktf/cdktf-provider-helm-go) package.
+The go package is generated into the [`github.com/cdktn-io/cdktn-provider-helm-go`](https://github.com/cdktn-io/cdktn-provider-helm-go) package.
 
-`go get github.com/cdktf/cdktf-provider-helm-go/helm/<version>`
+`go get github.com/cdktn-io/cdktn-provider-helm-go/helm/<version>`
 
 Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
-within the [go.mod](https://github.com/cdktf/cdktf-provider-helm-go/blob/main/helm/go.mod#L1) file.
+within the [go.mod](https://github.com/cdktn-io/cdktn-provider-helm-go/blob/main/helm/go.mod#L1) file.
 
 ## Docs
 
@@ -60,4 +54,41 @@ Find auto-generated docs for this provider here:
 - [C#](./docs/API.csharp.md)
 - [Go](./docs/API.go.md)
 
-You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktf/provider-helm).
+You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktn/provider-helm).
+
+## Versioning
+
+This project is explicitly not tracking the Terraform helm provider version 1:1. In fact, it always tracks `latest` of `~> 3.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdktn.io/docs/concepts/providers#import-providers).
+
+These are the upstream dependencies:
+
+- [CDK Terrain](https://cdktn.io) - Last official release
+- [Terraform helm provider](https://registry.terraform.io/providers/hashicorp/helm/3.1.1)
+- [Terraform Engine](https://terraform.io)
+
+If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
+
+## Features / Issues / Bugs
+
+Please report bugs and issues to the [CDK Terrain](https://cdktn.io) project:
+
+- [Create bug report](https://github.com/open-constructs/cdk-terrain/issues)
+- [Create feature request](https://github.com/open-constructs/cdk-terrain/issues)
+
+## Contributing
+
+### Projen
+
+This is mostly based on [Projen](https://projen.io), which takes care of generating the entire repository.
+
+### cdktn-provider-project based on Projen
+
+There's a custom [project builder](https://github.com/cdktn-io/cdktn-provider-project) which encapsulate the common settings for all `cdktn` prebuilt providers.
+
+### Provider Version
+
+The provider version can be adjusted in [./.projenrc.js](./.projenrc.js).
+
+### Repository Management
+
+The repository is managed by [CDKTN Repository Manager](https://github.com/cdktn-io/cdktn-repository-manager/).

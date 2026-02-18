@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ReleaseConfig extends cdktf.TerraformMetaArguments {
+export interface ReleaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * If set, installation process purges chart on fail. The wait flag will be set automatically if atomic is used
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#atomic Release#atomic}
   */
-  readonly atomic?: boolean | cdktf.IResolvable;
+  readonly atomic?: boolean | cdktn.IResolvable;
   /**
   * Chart name to be installed. A path may be used
   *
@@ -29,19 +29,19 @@ export interface ReleaseConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#cleanup_on_fail Release#cleanup_on_fail}
   */
-  readonly cleanupOnFail?: boolean | cdktf.IResolvable;
+  readonly cleanupOnFail?: boolean | cdktn.IResolvable;
   /**
   * Create the namespace if it does not exist
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#create_namespace Release#create_namespace}
   */
-  readonly createNamespace?: boolean | cdktf.IResolvable;
+  readonly createNamespace?: boolean | cdktn.IResolvable;
   /**
   * Run helm dependency update before installing the chart
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#dependency_update Release#dependency_update}
   */
-  readonly dependencyUpdate?: boolean | cdktf.IResolvable;
+  readonly dependencyUpdate?: boolean | cdktn.IResolvable;
   /**
   * Add a custom description
   *
@@ -53,31 +53,31 @@ export interface ReleaseConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#devel Release#devel}
   */
-  readonly devel?: boolean | cdktf.IResolvable;
+  readonly devel?: boolean | cdktn.IResolvable;
   /**
   * Prevent CRD hooks from running, but run other hooks. See helm install --no-crd-hook
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#disable_crd_hooks Release#disable_crd_hooks}
   */
-  readonly disableCrdHooks?: boolean | cdktf.IResolvable;
+  readonly disableCrdHooks?: boolean | cdktn.IResolvable;
   /**
   * If set, the installation process will not validate rendered templates against the Kubernetes OpenAPI Schema
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#disable_openapi_validation Release#disable_openapi_validation}
   */
-  readonly disableOpenapiValidation?: boolean | cdktf.IResolvable;
+  readonly disableOpenapiValidation?: boolean | cdktn.IResolvable;
   /**
   * Prevent hooks from running
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#disable_webhooks Release#disable_webhooks}
   */
-  readonly disableWebhooks?: boolean | cdktf.IResolvable;
+  readonly disableWebhooks?: boolean | cdktn.IResolvable;
   /**
   * Force resource update through delete/recreate if needed.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#force_update Release#force_update}
   */
-  readonly forceUpdate?: boolean | cdktf.IResolvable;
+  readonly forceUpdate?: boolean | cdktn.IResolvable;
   /**
   * Location of public keys used for verification, Used only if 'verify is true'
   *
@@ -89,7 +89,7 @@ export interface ReleaseConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#lint Release#lint}
   */
-  readonly lint?: boolean | cdktf.IResolvable;
+  readonly lint?: boolean | cdktn.IResolvable;
   /**
   * Limit the maximum number of revisions saved per release. Use 0 for no limit
   *
@@ -113,7 +113,7 @@ export interface ReleaseConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#pass_credentials Release#pass_credentials}
   */
-  readonly passCredentials?: boolean | cdktf.IResolvable;
+  readonly passCredentials?: boolean | cdktn.IResolvable;
   /**
   * Postrender command config
   *
@@ -125,19 +125,19 @@ export interface ReleaseConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#recreate_pods Release#recreate_pods}
   */
-  readonly recreatePods?: boolean | cdktf.IResolvable;
+  readonly recreatePods?: boolean | cdktn.IResolvable;
   /**
   * If set, render subchart notes along with the parent
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#render_subchart_notes Release#render_subchart_notes}
   */
-  readonly renderSubchartNotes?: boolean | cdktf.IResolvable;
+  readonly renderSubchartNotes?: boolean | cdktn.IResolvable;
   /**
   * Re-use the given name, even if that name is already used. This is unsafe in production
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#replace Release#replace}
   */
-  readonly replace?: boolean | cdktf.IResolvable;
+  readonly replace?: boolean | cdktn.IResolvable;
   /**
   * Repository where to locate the requested chart. If it is a URL, the chart is installed without installing the repository
   *
@@ -179,37 +179,37 @@ export interface ReleaseConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#reset_values Release#reset_values}
   */
-  readonly resetValues?: boolean | cdktf.IResolvable;
+  readonly resetValues?: boolean | cdktn.IResolvable;
   /**
   * When upgrading, reuse the last release's values and merge in any overrides. If 'reset_values' is specified, this is ignored
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#reuse_values Release#reuse_values}
   */
-  readonly reuseValues?: boolean | cdktf.IResolvable;
+  readonly reuseValues?: boolean | cdktn.IResolvable;
   /**
   * Custom values to be merged with the values
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#set Release#set}
   */
-  readonly set?: ReleaseSet[] | cdktf.IResolvable;
+  readonly set?: ReleaseSet[] | cdktn.IResolvable;
   /**
   * Custom sensitive values to be merged with the values
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#set_list Release#set_list}
   */
-  readonly setList?: ReleaseSetListStruct[] | cdktf.IResolvable;
+  readonly setList?: ReleaseSetListStruct[] | cdktn.IResolvable;
   /**
   * Custom sensitive values to be merged with the values
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#set_sensitive Release#set_sensitive}
   */
-  readonly setSensitive?: ReleaseSetSensitive[] | cdktf.IResolvable;
+  readonly setSensitive?: ReleaseSetSensitive[] | cdktn.IResolvable;
   /**
   * Custom values to be merged with the values
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#set_wo Release#set_wo}
   */
-  readonly setWo?: ReleaseSetWo[] | cdktf.IResolvable;
+  readonly setWo?: ReleaseSetWo[] | cdktn.IResolvable;
   /**
   * The current revision of the write-only "set_wo" attribute. Incrementing this integer value will cause Terraform to update the write-only value.
   *
@@ -221,13 +221,13 @@ export interface ReleaseConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#skip_crds Release#skip_crds}
   */
-  readonly skipCrds?: boolean | cdktf.IResolvable;
+  readonly skipCrds?: boolean | cdktn.IResolvable;
   /**
   * If set, Helm will take ownership of resources not already annotated by this release. Useful for migrations or recovery.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#take_ownership Release#take_ownership}
   */
-  readonly takeOwnership?: boolean | cdktf.IResolvable;
+  readonly takeOwnership?: boolean | cdktn.IResolvable;
   /**
   * Time in seconds to wait for any individual kubernetes operation
   *
@@ -243,7 +243,7 @@ export interface ReleaseConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#upgrade_install Release#upgrade_install}
   */
-  readonly upgradeInstall?: boolean | cdktf.IResolvable;
+  readonly upgradeInstall?: boolean | cdktn.IResolvable;
   /**
   * List of values in raw YAML format to pass to helm
   *
@@ -255,7 +255,7 @@ export interface ReleaseConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#verify Release#verify}
   */
-  readonly verify?: boolean | cdktf.IResolvable;
+  readonly verify?: boolean | cdktn.IResolvable;
   /**
   * Specify the exact chart version to install. If this is not specified, the latest version is installed
   *
@@ -267,20 +267,20 @@ export interface ReleaseConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#wait Release#wait}
   */
-  readonly wait?: boolean | cdktf.IResolvable;
+  readonly wait?: boolean | cdktn.IResolvable;
   /**
   * If wait is enabled, will wait until all Jobs have been completed before marking the release as successful.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#wait_for_jobs Release#wait_for_jobs}
   */
-  readonly waitForJobs?: boolean | cdktf.IResolvable;
+  readonly waitForJobs?: boolean | cdktn.IResolvable;
 }
 export interface ReleaseMetadata {
 }
 
 export function releaseMetadataToTerraform(struct?: ReleaseMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -289,8 +289,8 @@ export function releaseMetadataToTerraform(struct?: ReleaseMetadata): any {
 
 
 export function releaseMetadataToHclTerraform(struct?: ReleaseMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -298,14 +298,14 @@ export function releaseMetadataToHclTerraform(struct?: ReleaseMetadata): any {
   return attrs;
 }
 
-export class ReleaseMetadataOutputReference extends cdktf.ComplexObject {
+export class ReleaseMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -389,32 +389,32 @@ export interface ReleasePostrender {
   readonly binaryPath: string;
 }
 
-export function releasePostrenderToTerraform(struct?: ReleasePostrender | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releasePostrenderToTerraform(struct?: ReleasePostrender | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
-    binary_path: cdktf.stringToTerraform(struct!.binaryPath),
+    args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
+    binary_path: cdktn.stringToTerraform(struct!.binaryPath),
   }
 }
 
 
-export function releasePostrenderToHclTerraform(struct?: ReleasePostrender | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releasePostrenderToHclTerraform(struct?: ReleasePostrender | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     args: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.args),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     binary_path: {
-      value: cdktf.stringToHclTerraform(struct!.binaryPath),
+      value: cdktn.stringToHclTerraform(struct!.binaryPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -425,19 +425,19 @@ export function releasePostrenderToHclTerraform(struct?: ReleasePostrender | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ReleasePostrenderOutputReference extends cdktf.ComplexObject {
+export class ReleasePostrenderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ReleasePostrender | cdktf.IResolvable | undefined {
+  public get internalValue(): ReleasePostrender | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -454,14 +454,14 @@ export class ReleasePostrenderOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ReleasePostrender | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ReleasePostrender | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._args = undefined;
       this._binaryPath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -517,39 +517,39 @@ export interface ReleaseSet {
   readonly value?: string;
 }
 
-export function releaseSetToTerraform(struct?: ReleaseSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releaseSetToTerraform(struct?: ReleaseSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function releaseSetToHclTerraform(struct?: ReleaseSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releaseSetToHclTerraform(struct?: ReleaseSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -560,9 +560,9 @@ export function releaseSetToHclTerraform(struct?: ReleaseSet | cdktf.IResolvable
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ReleaseSetOutputReference extends cdktf.ComplexObject {
+export class ReleaseSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -570,11 +570,11 @@ export class ReleaseSetOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ReleaseSet | cdktf.IResolvable | undefined {
+  public get internalValue(): ReleaseSet | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -595,7 +595,7 @@ export class ReleaseSetOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ReleaseSet | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ReleaseSet | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -603,7 +603,7 @@ export class ReleaseSetOutputReference extends cdktf.ComplexObject {
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -662,15 +662,15 @@ export class ReleaseSetOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ReleaseSetList extends cdktf.ComplexList {
-  public internalValue? : ReleaseSet[] | cdktf.IResolvable
+export class ReleaseSetList extends cdktn.ComplexList {
+  public internalValue? : ReleaseSet[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -692,32 +692,32 @@ export interface ReleaseSetListStruct {
   readonly value: string[];
 }
 
-export function releaseSetListStructToTerraform(struct?: ReleaseSetListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releaseSetListStructToTerraform(struct?: ReleaseSetListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.value),
   }
 }
 
 
-export function releaseSetListStructToHclTerraform(struct?: ReleaseSetListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releaseSetListStructToHclTerraform(struct?: ReleaseSetListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.value),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.value),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -728,9 +728,9 @@ export function releaseSetListStructToHclTerraform(struct?: ReleaseSetListStruct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ReleaseSetListStructOutputReference extends cdktf.ComplexObject {
+export class ReleaseSetListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -738,11 +738,11 @@ export class ReleaseSetListStructOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ReleaseSetListStruct | cdktf.IResolvable | undefined {
+  public get internalValue(): ReleaseSetListStruct | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -759,14 +759,14 @@ export class ReleaseSetListStructOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ReleaseSetListStruct | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ReleaseSetListStruct | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -805,15 +805,15 @@ export class ReleaseSetListStructOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ReleaseSetListStructList extends cdktf.ComplexList {
-  public internalValue? : ReleaseSetListStruct[] | cdktf.IResolvable
+export class ReleaseSetListStructList extends cdktn.ComplexList {
+  public internalValue? : ReleaseSetListStruct[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -839,39 +839,39 @@ export interface ReleaseSetSensitive {
   readonly value: string;
 }
 
-export function releaseSetSensitiveToTerraform(struct?: ReleaseSetSensitive | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releaseSetSensitiveToTerraform(struct?: ReleaseSetSensitive | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function releaseSetSensitiveToHclTerraform(struct?: ReleaseSetSensitive | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releaseSetSensitiveToHclTerraform(struct?: ReleaseSetSensitive | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -882,9 +882,9 @@ export function releaseSetSensitiveToHclTerraform(struct?: ReleaseSetSensitive |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ReleaseSetSensitiveOutputReference extends cdktf.ComplexObject {
+export class ReleaseSetSensitiveOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -892,11 +892,11 @@ export class ReleaseSetSensitiveOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ReleaseSetSensitive | cdktf.IResolvable | undefined {
+  public get internalValue(): ReleaseSetSensitive | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -917,7 +917,7 @@ export class ReleaseSetSensitiveOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ReleaseSetSensitive | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ReleaseSetSensitive | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -925,7 +925,7 @@ export class ReleaseSetSensitiveOutputReference extends cdktf.ComplexObject {
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -981,15 +981,15 @@ export class ReleaseSetSensitiveOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ReleaseSetSensitiveList extends cdktf.ComplexList {
-  public internalValue? : ReleaseSetSensitive[] | cdktf.IResolvable
+export class ReleaseSetSensitiveList extends cdktn.ComplexList {
+  public internalValue? : ReleaseSetSensitive[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1015,39 +1015,39 @@ export interface ReleaseSetWo {
   readonly value: string;
 }
 
-export function releaseSetWoToTerraform(struct?: ReleaseSetWo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releaseSetWoToTerraform(struct?: ReleaseSetWo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function releaseSetWoToHclTerraform(struct?: ReleaseSetWo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releaseSetWoToHclTerraform(struct?: ReleaseSetWo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1058,9 +1058,9 @@ export function releaseSetWoToHclTerraform(struct?: ReleaseSetWo | cdktf.IResolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ReleaseSetWoOutputReference extends cdktf.ComplexObject {
+export class ReleaseSetWoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1068,11 +1068,11 @@ export class ReleaseSetWoOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ReleaseSetWo | cdktf.IResolvable | undefined {
+  public get internalValue(): ReleaseSetWo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1093,7 +1093,7 @@ export class ReleaseSetWoOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ReleaseSetWo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ReleaseSetWo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1101,7 +1101,7 @@ export class ReleaseSetWoOutputReference extends cdktf.ComplexObject {
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1157,15 +1157,15 @@ export class ReleaseSetWoOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ReleaseSetWoList extends cdktf.ComplexList {
-  public internalValue? : ReleaseSetWo[] | cdktf.IResolvable
+export class ReleaseSetWoList extends cdktn.ComplexList {
+  public internalValue? : ReleaseSetWo[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1203,46 +1203,46 @@ export interface ReleaseTimeouts {
   readonly update?: string;
 }
 
-export function releaseTimeoutsToTerraform(struct?: ReleaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releaseTimeoutsToTerraform(struct?: ReleaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function releaseTimeoutsToHclTerraform(struct?: ReleaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function releaseTimeoutsToHclTerraform(struct?: ReleaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1253,19 +1253,19 @@ export function releaseTimeoutsToHclTerraform(struct?: ReleaseTimeouts | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ReleaseTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ReleaseTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ReleaseTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ReleaseTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1290,7 +1290,7 @@ export class ReleaseTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ReleaseTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ReleaseTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1299,7 +1299,7 @@ export class ReleaseTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1381,7 +1381,7 @@ export class ReleaseTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release helm_release}
 */
-export class Release extends cdktf.TerraformResource {
+export class Release extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1392,14 +1392,14 @@ export class Release extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Release resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Release resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Release to import
   * @param importFromId The id of the existing Release that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Release to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "helm_release", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "helm_release", importId: importFromId, provider });
       }
 
   // ===========
@@ -1480,11 +1480,11 @@ export class Release extends cdktf.TerraformResource {
   // ==========
 
   // atomic - computed: true, optional: true, required: false
-  private _atomic?: boolean | cdktf.IResolvable; 
+  private _atomic?: boolean | cdktn.IResolvable; 
   public get atomic() {
     return this.getBooleanAttribute('atomic');
   }
-  public set atomic(value: boolean | cdktf.IResolvable) {
+  public set atomic(value: boolean | cdktn.IResolvable) {
     this._atomic = value;
   }
   public resetAtomic() {
@@ -1509,11 +1509,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // cleanup_on_fail - computed: true, optional: true, required: false
-  private _cleanupOnFail?: boolean | cdktf.IResolvable; 
+  private _cleanupOnFail?: boolean | cdktn.IResolvable; 
   public get cleanupOnFail() {
     return this.getBooleanAttribute('cleanup_on_fail');
   }
-  public set cleanupOnFail(value: boolean | cdktf.IResolvable) {
+  public set cleanupOnFail(value: boolean | cdktn.IResolvable) {
     this._cleanupOnFail = value;
   }
   public resetCleanupOnFail() {
@@ -1525,11 +1525,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // create_namespace - computed: true, optional: true, required: false
-  private _createNamespace?: boolean | cdktf.IResolvable; 
+  private _createNamespace?: boolean | cdktn.IResolvable; 
   public get createNamespace() {
     return this.getBooleanAttribute('create_namespace');
   }
-  public set createNamespace(value: boolean | cdktf.IResolvable) {
+  public set createNamespace(value: boolean | cdktn.IResolvable) {
     this._createNamespace = value;
   }
   public resetCreateNamespace() {
@@ -1541,11 +1541,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // dependency_update - computed: true, optional: true, required: false
-  private _dependencyUpdate?: boolean | cdktf.IResolvable; 
+  private _dependencyUpdate?: boolean | cdktn.IResolvable; 
   public get dependencyUpdate() {
     return this.getBooleanAttribute('dependency_update');
   }
-  public set dependencyUpdate(value: boolean | cdktf.IResolvable) {
+  public set dependencyUpdate(value: boolean | cdktn.IResolvable) {
     this._dependencyUpdate = value;
   }
   public resetDependencyUpdate() {
@@ -1573,11 +1573,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // devel - computed: false, optional: true, required: false
-  private _devel?: boolean | cdktf.IResolvable; 
+  private _devel?: boolean | cdktn.IResolvable; 
   public get devel() {
     return this.getBooleanAttribute('devel');
   }
-  public set devel(value: boolean | cdktf.IResolvable) {
+  public set devel(value: boolean | cdktn.IResolvable) {
     this._devel = value;
   }
   public resetDevel() {
@@ -1589,11 +1589,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // disable_crd_hooks - computed: true, optional: true, required: false
-  private _disableCrdHooks?: boolean | cdktf.IResolvable; 
+  private _disableCrdHooks?: boolean | cdktn.IResolvable; 
   public get disableCrdHooks() {
     return this.getBooleanAttribute('disable_crd_hooks');
   }
-  public set disableCrdHooks(value: boolean | cdktf.IResolvable) {
+  public set disableCrdHooks(value: boolean | cdktn.IResolvable) {
     this._disableCrdHooks = value;
   }
   public resetDisableCrdHooks() {
@@ -1605,11 +1605,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // disable_openapi_validation - computed: true, optional: true, required: false
-  private _disableOpenapiValidation?: boolean | cdktf.IResolvable; 
+  private _disableOpenapiValidation?: boolean | cdktn.IResolvable; 
   public get disableOpenapiValidation() {
     return this.getBooleanAttribute('disable_openapi_validation');
   }
-  public set disableOpenapiValidation(value: boolean | cdktf.IResolvable) {
+  public set disableOpenapiValidation(value: boolean | cdktn.IResolvable) {
     this._disableOpenapiValidation = value;
   }
   public resetDisableOpenapiValidation() {
@@ -1621,11 +1621,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // disable_webhooks - computed: true, optional: true, required: false
-  private _disableWebhooks?: boolean | cdktf.IResolvable; 
+  private _disableWebhooks?: boolean | cdktn.IResolvable; 
   public get disableWebhooks() {
     return this.getBooleanAttribute('disable_webhooks');
   }
-  public set disableWebhooks(value: boolean | cdktf.IResolvable) {
+  public set disableWebhooks(value: boolean | cdktn.IResolvable) {
     this._disableWebhooks = value;
   }
   public resetDisableWebhooks() {
@@ -1637,11 +1637,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // force_update - computed: true, optional: true, required: false
-  private _forceUpdate?: boolean | cdktf.IResolvable; 
+  private _forceUpdate?: boolean | cdktn.IResolvable; 
   public get forceUpdate() {
     return this.getBooleanAttribute('force_update');
   }
-  public set forceUpdate(value: boolean | cdktf.IResolvable) {
+  public set forceUpdate(value: boolean | cdktn.IResolvable) {
     this._forceUpdate = value;
   }
   public resetForceUpdate() {
@@ -1674,11 +1674,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // lint - computed: true, optional: true, required: false
-  private _lint?: boolean | cdktf.IResolvable; 
+  private _lint?: boolean | cdktn.IResolvable; 
   public get lint() {
     return this.getBooleanAttribute('lint');
   }
-  public set lint(value: boolean | cdktf.IResolvable) {
+  public set lint(value: boolean | cdktn.IResolvable) {
     this._lint = value;
   }
   public resetLint() {
@@ -1746,11 +1746,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // pass_credentials - computed: true, optional: true, required: false
-  private _passCredentials?: boolean | cdktf.IResolvable; 
+  private _passCredentials?: boolean | cdktn.IResolvable; 
   public get passCredentials() {
     return this.getBooleanAttribute('pass_credentials');
   }
-  public set passCredentials(value: boolean | cdktf.IResolvable) {
+  public set passCredentials(value: boolean | cdktn.IResolvable) {
     this._passCredentials = value;
   }
   public resetPassCredentials() {
@@ -1778,11 +1778,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // recreate_pods - computed: true, optional: true, required: false
-  private _recreatePods?: boolean | cdktf.IResolvable; 
+  private _recreatePods?: boolean | cdktn.IResolvable; 
   public get recreatePods() {
     return this.getBooleanAttribute('recreate_pods');
   }
-  public set recreatePods(value: boolean | cdktf.IResolvable) {
+  public set recreatePods(value: boolean | cdktn.IResolvable) {
     this._recreatePods = value;
   }
   public resetRecreatePods() {
@@ -1794,11 +1794,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // render_subchart_notes - computed: true, optional: true, required: false
-  private _renderSubchartNotes?: boolean | cdktf.IResolvable; 
+  private _renderSubchartNotes?: boolean | cdktn.IResolvable; 
   public get renderSubchartNotes() {
     return this.getBooleanAttribute('render_subchart_notes');
   }
-  public set renderSubchartNotes(value: boolean | cdktf.IResolvable) {
+  public set renderSubchartNotes(value: boolean | cdktn.IResolvable) {
     this._renderSubchartNotes = value;
   }
   public resetRenderSubchartNotes() {
@@ -1810,11 +1810,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // replace - computed: true, optional: true, required: false
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   public resetReplace() {
@@ -1922,11 +1922,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // reset_values - computed: true, optional: true, required: false
-  private _resetValues?: boolean | cdktf.IResolvable; 
+  private _resetValues?: boolean | cdktn.IResolvable; 
   public get resetValues() {
     return this.getBooleanAttribute('reset_values');
   }
-  public set resetValues(value: boolean | cdktf.IResolvable) {
+  public set resetValues(value: boolean | cdktn.IResolvable) {
     this._resetValues = value;
   }
   public resetResetValues() {
@@ -1938,17 +1938,17 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // resources - computed: true, optional: false, required: false
-  private _resources = new cdktf.StringMap(this, "resources");
+  private _resources = new cdktn.StringMap(this, "resources");
   public get resources() {
     return this._resources;
   }
 
   // reuse_values - computed: true, optional: true, required: false
-  private _reuseValues?: boolean | cdktf.IResolvable; 
+  private _reuseValues?: boolean | cdktn.IResolvable; 
   public get reuseValues() {
     return this.getBooleanAttribute('reuse_values');
   }
-  public set reuseValues(value: boolean | cdktf.IResolvable) {
+  public set reuseValues(value: boolean | cdktn.IResolvable) {
     this._reuseValues = value;
   }
   public resetReuseValues() {
@@ -1964,7 +1964,7 @@ export class Release extends cdktf.TerraformResource {
   public get set() {
     return this._set;
   }
-  public putSet(value: ReleaseSet[] | cdktf.IResolvable) {
+  public putSet(value: ReleaseSet[] | cdktn.IResolvable) {
     this._set.internalValue = value;
   }
   public resetSet() {
@@ -1980,7 +1980,7 @@ export class Release extends cdktf.TerraformResource {
   public get setList() {
     return this._setList;
   }
-  public putSetList(value: ReleaseSetListStruct[] | cdktf.IResolvable) {
+  public putSetList(value: ReleaseSetListStruct[] | cdktn.IResolvable) {
     this._setList.internalValue = value;
   }
   public resetSetList() {
@@ -1996,7 +1996,7 @@ export class Release extends cdktf.TerraformResource {
   public get setSensitive() {
     return this._setSensitive;
   }
-  public putSetSensitive(value: ReleaseSetSensitive[] | cdktf.IResolvable) {
+  public putSetSensitive(value: ReleaseSetSensitive[] | cdktn.IResolvable) {
     this._setSensitive.internalValue = value;
   }
   public resetSetSensitive() {
@@ -2012,7 +2012,7 @@ export class Release extends cdktf.TerraformResource {
   public get setWo() {
     return this._setWo;
   }
-  public putSetWo(value: ReleaseSetWo[] | cdktf.IResolvable) {
+  public putSetWo(value: ReleaseSetWo[] | cdktn.IResolvable) {
     this._setWo.internalValue = value;
   }
   public resetSetWo() {
@@ -2040,11 +2040,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // skip_crds - computed: true, optional: true, required: false
-  private _skipCrds?: boolean | cdktf.IResolvable; 
+  private _skipCrds?: boolean | cdktn.IResolvable; 
   public get skipCrds() {
     return this.getBooleanAttribute('skip_crds');
   }
-  public set skipCrds(value: boolean | cdktf.IResolvable) {
+  public set skipCrds(value: boolean | cdktn.IResolvable) {
     this._skipCrds = value;
   }
   public resetSkipCrds() {
@@ -2061,11 +2061,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // take_ownership - computed: true, optional: true, required: false
-  private _takeOwnership?: boolean | cdktf.IResolvable; 
+  private _takeOwnership?: boolean | cdktn.IResolvable; 
   public get takeOwnership() {
     return this.getBooleanAttribute('take_ownership');
   }
-  public set takeOwnership(value: boolean | cdktf.IResolvable) {
+  public set takeOwnership(value: boolean | cdktn.IResolvable) {
     this._takeOwnership = value;
   }
   public resetTakeOwnership() {
@@ -2109,11 +2109,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // upgrade_install - computed: true, optional: true, required: false
-  private _upgradeInstall?: boolean | cdktf.IResolvable; 
+  private _upgradeInstall?: boolean | cdktn.IResolvable; 
   public get upgradeInstall() {
     return this.getBooleanAttribute('upgrade_install');
   }
-  public set upgradeInstall(value: boolean | cdktf.IResolvable) {
+  public set upgradeInstall(value: boolean | cdktn.IResolvable) {
     this._upgradeInstall = value;
   }
   public resetUpgradeInstall() {
@@ -2141,11 +2141,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // verify - computed: true, optional: true, required: false
-  private _verify?: boolean | cdktf.IResolvable; 
+  private _verify?: boolean | cdktn.IResolvable; 
   public get verify() {
     return this.getBooleanAttribute('verify');
   }
-  public set verify(value: boolean | cdktf.IResolvable) {
+  public set verify(value: boolean | cdktn.IResolvable) {
     this._verify = value;
   }
   public resetVerify() {
@@ -2173,11 +2173,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // wait - computed: true, optional: true, required: false
-  private _wait?: boolean | cdktf.IResolvable; 
+  private _wait?: boolean | cdktn.IResolvable; 
   public get wait() {
     return this.getBooleanAttribute('wait');
   }
-  public set wait(value: boolean | cdktf.IResolvable) {
+  public set wait(value: boolean | cdktn.IResolvable) {
     this._wait = value;
   }
   public resetWait() {
@@ -2189,11 +2189,11 @@ export class Release extends cdktf.TerraformResource {
   }
 
   // wait_for_jobs - computed: true, optional: true, required: false
-  private _waitForJobs?: boolean | cdktf.IResolvable; 
+  private _waitForJobs?: boolean | cdktn.IResolvable; 
   public get waitForJobs() {
     return this.getBooleanAttribute('wait_for_jobs');
   }
-  public set waitForJobs(value: boolean | cdktf.IResolvable) {
+  public set waitForJobs(value: boolean | cdktn.IResolvable) {
     this._waitForJobs = value;
   }
   public resetWaitForJobs() {
@@ -2210,153 +2210,153 @@ export class Release extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      atomic: cdktf.booleanToTerraform(this._atomic),
-      chart: cdktf.stringToTerraform(this._chart),
-      cleanup_on_fail: cdktf.booleanToTerraform(this._cleanupOnFail),
-      create_namespace: cdktf.booleanToTerraform(this._createNamespace),
-      dependency_update: cdktf.booleanToTerraform(this._dependencyUpdate),
-      description: cdktf.stringToTerraform(this._description),
-      devel: cdktf.booleanToTerraform(this._devel),
-      disable_crd_hooks: cdktf.booleanToTerraform(this._disableCrdHooks),
-      disable_openapi_validation: cdktf.booleanToTerraform(this._disableOpenapiValidation),
-      disable_webhooks: cdktf.booleanToTerraform(this._disableWebhooks),
-      force_update: cdktf.booleanToTerraform(this._forceUpdate),
-      keyring: cdktf.stringToTerraform(this._keyring),
-      lint: cdktf.booleanToTerraform(this._lint),
-      max_history: cdktf.numberToTerraform(this._maxHistory),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      pass_credentials: cdktf.booleanToTerraform(this._passCredentials),
+      atomic: cdktn.booleanToTerraform(this._atomic),
+      chart: cdktn.stringToTerraform(this._chart),
+      cleanup_on_fail: cdktn.booleanToTerraform(this._cleanupOnFail),
+      create_namespace: cdktn.booleanToTerraform(this._createNamespace),
+      dependency_update: cdktn.booleanToTerraform(this._dependencyUpdate),
+      description: cdktn.stringToTerraform(this._description),
+      devel: cdktn.booleanToTerraform(this._devel),
+      disable_crd_hooks: cdktn.booleanToTerraform(this._disableCrdHooks),
+      disable_openapi_validation: cdktn.booleanToTerraform(this._disableOpenapiValidation),
+      disable_webhooks: cdktn.booleanToTerraform(this._disableWebhooks),
+      force_update: cdktn.booleanToTerraform(this._forceUpdate),
+      keyring: cdktn.stringToTerraform(this._keyring),
+      lint: cdktn.booleanToTerraform(this._lint),
+      max_history: cdktn.numberToTerraform(this._maxHistory),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      pass_credentials: cdktn.booleanToTerraform(this._passCredentials),
       postrender: releasePostrenderToTerraform(this._postrender.internalValue),
-      recreate_pods: cdktf.booleanToTerraform(this._recreatePods),
-      render_subchart_notes: cdktf.booleanToTerraform(this._renderSubchartNotes),
-      replace: cdktf.booleanToTerraform(this._replace),
-      repository: cdktf.stringToTerraform(this._repository),
-      repository_ca_file: cdktf.stringToTerraform(this._repositoryCaFile),
-      repository_cert_file: cdktf.stringToTerraform(this._repositoryCertFile),
-      repository_key_file: cdktf.stringToTerraform(this._repositoryKeyFile),
-      repository_password: cdktf.stringToTerraform(this._repositoryPassword),
-      repository_username: cdktf.stringToTerraform(this._repositoryUsername),
-      reset_values: cdktf.booleanToTerraform(this._resetValues),
-      reuse_values: cdktf.booleanToTerraform(this._reuseValues),
-      set: cdktf.listMapper(releaseSetToTerraform, false)(this._set.internalValue),
-      set_list: cdktf.listMapper(releaseSetListStructToTerraform, false)(this._setList.internalValue),
-      set_sensitive: cdktf.listMapper(releaseSetSensitiveToTerraform, false)(this._setSensitive.internalValue),
-      set_wo: cdktf.listMapper(releaseSetWoToTerraform, false)(this._setWo.internalValue),
-      set_wo_revision: cdktf.numberToTerraform(this._setWoRevision),
-      skip_crds: cdktf.booleanToTerraform(this._skipCrds),
-      take_ownership: cdktf.booleanToTerraform(this._takeOwnership),
-      timeout: cdktf.numberToTerraform(this._timeout),
+      recreate_pods: cdktn.booleanToTerraform(this._recreatePods),
+      render_subchart_notes: cdktn.booleanToTerraform(this._renderSubchartNotes),
+      replace: cdktn.booleanToTerraform(this._replace),
+      repository: cdktn.stringToTerraform(this._repository),
+      repository_ca_file: cdktn.stringToTerraform(this._repositoryCaFile),
+      repository_cert_file: cdktn.stringToTerraform(this._repositoryCertFile),
+      repository_key_file: cdktn.stringToTerraform(this._repositoryKeyFile),
+      repository_password: cdktn.stringToTerraform(this._repositoryPassword),
+      repository_username: cdktn.stringToTerraform(this._repositoryUsername),
+      reset_values: cdktn.booleanToTerraform(this._resetValues),
+      reuse_values: cdktn.booleanToTerraform(this._reuseValues),
+      set: cdktn.listMapper(releaseSetToTerraform, false)(this._set.internalValue),
+      set_list: cdktn.listMapper(releaseSetListStructToTerraform, false)(this._setList.internalValue),
+      set_sensitive: cdktn.listMapper(releaseSetSensitiveToTerraform, false)(this._setSensitive.internalValue),
+      set_wo: cdktn.listMapper(releaseSetWoToTerraform, false)(this._setWo.internalValue),
+      set_wo_revision: cdktn.numberToTerraform(this._setWoRevision),
+      skip_crds: cdktn.booleanToTerraform(this._skipCrds),
+      take_ownership: cdktn.booleanToTerraform(this._takeOwnership),
+      timeout: cdktn.numberToTerraform(this._timeout),
       timeouts: releaseTimeoutsToTerraform(this._timeouts.internalValue),
-      upgrade_install: cdktf.booleanToTerraform(this._upgradeInstall),
-      values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._values),
-      verify: cdktf.booleanToTerraform(this._verify),
-      version: cdktf.stringToTerraform(this._version),
-      wait: cdktf.booleanToTerraform(this._wait),
-      wait_for_jobs: cdktf.booleanToTerraform(this._waitForJobs),
+      upgrade_install: cdktn.booleanToTerraform(this._upgradeInstall),
+      values: cdktn.listMapper(cdktn.stringToTerraform, false)(this._values),
+      verify: cdktn.booleanToTerraform(this._verify),
+      version: cdktn.stringToTerraform(this._version),
+      wait: cdktn.booleanToTerraform(this._wait),
+      wait_for_jobs: cdktn.booleanToTerraform(this._waitForJobs),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       atomic: {
-        value: cdktf.booleanToHclTerraform(this._atomic),
+        value: cdktn.booleanToHclTerraform(this._atomic),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       chart: {
-        value: cdktf.stringToHclTerraform(this._chart),
+        value: cdktn.stringToHclTerraform(this._chart),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cleanup_on_fail: {
-        value: cdktf.booleanToHclTerraform(this._cleanupOnFail),
+        value: cdktn.booleanToHclTerraform(this._cleanupOnFail),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       create_namespace: {
-        value: cdktf.booleanToHclTerraform(this._createNamespace),
+        value: cdktn.booleanToHclTerraform(this._createNamespace),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       dependency_update: {
-        value: cdktf.booleanToHclTerraform(this._dependencyUpdate),
+        value: cdktn.booleanToHclTerraform(this._dependencyUpdate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       devel: {
-        value: cdktf.booleanToHclTerraform(this._devel),
+        value: cdktn.booleanToHclTerraform(this._devel),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_crd_hooks: {
-        value: cdktf.booleanToHclTerraform(this._disableCrdHooks),
+        value: cdktn.booleanToHclTerraform(this._disableCrdHooks),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_openapi_validation: {
-        value: cdktf.booleanToHclTerraform(this._disableOpenapiValidation),
+        value: cdktn.booleanToHclTerraform(this._disableOpenapiValidation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_webhooks: {
-        value: cdktf.booleanToHclTerraform(this._disableWebhooks),
+        value: cdktn.booleanToHclTerraform(this._disableWebhooks),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_update: {
-        value: cdktf.booleanToHclTerraform(this._forceUpdate),
+        value: cdktn.booleanToHclTerraform(this._forceUpdate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       keyring: {
-        value: cdktf.stringToHclTerraform(this._keyring),
+        value: cdktn.stringToHclTerraform(this._keyring),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lint: {
-        value: cdktf.booleanToHclTerraform(this._lint),
+        value: cdktn.booleanToHclTerraform(this._lint),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_history: {
-        value: cdktf.numberToHclTerraform(this._maxHistory),
+        value: cdktn.numberToHclTerraform(this._maxHistory),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pass_credentials: {
-        value: cdktf.booleanToHclTerraform(this._passCredentials),
+        value: cdktn.booleanToHclTerraform(this._passCredentials),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -2368,115 +2368,115 @@ export class Release extends cdktf.TerraformResource {
         storageClassType: "ReleasePostrender",
       },
       recreate_pods: {
-        value: cdktf.booleanToHclTerraform(this._recreatePods),
+        value: cdktn.booleanToHclTerraform(this._recreatePods),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       render_subchart_notes: {
-        value: cdktf.booleanToHclTerraform(this._renderSubchartNotes),
+        value: cdktn.booleanToHclTerraform(this._renderSubchartNotes),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       replace: {
-        value: cdktf.booleanToHclTerraform(this._replace),
+        value: cdktn.booleanToHclTerraform(this._replace),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       repository: {
-        value: cdktf.stringToHclTerraform(this._repository),
+        value: cdktn.stringToHclTerraform(this._repository),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_ca_file: {
-        value: cdktf.stringToHclTerraform(this._repositoryCaFile),
+        value: cdktn.stringToHclTerraform(this._repositoryCaFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_cert_file: {
-        value: cdktf.stringToHclTerraform(this._repositoryCertFile),
+        value: cdktn.stringToHclTerraform(this._repositoryCertFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_key_file: {
-        value: cdktf.stringToHclTerraform(this._repositoryKeyFile),
+        value: cdktn.stringToHclTerraform(this._repositoryKeyFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_password: {
-        value: cdktf.stringToHclTerraform(this._repositoryPassword),
+        value: cdktn.stringToHclTerraform(this._repositoryPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_username: {
-        value: cdktf.stringToHclTerraform(this._repositoryUsername),
+        value: cdktn.stringToHclTerraform(this._repositoryUsername),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reset_values: {
-        value: cdktf.booleanToHclTerraform(this._resetValues),
+        value: cdktn.booleanToHclTerraform(this._resetValues),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       reuse_values: {
-        value: cdktf.booleanToHclTerraform(this._reuseValues),
+        value: cdktn.booleanToHclTerraform(this._reuseValues),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       set: {
-        value: cdktf.listMapperHcl(releaseSetToHclTerraform, false)(this._set.internalValue),
+        value: cdktn.listMapperHcl(releaseSetToHclTerraform, false)(this._set.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ReleaseSetList",
       },
       set_list: {
-        value: cdktf.listMapperHcl(releaseSetListStructToHclTerraform, false)(this._setList.internalValue),
+        value: cdktn.listMapperHcl(releaseSetListStructToHclTerraform, false)(this._setList.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ReleaseSetListStructList",
       },
       set_sensitive: {
-        value: cdktf.listMapperHcl(releaseSetSensitiveToHclTerraform, false)(this._setSensitive.internalValue),
+        value: cdktn.listMapperHcl(releaseSetSensitiveToHclTerraform, false)(this._setSensitive.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ReleaseSetSensitiveList",
       },
       set_wo: {
-        value: cdktf.listMapperHcl(releaseSetWoToHclTerraform, false)(this._setWo.internalValue),
+        value: cdktn.listMapperHcl(releaseSetWoToHclTerraform, false)(this._setWo.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ReleaseSetWoList",
       },
       set_wo_revision: {
-        value: cdktf.numberToHclTerraform(this._setWoRevision),
+        value: cdktn.numberToHclTerraform(this._setWoRevision),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       skip_crds: {
-        value: cdktf.booleanToHclTerraform(this._skipCrds),
+        value: cdktn.booleanToHclTerraform(this._skipCrds),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       take_ownership: {
-        value: cdktf.booleanToHclTerraform(this._takeOwnership),
+        value: cdktn.booleanToHclTerraform(this._takeOwnership),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       timeout: {
-        value: cdktf.numberToHclTerraform(this._timeout),
+        value: cdktn.numberToHclTerraform(this._timeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
@@ -2488,37 +2488,37 @@ export class Release extends cdktf.TerraformResource {
         storageClassType: "ReleaseTimeouts",
       },
       upgrade_install: {
-        value: cdktf.booleanToHclTerraform(this._upgradeInstall),
+        value: cdktn.booleanToHclTerraform(this._upgradeInstall),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       values: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._values),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._values),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       verify: {
-        value: cdktf.booleanToHclTerraform(this._verify),
+        value: cdktn.booleanToHclTerraform(this._verify),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       wait: {
-        value: cdktf.booleanToHclTerraform(this._wait),
+        value: cdktn.booleanToHclTerraform(this._wait),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       wait_for_jobs: {
-        value: cdktf.booleanToHclTerraform(this._waitForJobs),
+        value: cdktn.booleanToHclTerraform(this._waitForJobs),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

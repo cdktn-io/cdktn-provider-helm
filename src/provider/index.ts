@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,7 +7,7 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
@@ -23,7 +23,7 @@ export interface HelmProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs#debug HelmProvider#debug}
   */
-  readonly debug?: boolean | cdktf.IResolvable;
+  readonly debug?: boolean | cdktn.IResolvable;
   /**
   * Enable and disable experimental features.
   *
@@ -59,7 +59,7 @@ export interface HelmProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs#registries HelmProvider#registries}
   */
-  readonly registries?: HelmProviderRegistries[] | cdktf.IResolvable;
+  readonly registries?: HelmProviderRegistries[] | cdktn.IResolvable;
   /**
   * The path to the registry config file
   *
@@ -91,28 +91,28 @@ export interface HelmProviderExperiments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs#manifest HelmProvider#manifest}
   */
-  readonly manifest?: boolean | cdktf.IResolvable;
+  readonly manifest?: boolean | cdktn.IResolvable;
 }
 
-export function helmProviderExperimentsToTerraform(struct?: HelmProviderExperiments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function helmProviderExperimentsToTerraform(struct?: HelmProviderExperiments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    manifest: cdktf.booleanToTerraform(struct!.manifest),
+    manifest: cdktn.booleanToTerraform(struct!.manifest),
   }
 }
 
 
-export function helmProviderExperimentsToHclTerraform(struct?: HelmProviderExperiments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function helmProviderExperimentsToHclTerraform(struct?: HelmProviderExperiments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     manifest: {
-      value: cdktf.booleanToHclTerraform(struct!.manifest),
+      value: cdktn.booleanToHclTerraform(struct!.manifest),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -150,46 +150,46 @@ export interface HelmProviderKubernetesExec {
   readonly env?: { [key: string]: string };
 }
 
-export function helmProviderKubernetesExecToTerraform(struct?: HelmProviderKubernetesExec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function helmProviderKubernetesExecToTerraform(struct?: HelmProviderKubernetesExec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_version: cdktf.stringToTerraform(struct!.apiVersion),
-    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
-    command: cdktf.stringToTerraform(struct!.command),
-    env: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.env),
+    api_version: cdktn.stringToTerraform(struct!.apiVersion),
+    args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
+    command: cdktn.stringToTerraform(struct!.command),
+    env: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.env),
   }
 }
 
 
-export function helmProviderKubernetesExecToHclTerraform(struct?: HelmProviderKubernetesExec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function helmProviderKubernetesExecToHclTerraform(struct?: HelmProviderKubernetesExec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_version: {
-      value: cdktf.stringToHclTerraform(struct!.apiVersion),
+      value: cdktn.stringToHclTerraform(struct!.apiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     args: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.args),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     command: {
-      value: cdktf.stringToHclTerraform(struct!.command),
+      value: cdktn.stringToHclTerraform(struct!.command),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     env: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.env),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.env),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -266,7 +266,7 @@ export interface HelmProviderKubernetes {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs#insecure HelmProvider#insecure}
   */
-  readonly insecure?: boolean | cdktf.IResolvable;
+  readonly insecure?: boolean | cdktn.IResolvable;
   /**
   * The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint.
   *
@@ -299,82 +299,82 @@ export interface HelmProviderKubernetes {
   readonly username?: string;
 }
 
-export function helmProviderKubernetesToTerraform(struct?: HelmProviderKubernetes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function helmProviderKubernetesToTerraform(struct?: HelmProviderKubernetes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_certificate: cdktf.stringToTerraform(struct!.clientCertificate),
-    client_key: cdktf.stringToTerraform(struct!.clientKey),
-    cluster_ca_certificate: cdktf.stringToTerraform(struct!.clusterCaCertificate),
-    config_context: cdktf.stringToTerraform(struct!.configContext),
-    config_context_auth_info: cdktf.stringToTerraform(struct!.configContextAuthInfo),
-    config_context_cluster: cdktf.stringToTerraform(struct!.configContextCluster),
-    config_path: cdktf.stringToTerraform(struct!.configPath),
-    config_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.configPaths),
+    client_certificate: cdktn.stringToTerraform(struct!.clientCertificate),
+    client_key: cdktn.stringToTerraform(struct!.clientKey),
+    cluster_ca_certificate: cdktn.stringToTerraform(struct!.clusterCaCertificate),
+    config_context: cdktn.stringToTerraform(struct!.configContext),
+    config_context_auth_info: cdktn.stringToTerraform(struct!.configContextAuthInfo),
+    config_context_cluster: cdktn.stringToTerraform(struct!.configContextCluster),
+    config_path: cdktn.stringToTerraform(struct!.configPath),
+    config_paths: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.configPaths),
     exec: helmProviderKubernetesExecToTerraform(struct!.exec),
-    host: cdktf.stringToTerraform(struct!.host),
-    insecure: cdktf.booleanToTerraform(struct!.insecure),
-    password: cdktf.stringToTerraform(struct!.password),
-    proxy_url: cdktf.stringToTerraform(struct!.proxyUrl),
-    tls_server_name: cdktf.stringToTerraform(struct!.tlsServerName),
-    token: cdktf.stringToTerraform(struct!.token),
-    username: cdktf.stringToTerraform(struct!.username),
+    host: cdktn.stringToTerraform(struct!.host),
+    insecure: cdktn.booleanToTerraform(struct!.insecure),
+    password: cdktn.stringToTerraform(struct!.password),
+    proxy_url: cdktn.stringToTerraform(struct!.proxyUrl),
+    tls_server_name: cdktn.stringToTerraform(struct!.tlsServerName),
+    token: cdktn.stringToTerraform(struct!.token),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function helmProviderKubernetesToHclTerraform(struct?: HelmProviderKubernetes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function helmProviderKubernetesToHclTerraform(struct?: HelmProviderKubernetes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.clientCertificate),
+      value: cdktn.stringToHclTerraform(struct!.clientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_key: {
-      value: cdktf.stringToHclTerraform(struct!.clientKey),
+      value: cdktn.stringToHclTerraform(struct!.clientKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cluster_ca_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.clusterCaCertificate),
+      value: cdktn.stringToHclTerraform(struct!.clusterCaCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     config_context: {
-      value: cdktf.stringToHclTerraform(struct!.configContext),
+      value: cdktn.stringToHclTerraform(struct!.configContext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     config_context_auth_info: {
-      value: cdktf.stringToHclTerraform(struct!.configContextAuthInfo),
+      value: cdktn.stringToHclTerraform(struct!.configContextAuthInfo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     config_context_cluster: {
-      value: cdktf.stringToHclTerraform(struct!.configContextCluster),
+      value: cdktn.stringToHclTerraform(struct!.configContextCluster),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     config_path: {
-      value: cdktf.stringToHclTerraform(struct!.configPath),
+      value: cdktn.stringToHclTerraform(struct!.configPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     config_paths: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.configPaths),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.configPaths),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -386,43 +386,43 @@ export function helmProviderKubernetesToHclTerraform(struct?: HelmProviderKubern
       storageClassType: "HelmProviderKubernetesExec",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     insecure: {
-      value: cdktf.booleanToHclTerraform(struct!.insecure),
+      value: cdktn.booleanToHclTerraform(struct!.insecure),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     proxy_url: {
-      value: cdktf.stringToHclTerraform(struct!.proxyUrl),
+      value: cdktn.stringToHclTerraform(struct!.proxyUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_server_name: {
-      value: cdktf.stringToHclTerraform(struct!.tlsServerName),
+      value: cdktn.stringToHclTerraform(struct!.tlsServerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token: {
-      value: cdktf.stringToHclTerraform(struct!.token),
+      value: cdktn.stringToHclTerraform(struct!.token),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -454,39 +454,39 @@ export interface HelmProviderRegistries {
   readonly username: string;
 }
 
-export function helmProviderRegistriesToTerraform(struct?: HelmProviderRegistries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function helmProviderRegistriesToTerraform(struct?: HelmProviderRegistries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    url: cdktf.stringToTerraform(struct!.url),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    url: cdktn.stringToTerraform(struct!.url),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function helmProviderRegistriesToHclTerraform(struct?: HelmProviderRegistries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function helmProviderRegistriesToHclTerraform(struct?: HelmProviderRegistries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -501,7 +501,7 @@ export function helmProviderRegistriesToHclTerraform(struct?: HelmProviderRegist
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs helm}
 */
-export class HelmProvider extends cdktf.TerraformProvider {
+export class HelmProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -512,14 +512,14 @@ export class HelmProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a HelmProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a HelmProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HelmProvider to import
   * @param importFromId The id of the existing HelmProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HelmProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "helm", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "helm", importId: importFromId, provider });
       }
 
   // ===========
@@ -578,11 +578,11 @@ export class HelmProvider extends cdktf.TerraformProvider {
   }
 
   // debug - computed: false, optional: true, required: false
-  private _debug?: boolean | cdktf.IResolvable; 
+  private _debug?: boolean | cdktn.IResolvable; 
   public get debug() {
     return this._debug;
   }
-  public set debug(value: boolean | cdktf.IResolvable | undefined) {
+  public set debug(value: boolean | cdktn.IResolvable | undefined) {
     this._debug = value;
   }
   public resetDebug() {
@@ -674,11 +674,11 @@ export class HelmProvider extends cdktf.TerraformProvider {
   }
 
   // registries - computed: false, optional: true, required: false
-  private _registries?: HelmProviderRegistries[] | cdktf.IResolvable; 
+  private _registries?: HelmProviderRegistries[] | cdktn.IResolvable; 
   public get registries() {
     return this._registries;
   }
-  public set registries(value: HelmProviderRegistries[] | cdktf.IResolvable | undefined) {
+  public set registries(value: HelmProviderRegistries[] | cdktn.IResolvable | undefined) {
     this._registries = value;
   }
   public resetRegistries() {
@@ -759,31 +759,31 @@ export class HelmProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      burst_limit: cdktf.numberToTerraform(this._burstLimit),
-      debug: cdktf.booleanToTerraform(this._debug),
+      burst_limit: cdktn.numberToTerraform(this._burstLimit),
+      debug: cdktn.booleanToTerraform(this._debug),
       experiments: helmProviderExperimentsToTerraform(this._experiments),
-      helm_driver: cdktf.stringToTerraform(this._helmDriver),
+      helm_driver: cdktn.stringToTerraform(this._helmDriver),
       kubernetes: helmProviderKubernetesToTerraform(this._kubernetes),
-      plugins_path: cdktf.stringToTerraform(this._pluginsPath),
-      qps: cdktf.numberToTerraform(this._qps),
-      registries: cdktf.listMapper(helmProviderRegistriesToTerraform, false)(this._registries),
-      registry_config_path: cdktf.stringToTerraform(this._registryConfigPath),
-      repository_cache: cdktf.stringToTerraform(this._repositoryCache),
-      repository_config_path: cdktf.stringToTerraform(this._repositoryConfigPath),
-      alias: cdktf.stringToTerraform(this._alias),
+      plugins_path: cdktn.stringToTerraform(this._pluginsPath),
+      qps: cdktn.numberToTerraform(this._qps),
+      registries: cdktn.listMapper(helmProviderRegistriesToTerraform, false)(this._registries),
+      registry_config_path: cdktn.stringToTerraform(this._registryConfigPath),
+      repository_cache: cdktn.stringToTerraform(this._repositoryCache),
+      repository_config_path: cdktn.stringToTerraform(this._repositoryConfigPath),
+      alias: cdktn.stringToTerraform(this._alias),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       burst_limit: {
-        value: cdktf.numberToHclTerraform(this._burstLimit),
+        value: cdktn.numberToHclTerraform(this._burstLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       debug: {
-        value: cdktf.booleanToHclTerraform(this._debug),
+        value: cdktn.booleanToHclTerraform(this._debug),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -795,7 +795,7 @@ export class HelmProvider extends cdktf.TerraformProvider {
         storageClassType: "HelmProviderExperiments",
       },
       helm_driver: {
-        value: cdktf.stringToHclTerraform(this._helmDriver),
+        value: cdktn.stringToHclTerraform(this._helmDriver),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -807,43 +807,43 @@ export class HelmProvider extends cdktf.TerraformProvider {
         storageClassType: "HelmProviderKubernetes",
       },
       plugins_path: {
-        value: cdktf.stringToHclTerraform(this._pluginsPath),
+        value: cdktn.stringToHclTerraform(this._pluginsPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       qps: {
-        value: cdktf.numberToHclTerraform(this._qps),
+        value: cdktn.numberToHclTerraform(this._qps),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       registries: {
-        value: cdktf.listMapperHcl(helmProviderRegistriesToHclTerraform, false)(this._registries),
+        value: cdktn.listMapperHcl(helmProviderRegistriesToHclTerraform, false)(this._registries),
         isBlock: true,
         type: "list",
         storageClassType: "HelmProviderRegistriesList",
       },
       registry_config_path: {
-        value: cdktf.stringToHclTerraform(this._registryConfigPath),
+        value: cdktn.stringToHclTerraform(this._registryConfigPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_cache: {
-        value: cdktf.stringToHclTerraform(this._repositoryCache),
+        value: cdktn.stringToHclTerraform(this._repositoryCache),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_config_path: {
-        value: cdktf.stringToHclTerraform(this._repositoryConfigPath),
+        value: cdktn.stringToHclTerraform(this._repositoryConfigPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
