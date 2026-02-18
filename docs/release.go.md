@@ -1,28 +1,28 @@
-# `release` Submodule <a name="`release` Submodule" id="@cdktf/provider-helm.release"></a>
+# `release` Submodule <a name="`release` Submodule" id="@cdktn/provider-helm.release"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Release <a name="Release" id="@cdktf/provider-helm.release.Release"></a>
+### Release <a name="Release" id="@cdktn/provider-helm.release.Release"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release helm_release}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.Release.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.Release.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewRelease(scope Construct, id *string, config ReleaseConfig) Release
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.Release.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-helm.release.Release.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-helm.release.Release.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-helm.release.ReleaseConfig">ReleaseConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-helm.release.Release.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-helm.release.Release.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-helm.release.ReleaseConfig">ReleaseConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-helm.release.Release.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-helm.release.Release.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-helm.release.Release.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-helm.release.Release.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-helm.release.Release.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-helm.release.Release.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleaseConfig">ReleaseConfig</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleaseConfig">ReleaseConfig</a>
 
 ---
 
@@ -50,81 +50,81 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.Release.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-helm.release.Release.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-helm.release.Release.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-helm.release.Release.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-helm.release.Release.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-helm.release.Release.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-helm.release.Release.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-helm.release.Release.putPostrender">PutPostrender</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.putSet">PutSet</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.putSetList">PutSetList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.putSetSensitive">PutSetSensitive</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.putSetWo">PutSetWo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetAtomic">ResetAtomic</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetCleanupOnFail">ResetCleanupOnFail</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetCreateNamespace">ResetCreateNamespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetDependencyUpdate">ResetDependencyUpdate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetDescription">ResetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetDevel">ResetDevel</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetDisableCrdHooks">ResetDisableCrdHooks</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetDisableOpenapiValidation">ResetDisableOpenapiValidation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetDisableWebhooks">ResetDisableWebhooks</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetForceUpdate">ResetForceUpdate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetKeyring">ResetKeyring</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetLint">ResetLint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetMaxHistory">ResetMaxHistory</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetNamespace">ResetNamespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetPassCredentials">ResetPassCredentials</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetPostrender">ResetPostrender</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetRecreatePods">ResetRecreatePods</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetRenderSubchartNotes">ResetRenderSubchartNotes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetReplace">ResetReplace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetRepository">ResetRepository</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetRepositoryCaFile">ResetRepositoryCaFile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetRepositoryCertFile">ResetRepositoryCertFile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetRepositoryKeyFile">ResetRepositoryKeyFile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetRepositoryPassword">ResetRepositoryPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetRepositoryUsername">ResetRepositoryUsername</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetResetValues">ResetResetValues</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetReuseValues">ResetReuseValues</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetSet">ResetSet</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetSetList">ResetSetList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetSetSensitive">ResetSetSensitive</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetSetWo">ResetSetWo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetSetWoRevision">ResetSetWoRevision</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetSkipCrds">ResetSkipCrds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetTakeOwnership">ResetTakeOwnership</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetTfValues">ResetTfValues</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetTimeout">ResetTimeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetUpgradeInstall">ResetUpgradeInstall</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetVerify">ResetVerify</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetVersion">ResetVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetWait">ResetWait</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.resetWaitForJobs">ResetWaitForJobs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-helm.release.Release.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-helm.release.Release.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-helm.release.Release.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-helm.release.Release.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-helm.release.Release.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-helm.release.Release.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-helm.release.Release.putPostrender">PutPostrender</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.putSet">PutSet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.putSetList">PutSetList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.putSetSensitive">PutSetSensitive</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.putSetWo">PutSetWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetAtomic">ResetAtomic</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetCleanupOnFail">ResetCleanupOnFail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetCreateNamespace">ResetCreateNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetDependencyUpdate">ResetDependencyUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetDevel">ResetDevel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetDisableCrdHooks">ResetDisableCrdHooks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetDisableOpenapiValidation">ResetDisableOpenapiValidation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetDisableWebhooks">ResetDisableWebhooks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetForceUpdate">ResetForceUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetKeyring">ResetKeyring</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetLint">ResetLint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetMaxHistory">ResetMaxHistory</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetPassCredentials">ResetPassCredentials</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetPostrender">ResetPostrender</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetRecreatePods">ResetRecreatePods</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetRenderSubchartNotes">ResetRenderSubchartNotes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetReplace">ResetReplace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetRepository">ResetRepository</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetRepositoryCaFile">ResetRepositoryCaFile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetRepositoryCertFile">ResetRepositoryCertFile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetRepositoryKeyFile">ResetRepositoryKeyFile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetRepositoryPassword">ResetRepositoryPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetRepositoryUsername">ResetRepositoryUsername</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetResetValues">ResetResetValues</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetReuseValues">ResetReuseValues</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetSet">ResetSet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetSetList">ResetSetList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetSetSensitive">ResetSetSensitive</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetSetWo">ResetSetWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetSetWoRevision">ResetSetWoRevision</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetSkipCrds">ResetSkipCrds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetTakeOwnership">ResetTakeOwnership</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetTfValues">ResetTfValues</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetTimeout">ResetTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetUpgradeInstall">ResetUpgradeInstall</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetVerify">ResetVerify</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetVersion">ResetVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetWait">ResetWait</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.resetWaitForJobs">ResetWaitForJobs</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.Release.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.Release.toString"></a>
 
 ```go
 func ToString() *string
@@ -132,25 +132,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-helm.release.Release.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-helm.release.Release.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-helm.release.Release.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-helm.release.Release.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-helm.release.Release.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.release.Release.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-helm.release.Release.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-helm.release.Release.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -158,7 +158,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-helm.release.Release.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-helm.release.Release.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -166,7 +166,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-helm.release.Release.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-helm.release.Release.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -174,19 +174,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-helm.release.Release.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-helm.release.Release.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-helm.release.Release.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-helm.release.Release.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-helm.release.Release.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-helm.release.Release.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -194,7 +194,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-helm.release.Release.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-helm.release.Release.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -202,7 +202,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-helm.release.Release.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-helm.release.Release.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -210,151 +210,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-helm.release.Release.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-helm.release.Release.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.Release.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.Release.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-helm.release.Release.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-helm.release.Release.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.Release.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.Release.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-helm.release.Release.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-helm.release.Release.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.Release.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.Release.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-helm.release.Release.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-helm.release.Release.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.Release.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.Release.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-helm.release.Release.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-helm.release.Release.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.Release.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.Release.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-helm.release.Release.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-helm.release.Release.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.Release.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.Release.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-helm.release.Release.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-helm.release.Release.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.Release.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.Release.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-helm.release.Release.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-helm.release.Release.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.Release.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.Release.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-helm.release.Release.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-helm.release.Release.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.Release.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.Release.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-helm.release.Release.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-helm.release.Release.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-helm.release.Release.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-helm.release.Release.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-helm.release.Release.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-helm.release.Release.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-helm.release.Release.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-helm.release.Release.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-helm.release.Release.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-helm.release.Release.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.Release.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.Release.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-helm.release.Release.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-helm.release.Release.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -364,7 +364,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-helm.release.Release.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-helm.release.Release.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -372,7 +372,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-helm.release.Release.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-helm.release.Release.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -380,7 +380,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-helm.release.Release.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-helm.release.Release.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -388,7 +388,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-helm.release.Release.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-helm.release.Release.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -396,7 +396,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-helm.release.Release.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-helm.release.Release.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -404,7 +404,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-helm.release.Release.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-helm.release.Release.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -412,325 +412,325 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutPostrender` <a name="PutPostrender" id="@cdktf/provider-helm.release.Release.putPostrender"></a>
+##### `PutPostrender` <a name="PutPostrender" id="@cdktn/provider-helm.release.Release.putPostrender"></a>
 
 ```go
 func PutPostrender(value ReleasePostrender)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-helm.release.Release.putPostrender.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.release.Release.putPostrender.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleasePostrender">ReleasePostrender</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleasePostrender">ReleasePostrender</a>
 
 ---
 
-##### `PutSet` <a name="PutSet" id="@cdktf/provider-helm.release.Release.putSet"></a>
+##### `PutSet` <a name="PutSet" id="@cdktn/provider-helm.release.Release.putSet"></a>
 
 ```go
 func PutSet(value interface{})
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-helm.release.Release.putSet.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.release.Release.putSet.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `PutSetList` <a name="PutSetList" id="@cdktf/provider-helm.release.Release.putSetList"></a>
+##### `PutSetList` <a name="PutSetList" id="@cdktn/provider-helm.release.Release.putSetList"></a>
 
 ```go
 func PutSetList(value interface{})
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-helm.release.Release.putSetList.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.release.Release.putSetList.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `PutSetSensitive` <a name="PutSetSensitive" id="@cdktf/provider-helm.release.Release.putSetSensitive"></a>
+##### `PutSetSensitive` <a name="PutSetSensitive" id="@cdktn/provider-helm.release.Release.putSetSensitive"></a>
 
 ```go
 func PutSetSensitive(value interface{})
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-helm.release.Release.putSetSensitive.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.release.Release.putSetSensitive.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `PutSetWo` <a name="PutSetWo" id="@cdktf/provider-helm.release.Release.putSetWo"></a>
+##### `PutSetWo` <a name="PutSetWo" id="@cdktn/provider-helm.release.Release.putSetWo"></a>
 
 ```go
 func PutSetWo(value interface{})
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-helm.release.Release.putSetWo.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.release.Release.putSetWo.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-helm.release.Release.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-helm.release.Release.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value ReleaseTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-helm.release.Release.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.release.Release.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleaseTimeouts">ReleaseTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleaseTimeouts">ReleaseTimeouts</a>
 
 ---
 
-##### `ResetAtomic` <a name="ResetAtomic" id="@cdktf/provider-helm.release.Release.resetAtomic"></a>
+##### `ResetAtomic` <a name="ResetAtomic" id="@cdktn/provider-helm.release.Release.resetAtomic"></a>
 
 ```go
 func ResetAtomic()
 ```
 
-##### `ResetCleanupOnFail` <a name="ResetCleanupOnFail" id="@cdktf/provider-helm.release.Release.resetCleanupOnFail"></a>
+##### `ResetCleanupOnFail` <a name="ResetCleanupOnFail" id="@cdktn/provider-helm.release.Release.resetCleanupOnFail"></a>
 
 ```go
 func ResetCleanupOnFail()
 ```
 
-##### `ResetCreateNamespace` <a name="ResetCreateNamespace" id="@cdktf/provider-helm.release.Release.resetCreateNamespace"></a>
+##### `ResetCreateNamespace` <a name="ResetCreateNamespace" id="@cdktn/provider-helm.release.Release.resetCreateNamespace"></a>
 
 ```go
 func ResetCreateNamespace()
 ```
 
-##### `ResetDependencyUpdate` <a name="ResetDependencyUpdate" id="@cdktf/provider-helm.release.Release.resetDependencyUpdate"></a>
+##### `ResetDependencyUpdate` <a name="ResetDependencyUpdate" id="@cdktn/provider-helm.release.Release.resetDependencyUpdate"></a>
 
 ```go
 func ResetDependencyUpdate()
 ```
 
-##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-helm.release.Release.resetDescription"></a>
+##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-helm.release.Release.resetDescription"></a>
 
 ```go
 func ResetDescription()
 ```
 
-##### `ResetDevel` <a name="ResetDevel" id="@cdktf/provider-helm.release.Release.resetDevel"></a>
+##### `ResetDevel` <a name="ResetDevel" id="@cdktn/provider-helm.release.Release.resetDevel"></a>
 
 ```go
 func ResetDevel()
 ```
 
-##### `ResetDisableCrdHooks` <a name="ResetDisableCrdHooks" id="@cdktf/provider-helm.release.Release.resetDisableCrdHooks"></a>
+##### `ResetDisableCrdHooks` <a name="ResetDisableCrdHooks" id="@cdktn/provider-helm.release.Release.resetDisableCrdHooks"></a>
 
 ```go
 func ResetDisableCrdHooks()
 ```
 
-##### `ResetDisableOpenapiValidation` <a name="ResetDisableOpenapiValidation" id="@cdktf/provider-helm.release.Release.resetDisableOpenapiValidation"></a>
+##### `ResetDisableOpenapiValidation` <a name="ResetDisableOpenapiValidation" id="@cdktn/provider-helm.release.Release.resetDisableOpenapiValidation"></a>
 
 ```go
 func ResetDisableOpenapiValidation()
 ```
 
-##### `ResetDisableWebhooks` <a name="ResetDisableWebhooks" id="@cdktf/provider-helm.release.Release.resetDisableWebhooks"></a>
+##### `ResetDisableWebhooks` <a name="ResetDisableWebhooks" id="@cdktn/provider-helm.release.Release.resetDisableWebhooks"></a>
 
 ```go
 func ResetDisableWebhooks()
 ```
 
-##### `ResetForceUpdate` <a name="ResetForceUpdate" id="@cdktf/provider-helm.release.Release.resetForceUpdate"></a>
+##### `ResetForceUpdate` <a name="ResetForceUpdate" id="@cdktn/provider-helm.release.Release.resetForceUpdate"></a>
 
 ```go
 func ResetForceUpdate()
 ```
 
-##### `ResetKeyring` <a name="ResetKeyring" id="@cdktf/provider-helm.release.Release.resetKeyring"></a>
+##### `ResetKeyring` <a name="ResetKeyring" id="@cdktn/provider-helm.release.Release.resetKeyring"></a>
 
 ```go
 func ResetKeyring()
 ```
 
-##### `ResetLint` <a name="ResetLint" id="@cdktf/provider-helm.release.Release.resetLint"></a>
+##### `ResetLint` <a name="ResetLint" id="@cdktn/provider-helm.release.Release.resetLint"></a>
 
 ```go
 func ResetLint()
 ```
 
-##### `ResetMaxHistory` <a name="ResetMaxHistory" id="@cdktf/provider-helm.release.Release.resetMaxHistory"></a>
+##### `ResetMaxHistory` <a name="ResetMaxHistory" id="@cdktn/provider-helm.release.Release.resetMaxHistory"></a>
 
 ```go
 func ResetMaxHistory()
 ```
 
-##### `ResetNamespace` <a name="ResetNamespace" id="@cdktf/provider-helm.release.Release.resetNamespace"></a>
+##### `ResetNamespace` <a name="ResetNamespace" id="@cdktn/provider-helm.release.Release.resetNamespace"></a>
 
 ```go
 func ResetNamespace()
 ```
 
-##### `ResetPassCredentials` <a name="ResetPassCredentials" id="@cdktf/provider-helm.release.Release.resetPassCredentials"></a>
+##### `ResetPassCredentials` <a name="ResetPassCredentials" id="@cdktn/provider-helm.release.Release.resetPassCredentials"></a>
 
 ```go
 func ResetPassCredentials()
 ```
 
-##### `ResetPostrender` <a name="ResetPostrender" id="@cdktf/provider-helm.release.Release.resetPostrender"></a>
+##### `ResetPostrender` <a name="ResetPostrender" id="@cdktn/provider-helm.release.Release.resetPostrender"></a>
 
 ```go
 func ResetPostrender()
 ```
 
-##### `ResetRecreatePods` <a name="ResetRecreatePods" id="@cdktf/provider-helm.release.Release.resetRecreatePods"></a>
+##### `ResetRecreatePods` <a name="ResetRecreatePods" id="@cdktn/provider-helm.release.Release.resetRecreatePods"></a>
 
 ```go
 func ResetRecreatePods()
 ```
 
-##### `ResetRenderSubchartNotes` <a name="ResetRenderSubchartNotes" id="@cdktf/provider-helm.release.Release.resetRenderSubchartNotes"></a>
+##### `ResetRenderSubchartNotes` <a name="ResetRenderSubchartNotes" id="@cdktn/provider-helm.release.Release.resetRenderSubchartNotes"></a>
 
 ```go
 func ResetRenderSubchartNotes()
 ```
 
-##### `ResetReplace` <a name="ResetReplace" id="@cdktf/provider-helm.release.Release.resetReplace"></a>
+##### `ResetReplace` <a name="ResetReplace" id="@cdktn/provider-helm.release.Release.resetReplace"></a>
 
 ```go
 func ResetReplace()
 ```
 
-##### `ResetRepository` <a name="ResetRepository" id="@cdktf/provider-helm.release.Release.resetRepository"></a>
+##### `ResetRepository` <a name="ResetRepository" id="@cdktn/provider-helm.release.Release.resetRepository"></a>
 
 ```go
 func ResetRepository()
 ```
 
-##### `ResetRepositoryCaFile` <a name="ResetRepositoryCaFile" id="@cdktf/provider-helm.release.Release.resetRepositoryCaFile"></a>
+##### `ResetRepositoryCaFile` <a name="ResetRepositoryCaFile" id="@cdktn/provider-helm.release.Release.resetRepositoryCaFile"></a>
 
 ```go
 func ResetRepositoryCaFile()
 ```
 
-##### `ResetRepositoryCertFile` <a name="ResetRepositoryCertFile" id="@cdktf/provider-helm.release.Release.resetRepositoryCertFile"></a>
+##### `ResetRepositoryCertFile` <a name="ResetRepositoryCertFile" id="@cdktn/provider-helm.release.Release.resetRepositoryCertFile"></a>
 
 ```go
 func ResetRepositoryCertFile()
 ```
 
-##### `ResetRepositoryKeyFile` <a name="ResetRepositoryKeyFile" id="@cdktf/provider-helm.release.Release.resetRepositoryKeyFile"></a>
+##### `ResetRepositoryKeyFile` <a name="ResetRepositoryKeyFile" id="@cdktn/provider-helm.release.Release.resetRepositoryKeyFile"></a>
 
 ```go
 func ResetRepositoryKeyFile()
 ```
 
-##### `ResetRepositoryPassword` <a name="ResetRepositoryPassword" id="@cdktf/provider-helm.release.Release.resetRepositoryPassword"></a>
+##### `ResetRepositoryPassword` <a name="ResetRepositoryPassword" id="@cdktn/provider-helm.release.Release.resetRepositoryPassword"></a>
 
 ```go
 func ResetRepositoryPassword()
 ```
 
-##### `ResetRepositoryUsername` <a name="ResetRepositoryUsername" id="@cdktf/provider-helm.release.Release.resetRepositoryUsername"></a>
+##### `ResetRepositoryUsername` <a name="ResetRepositoryUsername" id="@cdktn/provider-helm.release.Release.resetRepositoryUsername"></a>
 
 ```go
 func ResetRepositoryUsername()
 ```
 
-##### `ResetResetValues` <a name="ResetResetValues" id="@cdktf/provider-helm.release.Release.resetResetValues"></a>
+##### `ResetResetValues` <a name="ResetResetValues" id="@cdktn/provider-helm.release.Release.resetResetValues"></a>
 
 ```go
 func ResetResetValues()
 ```
 
-##### `ResetReuseValues` <a name="ResetReuseValues" id="@cdktf/provider-helm.release.Release.resetReuseValues"></a>
+##### `ResetReuseValues` <a name="ResetReuseValues" id="@cdktn/provider-helm.release.Release.resetReuseValues"></a>
 
 ```go
 func ResetReuseValues()
 ```
 
-##### `ResetSet` <a name="ResetSet" id="@cdktf/provider-helm.release.Release.resetSet"></a>
+##### `ResetSet` <a name="ResetSet" id="@cdktn/provider-helm.release.Release.resetSet"></a>
 
 ```go
 func ResetSet()
 ```
 
-##### `ResetSetList` <a name="ResetSetList" id="@cdktf/provider-helm.release.Release.resetSetList"></a>
+##### `ResetSetList` <a name="ResetSetList" id="@cdktn/provider-helm.release.Release.resetSetList"></a>
 
 ```go
 func ResetSetList()
 ```
 
-##### `ResetSetSensitive` <a name="ResetSetSensitive" id="@cdktf/provider-helm.release.Release.resetSetSensitive"></a>
+##### `ResetSetSensitive` <a name="ResetSetSensitive" id="@cdktn/provider-helm.release.Release.resetSetSensitive"></a>
 
 ```go
 func ResetSetSensitive()
 ```
 
-##### `ResetSetWo` <a name="ResetSetWo" id="@cdktf/provider-helm.release.Release.resetSetWo"></a>
+##### `ResetSetWo` <a name="ResetSetWo" id="@cdktn/provider-helm.release.Release.resetSetWo"></a>
 
 ```go
 func ResetSetWo()
 ```
 
-##### `ResetSetWoRevision` <a name="ResetSetWoRevision" id="@cdktf/provider-helm.release.Release.resetSetWoRevision"></a>
+##### `ResetSetWoRevision` <a name="ResetSetWoRevision" id="@cdktn/provider-helm.release.Release.resetSetWoRevision"></a>
 
 ```go
 func ResetSetWoRevision()
 ```
 
-##### `ResetSkipCrds` <a name="ResetSkipCrds" id="@cdktf/provider-helm.release.Release.resetSkipCrds"></a>
+##### `ResetSkipCrds` <a name="ResetSkipCrds" id="@cdktn/provider-helm.release.Release.resetSkipCrds"></a>
 
 ```go
 func ResetSkipCrds()
 ```
 
-##### `ResetTakeOwnership` <a name="ResetTakeOwnership" id="@cdktf/provider-helm.release.Release.resetTakeOwnership"></a>
+##### `ResetTakeOwnership` <a name="ResetTakeOwnership" id="@cdktn/provider-helm.release.Release.resetTakeOwnership"></a>
 
 ```go
 func ResetTakeOwnership()
 ```
 
-##### `ResetTfValues` <a name="ResetTfValues" id="@cdktf/provider-helm.release.Release.resetTfValues"></a>
+##### `ResetTfValues` <a name="ResetTfValues" id="@cdktn/provider-helm.release.Release.resetTfValues"></a>
 
 ```go
 func ResetTfValues()
 ```
 
-##### `ResetTimeout` <a name="ResetTimeout" id="@cdktf/provider-helm.release.Release.resetTimeout"></a>
+##### `ResetTimeout` <a name="ResetTimeout" id="@cdktn/provider-helm.release.Release.resetTimeout"></a>
 
 ```go
 func ResetTimeout()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-helm.release.Release.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-helm.release.Release.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
 ```
 
-##### `ResetUpgradeInstall` <a name="ResetUpgradeInstall" id="@cdktf/provider-helm.release.Release.resetUpgradeInstall"></a>
+##### `ResetUpgradeInstall` <a name="ResetUpgradeInstall" id="@cdktn/provider-helm.release.Release.resetUpgradeInstall"></a>
 
 ```go
 func ResetUpgradeInstall()
 ```
 
-##### `ResetVerify` <a name="ResetVerify" id="@cdktf/provider-helm.release.Release.resetVerify"></a>
+##### `ResetVerify` <a name="ResetVerify" id="@cdktn/provider-helm.release.Release.resetVerify"></a>
 
 ```go
 func ResetVerify()
 ```
 
-##### `ResetVersion` <a name="ResetVersion" id="@cdktf/provider-helm.release.Release.resetVersion"></a>
+##### `ResetVersion` <a name="ResetVersion" id="@cdktn/provider-helm.release.Release.resetVersion"></a>
 
 ```go
 func ResetVersion()
 ```
 
-##### `ResetWait` <a name="ResetWait" id="@cdktf/provider-helm.release.Release.resetWait"></a>
+##### `ResetWait` <a name="ResetWait" id="@cdktn/provider-helm.release.Release.resetWait"></a>
 
 ```go
 func ResetWait()
 ```
 
-##### `ResetWaitForJobs` <a name="ResetWaitForJobs" id="@cdktf/provider-helm.release.Release.resetWaitForJobs"></a>
+##### `ResetWaitForJobs` <a name="ResetWaitForJobs" id="@cdktn/provider-helm.release.Release.resetWaitForJobs"></a>
 
 ```go
 func ResetWaitForJobs()
@@ -740,17 +740,17 @@ func ResetWaitForJobs()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.Release.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-helm.release.Release.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a Release resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-helm.release.Release.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-helm.release.Release.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a Release resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-helm.release.Release.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-helm.release.Release.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.Release_IsConstruct(x interface{}) *bool
 ```
@@ -771,7 +771,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-helm.release.Release.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-helm.release.Release.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -779,45 +779,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-helm.release.Release.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-helm.release.Release.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.Release_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-helm.release.Release.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-helm.release.Release.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-helm.release.Release.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-helm.release.Release.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.Release_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-helm.release.Release.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-helm.release.Release.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-helm.release.Release.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-helm.release.Release.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.Release_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a Release resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a Release resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-helm.release.Release.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-helm.release.Release.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -825,7 +825,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-helm.release.Release.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-helm.release.Release.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -833,7 +833,7 @@ The construct id used in the generated config for the Release to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-helm.release.Release.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-helm.release.Release.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -843,9 +843,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-helm.release.Release.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-helm.release.Release.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the Release to import is found.
 
@@ -855,117 +855,117 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.manifest">Manifest</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.metadata">Metadata</a></code> | <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference">ReleaseMetadataOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.postrender">Postrender</a></code> | <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference">ReleasePostrenderOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.resources">Resources</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.set">Set</a></code> | <code><a href="#@cdktf/provider-helm.release.ReleaseSetList">ReleaseSetList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.setList">SetList</a></code> | <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList">ReleaseSetListStructList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.setSensitive">SetSensitive</a></code> | <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList">ReleaseSetSensitiveList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.setWo">SetWo</a></code> | <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList">ReleaseSetWoList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.status">Status</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference">ReleaseTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.atomicInput">AtomicInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.chartInput">ChartInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.cleanupOnFailInput">CleanupOnFailInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.createNamespaceInput">CreateNamespaceInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.dependencyUpdateInput">DependencyUpdateInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.develInput">DevelInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.disableCrdHooksInput">DisableCrdHooksInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.disableOpenapiValidationInput">DisableOpenapiValidationInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.disableWebhooksInput">DisableWebhooksInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.forceUpdateInput">ForceUpdateInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.keyringInput">KeyringInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.lintInput">LintInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.maxHistoryInput">MaxHistoryInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.passCredentialsInput">PassCredentialsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.postrenderInput">PostrenderInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.recreatePodsInput">RecreatePodsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.renderSubchartNotesInput">RenderSubchartNotesInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.replaceInput">ReplaceInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repositoryCaFileInput">RepositoryCaFileInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repositoryCertFileInput">RepositoryCertFileInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repositoryInput">RepositoryInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repositoryKeyFileInput">RepositoryKeyFileInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repositoryPasswordInput">RepositoryPasswordInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repositoryUsernameInput">RepositoryUsernameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.resetValuesInput">ResetValuesInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.reuseValuesInput">ReuseValuesInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.setInput">SetInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.setListInput">SetListInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.setSensitiveInput">SetSensitiveInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.setWoInput">SetWoInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.setWoRevisionInput">SetWoRevisionInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.skipCrdsInput">SkipCrdsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.takeOwnershipInput">TakeOwnershipInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.timeoutInput">TimeoutInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.upgradeInstallInput">UpgradeInstallInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.valuesInput">ValuesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.verifyInput">VerifyInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.versionInput">VersionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.waitForJobsInput">WaitForJobsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.waitInput">WaitInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.atomic">Atomic</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.chart">Chart</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.cleanupOnFail">CleanupOnFail</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.createNamespace">CreateNamespace</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.dependencyUpdate">DependencyUpdate</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.description">Description</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.devel">Devel</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.disableCrdHooks">DisableCrdHooks</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.disableOpenapiValidation">DisableOpenapiValidation</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.disableWebhooks">DisableWebhooks</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.forceUpdate">ForceUpdate</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.keyring">Keyring</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.lint">Lint</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.maxHistory">MaxHistory</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.passCredentials">PassCredentials</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.recreatePods">RecreatePods</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.renderSubchartNotes">RenderSubchartNotes</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.replace">Replace</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repository">Repository</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repositoryCaFile">RepositoryCaFile</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repositoryCertFile">RepositoryCertFile</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repositoryKeyFile">RepositoryKeyFile</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repositoryPassword">RepositoryPassword</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.repositoryUsername">RepositoryUsername</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.resetValues">ResetValues</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.reuseValues">ReuseValues</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.setWoRevision">SetWoRevision</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.skipCrds">SkipCrds</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.takeOwnership">TakeOwnership</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.timeout">Timeout</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.upgradeInstall">UpgradeInstall</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.values">Values</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.verify">Verify</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.version">Version</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.wait">Wait</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.waitForJobs">WaitForJobs</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.manifest">Manifest</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference">ReleaseMetadataOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.postrender">Postrender</a></code> | <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference">ReleasePostrenderOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.resources">Resources</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.set">Set</a></code> | <code><a href="#@cdktn/provider-helm.release.ReleaseSetList">ReleaseSetList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.setList">SetList</a></code> | <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList">ReleaseSetListStructList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.setSensitive">SetSensitive</a></code> | <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList">ReleaseSetSensitiveList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.setWo">SetWo</a></code> | <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList">ReleaseSetWoList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference">ReleaseTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.atomicInput">AtomicInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.chartInput">ChartInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.cleanupOnFailInput">CleanupOnFailInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.createNamespaceInput">CreateNamespaceInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.dependencyUpdateInput">DependencyUpdateInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.develInput">DevelInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.disableCrdHooksInput">DisableCrdHooksInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.disableOpenapiValidationInput">DisableOpenapiValidationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.disableWebhooksInput">DisableWebhooksInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.forceUpdateInput">ForceUpdateInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.keyringInput">KeyringInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.lintInput">LintInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.maxHistoryInput">MaxHistoryInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.passCredentialsInput">PassCredentialsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.postrenderInput">PostrenderInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.recreatePodsInput">RecreatePodsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.renderSubchartNotesInput">RenderSubchartNotesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.replaceInput">ReplaceInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repositoryCaFileInput">RepositoryCaFileInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repositoryCertFileInput">RepositoryCertFileInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repositoryInput">RepositoryInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repositoryKeyFileInput">RepositoryKeyFileInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repositoryPasswordInput">RepositoryPasswordInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repositoryUsernameInput">RepositoryUsernameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.resetValuesInput">ResetValuesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.reuseValuesInput">ReuseValuesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.setInput">SetInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.setListInput">SetListInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.setSensitiveInput">SetSensitiveInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.setWoInput">SetWoInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.setWoRevisionInput">SetWoRevisionInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.skipCrdsInput">SkipCrdsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.takeOwnershipInput">TakeOwnershipInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.timeoutInput">TimeoutInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.upgradeInstallInput">UpgradeInstallInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.valuesInput">ValuesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.verifyInput">VerifyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.versionInput">VersionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.waitForJobsInput">WaitForJobsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.waitInput">WaitInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.atomic">Atomic</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.chart">Chart</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.cleanupOnFail">CleanupOnFail</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.createNamespace">CreateNamespace</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.dependencyUpdate">DependencyUpdate</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.devel">Devel</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.disableCrdHooks">DisableCrdHooks</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.disableOpenapiValidation">DisableOpenapiValidation</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.disableWebhooks">DisableWebhooks</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.forceUpdate">ForceUpdate</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.keyring">Keyring</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.lint">Lint</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.maxHistory">MaxHistory</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.passCredentials">PassCredentials</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.recreatePods">RecreatePods</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.renderSubchartNotes">RenderSubchartNotes</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.replace">Replace</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repository">Repository</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repositoryCaFile">RepositoryCaFile</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repositoryCertFile">RepositoryCertFile</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repositoryKeyFile">RepositoryKeyFile</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repositoryPassword">RepositoryPassword</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.repositoryUsername">RepositoryUsername</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.resetValues">ResetValues</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.reuseValues">ReuseValues</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.setWoRevision">SetWoRevision</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.skipCrds">SkipCrds</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.takeOwnership">TakeOwnership</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.timeout">Timeout</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.upgradeInstall">UpgradeInstall</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.values">Values</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.verify">Verify</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.version">Version</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.wait">Wait</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.waitForJobs">WaitForJobs</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-helm.release.Release.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-helm.release.Release.property.node"></a>
 
 ```go
 func Node() Node
@@ -977,17 +977,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-helm.release.Release.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-helm.release.Release.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.Release.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.Release.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -997,7 +997,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-helm.release.Release.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-helm.release.Release.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -1007,7 +1007,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-helm.release.Release.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-helm.release.Release.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -1017,7 +1017,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-helm.release.Release.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-helm.release.Release.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -1027,17 +1027,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-helm.release.Release.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-helm.release.Release.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-helm.release.Release.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-helm.release.Release.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -1047,7 +1047,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-helm.release.Release.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-helm.release.Release.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -1057,7 +1057,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-helm.release.Release.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-helm.release.Release.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -1067,37 +1067,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-helm.release.Release.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-helm.release.Release.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-helm.release.Release.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-helm.release.Release.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-helm.release.Release.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-helm.release.Release.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-helm.release.Release.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-helm.release.Release.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -1107,7 +1107,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-helm.release.Release.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-helm.release.Release.property.id"></a>
 
 ```go
 func Id() *string
@@ -1117,7 +1117,7 @@ func Id() *string
 
 ---
 
-##### `Manifest`<sup>Required</sup> <a name="Manifest" id="@cdktf/provider-helm.release.Release.property.manifest"></a>
+##### `Manifest`<sup>Required</sup> <a name="Manifest" id="@cdktn/provider-helm.release.Release.property.manifest"></a>
 
 ```go
 func Manifest() *string
@@ -1127,77 +1127,77 @@ func Manifest() *string
 
 ---
 
-##### `Metadata`<sup>Required</sup> <a name="Metadata" id="@cdktf/provider-helm.release.Release.property.metadata"></a>
+##### `Metadata`<sup>Required</sup> <a name="Metadata" id="@cdktn/provider-helm.release.Release.property.metadata"></a>
 
 ```go
 func Metadata() ReleaseMetadataOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference">ReleaseMetadataOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference">ReleaseMetadataOutputReference</a>
 
 ---
 
-##### `Postrender`<sup>Required</sup> <a name="Postrender" id="@cdktf/provider-helm.release.Release.property.postrender"></a>
+##### `Postrender`<sup>Required</sup> <a name="Postrender" id="@cdktn/provider-helm.release.Release.property.postrender"></a>
 
 ```go
 func Postrender() ReleasePostrenderOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference">ReleasePostrenderOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference">ReleasePostrenderOutputReference</a>
 
 ---
 
-##### `Resources`<sup>Required</sup> <a name="Resources" id="@cdktf/provider-helm.release.Release.property.resources"></a>
+##### `Resources`<sup>Required</sup> <a name="Resources" id="@cdktn/provider-helm.release.Release.property.resources"></a>
 
 ```go
 func Resources() StringMap
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMap
 
 ---
 
-##### `Set`<sup>Required</sup> <a name="Set" id="@cdktf/provider-helm.release.Release.property.set"></a>
+##### `Set`<sup>Required</sup> <a name="Set" id="@cdktn/provider-helm.release.Release.property.set"></a>
 
 ```go
 func Set() ReleaseSetList
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleaseSetList">ReleaseSetList</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleaseSetList">ReleaseSetList</a>
 
 ---
 
-##### `SetList`<sup>Required</sup> <a name="SetList" id="@cdktf/provider-helm.release.Release.property.setList"></a>
+##### `SetList`<sup>Required</sup> <a name="SetList" id="@cdktn/provider-helm.release.Release.property.setList"></a>
 
 ```go
 func SetList() ReleaseSetListStructList
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleaseSetListStructList">ReleaseSetListStructList</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleaseSetListStructList">ReleaseSetListStructList</a>
 
 ---
 
-##### `SetSensitive`<sup>Required</sup> <a name="SetSensitive" id="@cdktf/provider-helm.release.Release.property.setSensitive"></a>
+##### `SetSensitive`<sup>Required</sup> <a name="SetSensitive" id="@cdktn/provider-helm.release.Release.property.setSensitive"></a>
 
 ```go
 func SetSensitive() ReleaseSetSensitiveList
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList">ReleaseSetSensitiveList</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList">ReleaseSetSensitiveList</a>
 
 ---
 
-##### `SetWo`<sup>Required</sup> <a name="SetWo" id="@cdktf/provider-helm.release.Release.property.setWo"></a>
+##### `SetWo`<sup>Required</sup> <a name="SetWo" id="@cdktn/provider-helm.release.Release.property.setWo"></a>
 
 ```go
 func SetWo() ReleaseSetWoList
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleaseSetWoList">ReleaseSetWoList</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleaseSetWoList">ReleaseSetWoList</a>
 
 ---
 
-##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-helm.release.Release.property.status"></a>
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktn/provider-helm.release.Release.property.status"></a>
 
 ```go
 func Status() *string
@@ -1207,17 +1207,17 @@ func Status() *string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-helm.release.Release.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-helm.release.Release.property.timeouts"></a>
 
 ```go
 func Timeouts() ReleaseTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference">ReleaseTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference">ReleaseTimeoutsOutputReference</a>
 
 ---
 
-##### `AtomicInput`<sup>Optional</sup> <a name="AtomicInput" id="@cdktf/provider-helm.release.Release.property.atomicInput"></a>
+##### `AtomicInput`<sup>Optional</sup> <a name="AtomicInput" id="@cdktn/provider-helm.release.Release.property.atomicInput"></a>
 
 ```go
 func AtomicInput() interface{}
@@ -1227,7 +1227,7 @@ func AtomicInput() interface{}
 
 ---
 
-##### `ChartInput`<sup>Optional</sup> <a name="ChartInput" id="@cdktf/provider-helm.release.Release.property.chartInput"></a>
+##### `ChartInput`<sup>Optional</sup> <a name="ChartInput" id="@cdktn/provider-helm.release.Release.property.chartInput"></a>
 
 ```go
 func ChartInput() *string
@@ -1237,7 +1237,7 @@ func ChartInput() *string
 
 ---
 
-##### `CleanupOnFailInput`<sup>Optional</sup> <a name="CleanupOnFailInput" id="@cdktf/provider-helm.release.Release.property.cleanupOnFailInput"></a>
+##### `CleanupOnFailInput`<sup>Optional</sup> <a name="CleanupOnFailInput" id="@cdktn/provider-helm.release.Release.property.cleanupOnFailInput"></a>
 
 ```go
 func CleanupOnFailInput() interface{}
@@ -1247,7 +1247,7 @@ func CleanupOnFailInput() interface{}
 
 ---
 
-##### `CreateNamespaceInput`<sup>Optional</sup> <a name="CreateNamespaceInput" id="@cdktf/provider-helm.release.Release.property.createNamespaceInput"></a>
+##### `CreateNamespaceInput`<sup>Optional</sup> <a name="CreateNamespaceInput" id="@cdktn/provider-helm.release.Release.property.createNamespaceInput"></a>
 
 ```go
 func CreateNamespaceInput() interface{}
@@ -1257,7 +1257,7 @@ func CreateNamespaceInput() interface{}
 
 ---
 
-##### `DependencyUpdateInput`<sup>Optional</sup> <a name="DependencyUpdateInput" id="@cdktf/provider-helm.release.Release.property.dependencyUpdateInput"></a>
+##### `DependencyUpdateInput`<sup>Optional</sup> <a name="DependencyUpdateInput" id="@cdktn/provider-helm.release.Release.property.dependencyUpdateInput"></a>
 
 ```go
 func DependencyUpdateInput() interface{}
@@ -1267,7 +1267,7 @@ func DependencyUpdateInput() interface{}
 
 ---
 
-##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-helm.release.Release.property.descriptionInput"></a>
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-helm.release.Release.property.descriptionInput"></a>
 
 ```go
 func DescriptionInput() *string
@@ -1277,7 +1277,7 @@ func DescriptionInput() *string
 
 ---
 
-##### `DevelInput`<sup>Optional</sup> <a name="DevelInput" id="@cdktf/provider-helm.release.Release.property.develInput"></a>
+##### `DevelInput`<sup>Optional</sup> <a name="DevelInput" id="@cdktn/provider-helm.release.Release.property.develInput"></a>
 
 ```go
 func DevelInput() interface{}
@@ -1287,7 +1287,7 @@ func DevelInput() interface{}
 
 ---
 
-##### `DisableCrdHooksInput`<sup>Optional</sup> <a name="DisableCrdHooksInput" id="@cdktf/provider-helm.release.Release.property.disableCrdHooksInput"></a>
+##### `DisableCrdHooksInput`<sup>Optional</sup> <a name="DisableCrdHooksInput" id="@cdktn/provider-helm.release.Release.property.disableCrdHooksInput"></a>
 
 ```go
 func DisableCrdHooksInput() interface{}
@@ -1297,7 +1297,7 @@ func DisableCrdHooksInput() interface{}
 
 ---
 
-##### `DisableOpenapiValidationInput`<sup>Optional</sup> <a name="DisableOpenapiValidationInput" id="@cdktf/provider-helm.release.Release.property.disableOpenapiValidationInput"></a>
+##### `DisableOpenapiValidationInput`<sup>Optional</sup> <a name="DisableOpenapiValidationInput" id="@cdktn/provider-helm.release.Release.property.disableOpenapiValidationInput"></a>
 
 ```go
 func DisableOpenapiValidationInput() interface{}
@@ -1307,7 +1307,7 @@ func DisableOpenapiValidationInput() interface{}
 
 ---
 
-##### `DisableWebhooksInput`<sup>Optional</sup> <a name="DisableWebhooksInput" id="@cdktf/provider-helm.release.Release.property.disableWebhooksInput"></a>
+##### `DisableWebhooksInput`<sup>Optional</sup> <a name="DisableWebhooksInput" id="@cdktn/provider-helm.release.Release.property.disableWebhooksInput"></a>
 
 ```go
 func DisableWebhooksInput() interface{}
@@ -1317,7 +1317,7 @@ func DisableWebhooksInput() interface{}
 
 ---
 
-##### `ForceUpdateInput`<sup>Optional</sup> <a name="ForceUpdateInput" id="@cdktf/provider-helm.release.Release.property.forceUpdateInput"></a>
+##### `ForceUpdateInput`<sup>Optional</sup> <a name="ForceUpdateInput" id="@cdktn/provider-helm.release.Release.property.forceUpdateInput"></a>
 
 ```go
 func ForceUpdateInput() interface{}
@@ -1327,7 +1327,7 @@ func ForceUpdateInput() interface{}
 
 ---
 
-##### `KeyringInput`<sup>Optional</sup> <a name="KeyringInput" id="@cdktf/provider-helm.release.Release.property.keyringInput"></a>
+##### `KeyringInput`<sup>Optional</sup> <a name="KeyringInput" id="@cdktn/provider-helm.release.Release.property.keyringInput"></a>
 
 ```go
 func KeyringInput() *string
@@ -1337,7 +1337,7 @@ func KeyringInput() *string
 
 ---
 
-##### `LintInput`<sup>Optional</sup> <a name="LintInput" id="@cdktf/provider-helm.release.Release.property.lintInput"></a>
+##### `LintInput`<sup>Optional</sup> <a name="LintInput" id="@cdktn/provider-helm.release.Release.property.lintInput"></a>
 
 ```go
 func LintInput() interface{}
@@ -1347,7 +1347,7 @@ func LintInput() interface{}
 
 ---
 
-##### `MaxHistoryInput`<sup>Optional</sup> <a name="MaxHistoryInput" id="@cdktf/provider-helm.release.Release.property.maxHistoryInput"></a>
+##### `MaxHistoryInput`<sup>Optional</sup> <a name="MaxHistoryInput" id="@cdktn/provider-helm.release.Release.property.maxHistoryInput"></a>
 
 ```go
 func MaxHistoryInput() *f64
@@ -1357,7 +1357,7 @@ func MaxHistoryInput() *f64
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-helm.release.Release.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-helm.release.Release.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -1367,7 +1367,7 @@ func NameInput() *string
 
 ---
 
-##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktf/provider-helm.release.Release.property.namespaceInput"></a>
+##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktn/provider-helm.release.Release.property.namespaceInput"></a>
 
 ```go
 func NamespaceInput() *string
@@ -1377,7 +1377,7 @@ func NamespaceInput() *string
 
 ---
 
-##### `PassCredentialsInput`<sup>Optional</sup> <a name="PassCredentialsInput" id="@cdktf/provider-helm.release.Release.property.passCredentialsInput"></a>
+##### `PassCredentialsInput`<sup>Optional</sup> <a name="PassCredentialsInput" id="@cdktn/provider-helm.release.Release.property.passCredentialsInput"></a>
 
 ```go
 func PassCredentialsInput() interface{}
@@ -1387,7 +1387,7 @@ func PassCredentialsInput() interface{}
 
 ---
 
-##### `PostrenderInput`<sup>Optional</sup> <a name="PostrenderInput" id="@cdktf/provider-helm.release.Release.property.postrenderInput"></a>
+##### `PostrenderInput`<sup>Optional</sup> <a name="PostrenderInput" id="@cdktn/provider-helm.release.Release.property.postrenderInput"></a>
 
 ```go
 func PostrenderInput() interface{}
@@ -1397,7 +1397,7 @@ func PostrenderInput() interface{}
 
 ---
 
-##### `RecreatePodsInput`<sup>Optional</sup> <a name="RecreatePodsInput" id="@cdktf/provider-helm.release.Release.property.recreatePodsInput"></a>
+##### `RecreatePodsInput`<sup>Optional</sup> <a name="RecreatePodsInput" id="@cdktn/provider-helm.release.Release.property.recreatePodsInput"></a>
 
 ```go
 func RecreatePodsInput() interface{}
@@ -1407,7 +1407,7 @@ func RecreatePodsInput() interface{}
 
 ---
 
-##### `RenderSubchartNotesInput`<sup>Optional</sup> <a name="RenderSubchartNotesInput" id="@cdktf/provider-helm.release.Release.property.renderSubchartNotesInput"></a>
+##### `RenderSubchartNotesInput`<sup>Optional</sup> <a name="RenderSubchartNotesInput" id="@cdktn/provider-helm.release.Release.property.renderSubchartNotesInput"></a>
 
 ```go
 func RenderSubchartNotesInput() interface{}
@@ -1417,7 +1417,7 @@ func RenderSubchartNotesInput() interface{}
 
 ---
 
-##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktf/provider-helm.release.Release.property.replaceInput"></a>
+##### `ReplaceInput`<sup>Optional</sup> <a name="ReplaceInput" id="@cdktn/provider-helm.release.Release.property.replaceInput"></a>
 
 ```go
 func ReplaceInput() interface{}
@@ -1427,7 +1427,7 @@ func ReplaceInput() interface{}
 
 ---
 
-##### `RepositoryCaFileInput`<sup>Optional</sup> <a name="RepositoryCaFileInput" id="@cdktf/provider-helm.release.Release.property.repositoryCaFileInput"></a>
+##### `RepositoryCaFileInput`<sup>Optional</sup> <a name="RepositoryCaFileInput" id="@cdktn/provider-helm.release.Release.property.repositoryCaFileInput"></a>
 
 ```go
 func RepositoryCaFileInput() *string
@@ -1437,7 +1437,7 @@ func RepositoryCaFileInput() *string
 
 ---
 
-##### `RepositoryCertFileInput`<sup>Optional</sup> <a name="RepositoryCertFileInput" id="@cdktf/provider-helm.release.Release.property.repositoryCertFileInput"></a>
+##### `RepositoryCertFileInput`<sup>Optional</sup> <a name="RepositoryCertFileInput" id="@cdktn/provider-helm.release.Release.property.repositoryCertFileInput"></a>
 
 ```go
 func RepositoryCertFileInput() *string
@@ -1447,7 +1447,7 @@ func RepositoryCertFileInput() *string
 
 ---
 
-##### `RepositoryInput`<sup>Optional</sup> <a name="RepositoryInput" id="@cdktf/provider-helm.release.Release.property.repositoryInput"></a>
+##### `RepositoryInput`<sup>Optional</sup> <a name="RepositoryInput" id="@cdktn/provider-helm.release.Release.property.repositoryInput"></a>
 
 ```go
 func RepositoryInput() *string
@@ -1457,7 +1457,7 @@ func RepositoryInput() *string
 
 ---
 
-##### `RepositoryKeyFileInput`<sup>Optional</sup> <a name="RepositoryKeyFileInput" id="@cdktf/provider-helm.release.Release.property.repositoryKeyFileInput"></a>
+##### `RepositoryKeyFileInput`<sup>Optional</sup> <a name="RepositoryKeyFileInput" id="@cdktn/provider-helm.release.Release.property.repositoryKeyFileInput"></a>
 
 ```go
 func RepositoryKeyFileInput() *string
@@ -1467,7 +1467,7 @@ func RepositoryKeyFileInput() *string
 
 ---
 
-##### `RepositoryPasswordInput`<sup>Optional</sup> <a name="RepositoryPasswordInput" id="@cdktf/provider-helm.release.Release.property.repositoryPasswordInput"></a>
+##### `RepositoryPasswordInput`<sup>Optional</sup> <a name="RepositoryPasswordInput" id="@cdktn/provider-helm.release.Release.property.repositoryPasswordInput"></a>
 
 ```go
 func RepositoryPasswordInput() *string
@@ -1477,7 +1477,7 @@ func RepositoryPasswordInput() *string
 
 ---
 
-##### `RepositoryUsernameInput`<sup>Optional</sup> <a name="RepositoryUsernameInput" id="@cdktf/provider-helm.release.Release.property.repositoryUsernameInput"></a>
+##### `RepositoryUsernameInput`<sup>Optional</sup> <a name="RepositoryUsernameInput" id="@cdktn/provider-helm.release.Release.property.repositoryUsernameInput"></a>
 
 ```go
 func RepositoryUsernameInput() *string
@@ -1487,7 +1487,7 @@ func RepositoryUsernameInput() *string
 
 ---
 
-##### `ResetValuesInput`<sup>Optional</sup> <a name="ResetValuesInput" id="@cdktf/provider-helm.release.Release.property.resetValuesInput"></a>
+##### `ResetValuesInput`<sup>Optional</sup> <a name="ResetValuesInput" id="@cdktn/provider-helm.release.Release.property.resetValuesInput"></a>
 
 ```go
 func ResetValuesInput() interface{}
@@ -1497,7 +1497,7 @@ func ResetValuesInput() interface{}
 
 ---
 
-##### `ReuseValuesInput`<sup>Optional</sup> <a name="ReuseValuesInput" id="@cdktf/provider-helm.release.Release.property.reuseValuesInput"></a>
+##### `ReuseValuesInput`<sup>Optional</sup> <a name="ReuseValuesInput" id="@cdktn/provider-helm.release.Release.property.reuseValuesInput"></a>
 
 ```go
 func ReuseValuesInput() interface{}
@@ -1507,7 +1507,7 @@ func ReuseValuesInput() interface{}
 
 ---
 
-##### `SetInput`<sup>Optional</sup> <a name="SetInput" id="@cdktf/provider-helm.release.Release.property.setInput"></a>
+##### `SetInput`<sup>Optional</sup> <a name="SetInput" id="@cdktn/provider-helm.release.Release.property.setInput"></a>
 
 ```go
 func SetInput() interface{}
@@ -1517,7 +1517,7 @@ func SetInput() interface{}
 
 ---
 
-##### `SetListInput`<sup>Optional</sup> <a name="SetListInput" id="@cdktf/provider-helm.release.Release.property.setListInput"></a>
+##### `SetListInput`<sup>Optional</sup> <a name="SetListInput" id="@cdktn/provider-helm.release.Release.property.setListInput"></a>
 
 ```go
 func SetListInput() interface{}
@@ -1527,7 +1527,7 @@ func SetListInput() interface{}
 
 ---
 
-##### `SetSensitiveInput`<sup>Optional</sup> <a name="SetSensitiveInput" id="@cdktf/provider-helm.release.Release.property.setSensitiveInput"></a>
+##### `SetSensitiveInput`<sup>Optional</sup> <a name="SetSensitiveInput" id="@cdktn/provider-helm.release.Release.property.setSensitiveInput"></a>
 
 ```go
 func SetSensitiveInput() interface{}
@@ -1537,7 +1537,7 @@ func SetSensitiveInput() interface{}
 
 ---
 
-##### `SetWoInput`<sup>Optional</sup> <a name="SetWoInput" id="@cdktf/provider-helm.release.Release.property.setWoInput"></a>
+##### `SetWoInput`<sup>Optional</sup> <a name="SetWoInput" id="@cdktn/provider-helm.release.Release.property.setWoInput"></a>
 
 ```go
 func SetWoInput() interface{}
@@ -1547,7 +1547,7 @@ func SetWoInput() interface{}
 
 ---
 
-##### `SetWoRevisionInput`<sup>Optional</sup> <a name="SetWoRevisionInput" id="@cdktf/provider-helm.release.Release.property.setWoRevisionInput"></a>
+##### `SetWoRevisionInput`<sup>Optional</sup> <a name="SetWoRevisionInput" id="@cdktn/provider-helm.release.Release.property.setWoRevisionInput"></a>
 
 ```go
 func SetWoRevisionInput() *f64
@@ -1557,7 +1557,7 @@ func SetWoRevisionInput() *f64
 
 ---
 
-##### `SkipCrdsInput`<sup>Optional</sup> <a name="SkipCrdsInput" id="@cdktf/provider-helm.release.Release.property.skipCrdsInput"></a>
+##### `SkipCrdsInput`<sup>Optional</sup> <a name="SkipCrdsInput" id="@cdktn/provider-helm.release.Release.property.skipCrdsInput"></a>
 
 ```go
 func SkipCrdsInput() interface{}
@@ -1567,7 +1567,7 @@ func SkipCrdsInput() interface{}
 
 ---
 
-##### `TakeOwnershipInput`<sup>Optional</sup> <a name="TakeOwnershipInput" id="@cdktf/provider-helm.release.Release.property.takeOwnershipInput"></a>
+##### `TakeOwnershipInput`<sup>Optional</sup> <a name="TakeOwnershipInput" id="@cdktn/provider-helm.release.Release.property.takeOwnershipInput"></a>
 
 ```go
 func TakeOwnershipInput() interface{}
@@ -1577,7 +1577,7 @@ func TakeOwnershipInput() interface{}
 
 ---
 
-##### `TimeoutInput`<sup>Optional</sup> <a name="TimeoutInput" id="@cdktf/provider-helm.release.Release.property.timeoutInput"></a>
+##### `TimeoutInput`<sup>Optional</sup> <a name="TimeoutInput" id="@cdktn/provider-helm.release.Release.property.timeoutInput"></a>
 
 ```go
 func TimeoutInput() *f64
@@ -1587,7 +1587,7 @@ func TimeoutInput() *f64
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-helm.release.Release.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-helm.release.Release.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -1597,7 +1597,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `UpgradeInstallInput`<sup>Optional</sup> <a name="UpgradeInstallInput" id="@cdktf/provider-helm.release.Release.property.upgradeInstallInput"></a>
+##### `UpgradeInstallInput`<sup>Optional</sup> <a name="UpgradeInstallInput" id="@cdktn/provider-helm.release.Release.property.upgradeInstallInput"></a>
 
 ```go
 func UpgradeInstallInput() interface{}
@@ -1607,7 +1607,7 @@ func UpgradeInstallInput() interface{}
 
 ---
 
-##### `ValuesInput`<sup>Optional</sup> <a name="ValuesInput" id="@cdktf/provider-helm.release.Release.property.valuesInput"></a>
+##### `ValuesInput`<sup>Optional</sup> <a name="ValuesInput" id="@cdktn/provider-helm.release.Release.property.valuesInput"></a>
 
 ```go
 func ValuesInput() *[]*string
@@ -1617,7 +1617,7 @@ func ValuesInput() *[]*string
 
 ---
 
-##### `VerifyInput`<sup>Optional</sup> <a name="VerifyInput" id="@cdktf/provider-helm.release.Release.property.verifyInput"></a>
+##### `VerifyInput`<sup>Optional</sup> <a name="VerifyInput" id="@cdktn/provider-helm.release.Release.property.verifyInput"></a>
 
 ```go
 func VerifyInput() interface{}
@@ -1627,7 +1627,7 @@ func VerifyInput() interface{}
 
 ---
 
-##### `VersionInput`<sup>Optional</sup> <a name="VersionInput" id="@cdktf/provider-helm.release.Release.property.versionInput"></a>
+##### `VersionInput`<sup>Optional</sup> <a name="VersionInput" id="@cdktn/provider-helm.release.Release.property.versionInput"></a>
 
 ```go
 func VersionInput() *string
@@ -1637,7 +1637,7 @@ func VersionInput() *string
 
 ---
 
-##### `WaitForJobsInput`<sup>Optional</sup> <a name="WaitForJobsInput" id="@cdktf/provider-helm.release.Release.property.waitForJobsInput"></a>
+##### `WaitForJobsInput`<sup>Optional</sup> <a name="WaitForJobsInput" id="@cdktn/provider-helm.release.Release.property.waitForJobsInput"></a>
 
 ```go
 func WaitForJobsInput() interface{}
@@ -1647,7 +1647,7 @@ func WaitForJobsInput() interface{}
 
 ---
 
-##### `WaitInput`<sup>Optional</sup> <a name="WaitInput" id="@cdktf/provider-helm.release.Release.property.waitInput"></a>
+##### `WaitInput`<sup>Optional</sup> <a name="WaitInput" id="@cdktn/provider-helm.release.Release.property.waitInput"></a>
 
 ```go
 func WaitInput() interface{}
@@ -1657,7 +1657,7 @@ func WaitInput() interface{}
 
 ---
 
-##### `Atomic`<sup>Required</sup> <a name="Atomic" id="@cdktf/provider-helm.release.Release.property.atomic"></a>
+##### `Atomic`<sup>Required</sup> <a name="Atomic" id="@cdktn/provider-helm.release.Release.property.atomic"></a>
 
 ```go
 func Atomic() interface{}
@@ -1667,7 +1667,7 @@ func Atomic() interface{}
 
 ---
 
-##### `Chart`<sup>Required</sup> <a name="Chart" id="@cdktf/provider-helm.release.Release.property.chart"></a>
+##### `Chart`<sup>Required</sup> <a name="Chart" id="@cdktn/provider-helm.release.Release.property.chart"></a>
 
 ```go
 func Chart() *string
@@ -1677,7 +1677,7 @@ func Chart() *string
 
 ---
 
-##### `CleanupOnFail`<sup>Required</sup> <a name="CleanupOnFail" id="@cdktf/provider-helm.release.Release.property.cleanupOnFail"></a>
+##### `CleanupOnFail`<sup>Required</sup> <a name="CleanupOnFail" id="@cdktn/provider-helm.release.Release.property.cleanupOnFail"></a>
 
 ```go
 func CleanupOnFail() interface{}
@@ -1687,7 +1687,7 @@ func CleanupOnFail() interface{}
 
 ---
 
-##### `CreateNamespace`<sup>Required</sup> <a name="CreateNamespace" id="@cdktf/provider-helm.release.Release.property.createNamespace"></a>
+##### `CreateNamespace`<sup>Required</sup> <a name="CreateNamespace" id="@cdktn/provider-helm.release.Release.property.createNamespace"></a>
 
 ```go
 func CreateNamespace() interface{}
@@ -1697,7 +1697,7 @@ func CreateNamespace() interface{}
 
 ---
 
-##### `DependencyUpdate`<sup>Required</sup> <a name="DependencyUpdate" id="@cdktf/provider-helm.release.Release.property.dependencyUpdate"></a>
+##### `DependencyUpdate`<sup>Required</sup> <a name="DependencyUpdate" id="@cdktn/provider-helm.release.Release.property.dependencyUpdate"></a>
 
 ```go
 func DependencyUpdate() interface{}
@@ -1707,7 +1707,7 @@ func DependencyUpdate() interface{}
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-helm.release.Release.property.description"></a>
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-helm.release.Release.property.description"></a>
 
 ```go
 func Description() *string
@@ -1717,7 +1717,7 @@ func Description() *string
 
 ---
 
-##### `Devel`<sup>Required</sup> <a name="Devel" id="@cdktf/provider-helm.release.Release.property.devel"></a>
+##### `Devel`<sup>Required</sup> <a name="Devel" id="@cdktn/provider-helm.release.Release.property.devel"></a>
 
 ```go
 func Devel() interface{}
@@ -1727,7 +1727,7 @@ func Devel() interface{}
 
 ---
 
-##### `DisableCrdHooks`<sup>Required</sup> <a name="DisableCrdHooks" id="@cdktf/provider-helm.release.Release.property.disableCrdHooks"></a>
+##### `DisableCrdHooks`<sup>Required</sup> <a name="DisableCrdHooks" id="@cdktn/provider-helm.release.Release.property.disableCrdHooks"></a>
 
 ```go
 func DisableCrdHooks() interface{}
@@ -1737,7 +1737,7 @@ func DisableCrdHooks() interface{}
 
 ---
 
-##### `DisableOpenapiValidation`<sup>Required</sup> <a name="DisableOpenapiValidation" id="@cdktf/provider-helm.release.Release.property.disableOpenapiValidation"></a>
+##### `DisableOpenapiValidation`<sup>Required</sup> <a name="DisableOpenapiValidation" id="@cdktn/provider-helm.release.Release.property.disableOpenapiValidation"></a>
 
 ```go
 func DisableOpenapiValidation() interface{}
@@ -1747,7 +1747,7 @@ func DisableOpenapiValidation() interface{}
 
 ---
 
-##### `DisableWebhooks`<sup>Required</sup> <a name="DisableWebhooks" id="@cdktf/provider-helm.release.Release.property.disableWebhooks"></a>
+##### `DisableWebhooks`<sup>Required</sup> <a name="DisableWebhooks" id="@cdktn/provider-helm.release.Release.property.disableWebhooks"></a>
 
 ```go
 func DisableWebhooks() interface{}
@@ -1757,7 +1757,7 @@ func DisableWebhooks() interface{}
 
 ---
 
-##### `ForceUpdate`<sup>Required</sup> <a name="ForceUpdate" id="@cdktf/provider-helm.release.Release.property.forceUpdate"></a>
+##### `ForceUpdate`<sup>Required</sup> <a name="ForceUpdate" id="@cdktn/provider-helm.release.Release.property.forceUpdate"></a>
 
 ```go
 func ForceUpdate() interface{}
@@ -1767,7 +1767,7 @@ func ForceUpdate() interface{}
 
 ---
 
-##### `Keyring`<sup>Required</sup> <a name="Keyring" id="@cdktf/provider-helm.release.Release.property.keyring"></a>
+##### `Keyring`<sup>Required</sup> <a name="Keyring" id="@cdktn/provider-helm.release.Release.property.keyring"></a>
 
 ```go
 func Keyring() *string
@@ -1777,7 +1777,7 @@ func Keyring() *string
 
 ---
 
-##### `Lint`<sup>Required</sup> <a name="Lint" id="@cdktf/provider-helm.release.Release.property.lint"></a>
+##### `Lint`<sup>Required</sup> <a name="Lint" id="@cdktn/provider-helm.release.Release.property.lint"></a>
 
 ```go
 func Lint() interface{}
@@ -1787,7 +1787,7 @@ func Lint() interface{}
 
 ---
 
-##### `MaxHistory`<sup>Required</sup> <a name="MaxHistory" id="@cdktf/provider-helm.release.Release.property.maxHistory"></a>
+##### `MaxHistory`<sup>Required</sup> <a name="MaxHistory" id="@cdktn/provider-helm.release.Release.property.maxHistory"></a>
 
 ```go
 func MaxHistory() *f64
@@ -1797,7 +1797,7 @@ func MaxHistory() *f64
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-helm.release.Release.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.Release.property.name"></a>
 
 ```go
 func Name() *string
@@ -1807,7 +1807,7 @@ func Name() *string
 
 ---
 
-##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktf/provider-helm.release.Release.property.namespace"></a>
+##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktn/provider-helm.release.Release.property.namespace"></a>
 
 ```go
 func Namespace() *string
@@ -1817,7 +1817,7 @@ func Namespace() *string
 
 ---
 
-##### `PassCredentials`<sup>Required</sup> <a name="PassCredentials" id="@cdktf/provider-helm.release.Release.property.passCredentials"></a>
+##### `PassCredentials`<sup>Required</sup> <a name="PassCredentials" id="@cdktn/provider-helm.release.Release.property.passCredentials"></a>
 
 ```go
 func PassCredentials() interface{}
@@ -1827,7 +1827,7 @@ func PassCredentials() interface{}
 
 ---
 
-##### `RecreatePods`<sup>Required</sup> <a name="RecreatePods" id="@cdktf/provider-helm.release.Release.property.recreatePods"></a>
+##### `RecreatePods`<sup>Required</sup> <a name="RecreatePods" id="@cdktn/provider-helm.release.Release.property.recreatePods"></a>
 
 ```go
 func RecreatePods() interface{}
@@ -1837,7 +1837,7 @@ func RecreatePods() interface{}
 
 ---
 
-##### `RenderSubchartNotes`<sup>Required</sup> <a name="RenderSubchartNotes" id="@cdktf/provider-helm.release.Release.property.renderSubchartNotes"></a>
+##### `RenderSubchartNotes`<sup>Required</sup> <a name="RenderSubchartNotes" id="@cdktn/provider-helm.release.Release.property.renderSubchartNotes"></a>
 
 ```go
 func RenderSubchartNotes() interface{}
@@ -1847,7 +1847,7 @@ func RenderSubchartNotes() interface{}
 
 ---
 
-##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktf/provider-helm.release.Release.property.replace"></a>
+##### `Replace`<sup>Required</sup> <a name="Replace" id="@cdktn/provider-helm.release.Release.property.replace"></a>
 
 ```go
 func Replace() interface{}
@@ -1857,7 +1857,7 @@ func Replace() interface{}
 
 ---
 
-##### `Repository`<sup>Required</sup> <a name="Repository" id="@cdktf/provider-helm.release.Release.property.repository"></a>
+##### `Repository`<sup>Required</sup> <a name="Repository" id="@cdktn/provider-helm.release.Release.property.repository"></a>
 
 ```go
 func Repository() *string
@@ -1867,7 +1867,7 @@ func Repository() *string
 
 ---
 
-##### `RepositoryCaFile`<sup>Required</sup> <a name="RepositoryCaFile" id="@cdktf/provider-helm.release.Release.property.repositoryCaFile"></a>
+##### `RepositoryCaFile`<sup>Required</sup> <a name="RepositoryCaFile" id="@cdktn/provider-helm.release.Release.property.repositoryCaFile"></a>
 
 ```go
 func RepositoryCaFile() *string
@@ -1877,7 +1877,7 @@ func RepositoryCaFile() *string
 
 ---
 
-##### `RepositoryCertFile`<sup>Required</sup> <a name="RepositoryCertFile" id="@cdktf/provider-helm.release.Release.property.repositoryCertFile"></a>
+##### `RepositoryCertFile`<sup>Required</sup> <a name="RepositoryCertFile" id="@cdktn/provider-helm.release.Release.property.repositoryCertFile"></a>
 
 ```go
 func RepositoryCertFile() *string
@@ -1887,7 +1887,7 @@ func RepositoryCertFile() *string
 
 ---
 
-##### `RepositoryKeyFile`<sup>Required</sup> <a name="RepositoryKeyFile" id="@cdktf/provider-helm.release.Release.property.repositoryKeyFile"></a>
+##### `RepositoryKeyFile`<sup>Required</sup> <a name="RepositoryKeyFile" id="@cdktn/provider-helm.release.Release.property.repositoryKeyFile"></a>
 
 ```go
 func RepositoryKeyFile() *string
@@ -1897,7 +1897,7 @@ func RepositoryKeyFile() *string
 
 ---
 
-##### `RepositoryPassword`<sup>Required</sup> <a name="RepositoryPassword" id="@cdktf/provider-helm.release.Release.property.repositoryPassword"></a>
+##### `RepositoryPassword`<sup>Required</sup> <a name="RepositoryPassword" id="@cdktn/provider-helm.release.Release.property.repositoryPassword"></a>
 
 ```go
 func RepositoryPassword() *string
@@ -1907,7 +1907,7 @@ func RepositoryPassword() *string
 
 ---
 
-##### `RepositoryUsername`<sup>Required</sup> <a name="RepositoryUsername" id="@cdktf/provider-helm.release.Release.property.repositoryUsername"></a>
+##### `RepositoryUsername`<sup>Required</sup> <a name="RepositoryUsername" id="@cdktn/provider-helm.release.Release.property.repositoryUsername"></a>
 
 ```go
 func RepositoryUsername() *string
@@ -1917,7 +1917,7 @@ func RepositoryUsername() *string
 
 ---
 
-##### `ResetValues`<sup>Required</sup> <a name="ResetValues" id="@cdktf/provider-helm.release.Release.property.resetValues"></a>
+##### `ResetValues`<sup>Required</sup> <a name="ResetValues" id="@cdktn/provider-helm.release.Release.property.resetValues"></a>
 
 ```go
 func ResetValues() interface{}
@@ -1927,7 +1927,7 @@ func ResetValues() interface{}
 
 ---
 
-##### `ReuseValues`<sup>Required</sup> <a name="ReuseValues" id="@cdktf/provider-helm.release.Release.property.reuseValues"></a>
+##### `ReuseValues`<sup>Required</sup> <a name="ReuseValues" id="@cdktn/provider-helm.release.Release.property.reuseValues"></a>
 
 ```go
 func ReuseValues() interface{}
@@ -1937,7 +1937,7 @@ func ReuseValues() interface{}
 
 ---
 
-##### `SetWoRevision`<sup>Required</sup> <a name="SetWoRevision" id="@cdktf/provider-helm.release.Release.property.setWoRevision"></a>
+##### `SetWoRevision`<sup>Required</sup> <a name="SetWoRevision" id="@cdktn/provider-helm.release.Release.property.setWoRevision"></a>
 
 ```go
 func SetWoRevision() *f64
@@ -1947,7 +1947,7 @@ func SetWoRevision() *f64
 
 ---
 
-##### `SkipCrds`<sup>Required</sup> <a name="SkipCrds" id="@cdktf/provider-helm.release.Release.property.skipCrds"></a>
+##### `SkipCrds`<sup>Required</sup> <a name="SkipCrds" id="@cdktn/provider-helm.release.Release.property.skipCrds"></a>
 
 ```go
 func SkipCrds() interface{}
@@ -1957,7 +1957,7 @@ func SkipCrds() interface{}
 
 ---
 
-##### `TakeOwnership`<sup>Required</sup> <a name="TakeOwnership" id="@cdktf/provider-helm.release.Release.property.takeOwnership"></a>
+##### `TakeOwnership`<sup>Required</sup> <a name="TakeOwnership" id="@cdktn/provider-helm.release.Release.property.takeOwnership"></a>
 
 ```go
 func TakeOwnership() interface{}
@@ -1967,7 +1967,7 @@ func TakeOwnership() interface{}
 
 ---
 
-##### `Timeout`<sup>Required</sup> <a name="Timeout" id="@cdktf/provider-helm.release.Release.property.timeout"></a>
+##### `Timeout`<sup>Required</sup> <a name="Timeout" id="@cdktn/provider-helm.release.Release.property.timeout"></a>
 
 ```go
 func Timeout() *f64
@@ -1977,7 +1977,7 @@ func Timeout() *f64
 
 ---
 
-##### `UpgradeInstall`<sup>Required</sup> <a name="UpgradeInstall" id="@cdktf/provider-helm.release.Release.property.upgradeInstall"></a>
+##### `UpgradeInstall`<sup>Required</sup> <a name="UpgradeInstall" id="@cdktn/provider-helm.release.Release.property.upgradeInstall"></a>
 
 ```go
 func UpgradeInstall() interface{}
@@ -1987,7 +1987,7 @@ func UpgradeInstall() interface{}
 
 ---
 
-##### `Values`<sup>Required</sup> <a name="Values" id="@cdktf/provider-helm.release.Release.property.values"></a>
+##### `Values`<sup>Required</sup> <a name="Values" id="@cdktn/provider-helm.release.Release.property.values"></a>
 
 ```go
 func Values() *[]*string
@@ -1997,7 +1997,7 @@ func Values() *[]*string
 
 ---
 
-##### `Verify`<sup>Required</sup> <a name="Verify" id="@cdktf/provider-helm.release.Release.property.verify"></a>
+##### `Verify`<sup>Required</sup> <a name="Verify" id="@cdktn/provider-helm.release.Release.property.verify"></a>
 
 ```go
 func Verify() interface{}
@@ -2007,7 +2007,7 @@ func Verify() interface{}
 
 ---
 
-##### `Version`<sup>Required</sup> <a name="Version" id="@cdktf/provider-helm.release.Release.property.version"></a>
+##### `Version`<sup>Required</sup> <a name="Version" id="@cdktn/provider-helm.release.Release.property.version"></a>
 
 ```go
 func Version() *string
@@ -2017,7 +2017,7 @@ func Version() *string
 
 ---
 
-##### `Wait`<sup>Required</sup> <a name="Wait" id="@cdktf/provider-helm.release.Release.property.wait"></a>
+##### `Wait`<sup>Required</sup> <a name="Wait" id="@cdktn/provider-helm.release.Release.property.wait"></a>
 
 ```go
 func Wait() interface{}
@@ -2027,7 +2027,7 @@ func Wait() interface{}
 
 ---
 
-##### `WaitForJobs`<sup>Required</sup> <a name="WaitForJobs" id="@cdktf/provider-helm.release.Release.property.waitForJobs"></a>
+##### `WaitForJobs`<sup>Required</sup> <a name="WaitForJobs" id="@cdktn/provider-helm.release.Release.property.waitForJobs"></a>
 
 ```go
 func WaitForJobs() interface{}
@@ -2041,11 +2041,11 @@ func WaitForJobs() interface{}
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.Release.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.Release.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-helm.release.Release.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-helm.release.Release.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -2057,20 +2057,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ReleaseConfig <a name="ReleaseConfig" id="@cdktf/provider-helm.release.ReleaseConfig"></a>
+### ReleaseConfig <a name="ReleaseConfig" id="@cdktn/provider-helm.release.ReleaseConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.release.ReleaseConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.release.ReleaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 &release.ReleaseConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Chart: *string,
 	Name: *string,
@@ -2089,7 +2089,7 @@ import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
 	MaxHistory: *f64,
 	Namespace: *string,
 	PassCredentials: interface{},
-	Postrender: github.com/cdktf/cdktf-provider-helm-go/helm/v12.release.ReleasePostrender,
+	Postrender: github.com/cdktn-io/cdktn-provider-helm-go/helm/v12.release.ReleasePostrender,
 	RecreatePods: interface{},
 	RenderSubchartNotes: interface{},
 	Replace: interface{},
@@ -2109,7 +2109,7 @@ import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
 	SkipCrds: interface{},
 	TakeOwnership: interface{},
 	Timeout: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-helm-go/helm/v12.release.ReleaseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-helm-go/helm/v12.release.ReleaseTimeouts,
 	UpgradeInstall: interface{},
 	Values: *[]*string,
 	Verify: interface{},
@@ -2123,61 +2123,61 @@ import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.chart">Chart</a></code> | <code>*string</code> | Chart name to be installed. A path may be used. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.name">Name</a></code> | <code>*string</code> | Release name. The length must not be longer than 53 characters. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.atomic">Atomic</a></code> | <code>interface{}</code> | If set, installation process purges chart on fail. The wait flag will be set automatically if atomic is used. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.cleanupOnFail">CleanupOnFail</a></code> | <code>interface{}</code> | Allow deletion of new resources created in this upgrade when upgrade fails. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.createNamespace">CreateNamespace</a></code> | <code>interface{}</code> | Create the namespace if it does not exist. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.dependencyUpdate">DependencyUpdate</a></code> | <code>interface{}</code> | Run helm dependency update before installing the chart. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.description">Description</a></code> | <code>*string</code> | Add a custom description. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.devel">Devel</a></code> | <code>interface{}</code> | Use chart development versions, too. Equivalent to version '>0.0.0-0'. If 'version' is set, this is ignored. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.disableCrdHooks">DisableCrdHooks</a></code> | <code>interface{}</code> | Prevent CRD hooks from running, but run other hooks. See helm install --no-crd-hook. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.disableOpenapiValidation">DisableOpenapiValidation</a></code> | <code>interface{}</code> | If set, the installation process will not validate rendered templates against the Kubernetes OpenAPI Schema. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.disableWebhooks">DisableWebhooks</a></code> | <code>interface{}</code> | Prevent hooks from running. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.forceUpdate">ForceUpdate</a></code> | <code>interface{}</code> | Force resource update through delete/recreate if needed. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.keyring">Keyring</a></code> | <code>*string</code> | Location of public keys used for verification, Used only if 'verify is true'. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.lint">Lint</a></code> | <code>interface{}</code> | Run helm lint when planning. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.maxHistory">MaxHistory</a></code> | <code>*f64</code> | Limit the maximum number of revisions saved per release. Use 0 for no limit. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Namespace to install the release into. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.passCredentials">PassCredentials</a></code> | <code>interface{}</code> | Pass credentials to all domains. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.postrender">Postrender</a></code> | <code><a href="#@cdktf/provider-helm.release.ReleasePostrender">ReleasePostrender</a></code> | Postrender command config. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.recreatePods">RecreatePods</a></code> | <code>interface{}</code> | Perform pods restart during upgrade/rollback. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.renderSubchartNotes">RenderSubchartNotes</a></code> | <code>interface{}</code> | If set, render subchart notes along with the parent. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.replace">Replace</a></code> | <code>interface{}</code> | Re-use the given name, even if that name is already used. This is unsafe in production. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.repository">Repository</a></code> | <code>*string</code> | Repository where to locate the requested chart. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.repositoryCaFile">RepositoryCaFile</a></code> | <code>*string</code> | The Repositories CA file. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.repositoryCertFile">RepositoryCertFile</a></code> | <code>*string</code> | The repositories cert file. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.repositoryKeyFile">RepositoryKeyFile</a></code> | <code>*string</code> | The repositories cert key file. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.repositoryPassword">RepositoryPassword</a></code> | <code>*string</code> | Password for HTTP basic authentication. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.repositoryUsername">RepositoryUsername</a></code> | <code>*string</code> | Username for HTTP basic authentication. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.resetValues">ResetValues</a></code> | <code>interface{}</code> | When upgrading, reset the values to the ones built into the chart. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.reuseValues">ReuseValues</a></code> | <code>interface{}</code> | When upgrading, reuse the last release's values and merge in any overrides. If 'reset_values' is specified, this is ignored. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.set">Set</a></code> | <code>interface{}</code> | Custom values to be merged with the values. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.setList">SetList</a></code> | <code>interface{}</code> | Custom sensitive values to be merged with the values. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.setSensitive">SetSensitive</a></code> | <code>interface{}</code> | Custom sensitive values to be merged with the values. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.setWo">SetWo</a></code> | <code>interface{}</code> | Custom values to be merged with the values. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.setWoRevision">SetWoRevision</a></code> | <code>*f64</code> | The current revision of the write-only "set_wo" attribute. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.skipCrds">SkipCrds</a></code> | <code>interface{}</code> | If set, no CRDs will be installed. By default, CRDs are installed if not already present. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.takeOwnership">TakeOwnership</a></code> | <code>interface{}</code> | If set, Helm will take ownership of resources not already annotated by this release. Useful for migrations or recovery. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.timeout">Timeout</a></code> | <code>*f64</code> | Time in seconds to wait for any individual kubernetes operation. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-helm.release.ReleaseTimeouts">ReleaseTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#timeouts Release#timeouts}. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.upgradeInstall">UpgradeInstall</a></code> | <code>interface{}</code> | If true, the provider will install the release at the specified version even if a release not controlled by the provider is present. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.values">Values</a></code> | <code>*[]*string</code> | List of values in raw YAML format to pass to helm. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.verify">Verify</a></code> | <code>interface{}</code> | Verify the package before installing it. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.version">Version</a></code> | <code>*string</code> | Specify the exact chart version to install. If this is not specified, the latest version is installed. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.wait">Wait</a></code> | <code>interface{}</code> | Will wait until all resources are in a ready state before marking the release as successful. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseConfig.property.waitForJobs">WaitForJobs</a></code> | <code>interface{}</code> | If wait is enabled, will wait until all Jobs have been completed before marking the release as successful. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.chart">Chart</a></code> | <code>*string</code> | Chart name to be installed. A path may be used. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.name">Name</a></code> | <code>*string</code> | Release name. The length must not be longer than 53 characters. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.atomic">Atomic</a></code> | <code>interface{}</code> | If set, installation process purges chart on fail. The wait flag will be set automatically if atomic is used. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.cleanupOnFail">CleanupOnFail</a></code> | <code>interface{}</code> | Allow deletion of new resources created in this upgrade when upgrade fails. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.createNamespace">CreateNamespace</a></code> | <code>interface{}</code> | Create the namespace if it does not exist. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.dependencyUpdate">DependencyUpdate</a></code> | <code>interface{}</code> | Run helm dependency update before installing the chart. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.description">Description</a></code> | <code>*string</code> | Add a custom description. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.devel">Devel</a></code> | <code>interface{}</code> | Use chart development versions, too. Equivalent to version '>0.0.0-0'. If 'version' is set, this is ignored. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.disableCrdHooks">DisableCrdHooks</a></code> | <code>interface{}</code> | Prevent CRD hooks from running, but run other hooks. See helm install --no-crd-hook. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.disableOpenapiValidation">DisableOpenapiValidation</a></code> | <code>interface{}</code> | If set, the installation process will not validate rendered templates against the Kubernetes OpenAPI Schema. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.disableWebhooks">DisableWebhooks</a></code> | <code>interface{}</code> | Prevent hooks from running. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.forceUpdate">ForceUpdate</a></code> | <code>interface{}</code> | Force resource update through delete/recreate if needed. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.keyring">Keyring</a></code> | <code>*string</code> | Location of public keys used for verification, Used only if 'verify is true'. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.lint">Lint</a></code> | <code>interface{}</code> | Run helm lint when planning. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.maxHistory">MaxHistory</a></code> | <code>*f64</code> | Limit the maximum number of revisions saved per release. Use 0 for no limit. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Namespace to install the release into. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.passCredentials">PassCredentials</a></code> | <code>interface{}</code> | Pass credentials to all domains. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.postrender">Postrender</a></code> | <code><a href="#@cdktn/provider-helm.release.ReleasePostrender">ReleasePostrender</a></code> | Postrender command config. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.recreatePods">RecreatePods</a></code> | <code>interface{}</code> | Perform pods restart during upgrade/rollback. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.renderSubchartNotes">RenderSubchartNotes</a></code> | <code>interface{}</code> | If set, render subchart notes along with the parent. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.replace">Replace</a></code> | <code>interface{}</code> | Re-use the given name, even if that name is already used. This is unsafe in production. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.repository">Repository</a></code> | <code>*string</code> | Repository where to locate the requested chart. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.repositoryCaFile">RepositoryCaFile</a></code> | <code>*string</code> | The Repositories CA file. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.repositoryCertFile">RepositoryCertFile</a></code> | <code>*string</code> | The repositories cert file. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.repositoryKeyFile">RepositoryKeyFile</a></code> | <code>*string</code> | The repositories cert key file. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.repositoryPassword">RepositoryPassword</a></code> | <code>*string</code> | Password for HTTP basic authentication. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.repositoryUsername">RepositoryUsername</a></code> | <code>*string</code> | Username for HTTP basic authentication. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.resetValues">ResetValues</a></code> | <code>interface{}</code> | When upgrading, reset the values to the ones built into the chart. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.reuseValues">ReuseValues</a></code> | <code>interface{}</code> | When upgrading, reuse the last release's values and merge in any overrides. If 'reset_values' is specified, this is ignored. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.set">Set</a></code> | <code>interface{}</code> | Custom values to be merged with the values. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.setList">SetList</a></code> | <code>interface{}</code> | Custom sensitive values to be merged with the values. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.setSensitive">SetSensitive</a></code> | <code>interface{}</code> | Custom sensitive values to be merged with the values. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.setWo">SetWo</a></code> | <code>interface{}</code> | Custom values to be merged with the values. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.setWoRevision">SetWoRevision</a></code> | <code>*f64</code> | The current revision of the write-only "set_wo" attribute. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.skipCrds">SkipCrds</a></code> | <code>interface{}</code> | If set, no CRDs will be installed. By default, CRDs are installed if not already present. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.takeOwnership">TakeOwnership</a></code> | <code>interface{}</code> | If set, Helm will take ownership of resources not already annotated by this release. Useful for migrations or recovery. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.timeout">Timeout</a></code> | <code>*f64</code> | Time in seconds to wait for any individual kubernetes operation. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-helm.release.ReleaseTimeouts">ReleaseTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#timeouts Release#timeouts}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.upgradeInstall">UpgradeInstall</a></code> | <code>interface{}</code> | If true, the provider will install the release at the specified version even if a release not controlled by the provider is present. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.values">Values</a></code> | <code>*[]*string</code> | List of values in raw YAML format to pass to helm. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.verify">Verify</a></code> | <code>interface{}</code> | Verify the package before installing it. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.version">Version</a></code> | <code>*string</code> | Specify the exact chart version to install. If this is not specified, the latest version is installed. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.wait">Wait</a></code> | <code>interface{}</code> | Will wait until all resources are in a ready state before marking the release as successful. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseConfig.property.waitForJobs">WaitForJobs</a></code> | <code>interface{}</code> | If wait is enabled, will wait until all Jobs have been completed before marking the release as successful. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-helm.release.ReleaseConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-helm.release.ReleaseConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -2187,7 +2187,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-helm.release.ReleaseConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-helm.release.ReleaseConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -2197,47 +2197,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-helm.release.ReleaseConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-helm.release.ReleaseConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-helm.release.ReleaseConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-helm.release.ReleaseConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-helm.release.ReleaseConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-helm.release.ReleaseConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-helm.release.ReleaseConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-helm.release.ReleaseConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-helm.release.ReleaseConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-helm.release.ReleaseConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -2247,7 +2247,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Chart`<sup>Required</sup> <a name="Chart" id="@cdktf/provider-helm.release.ReleaseConfig.property.chart"></a>
+##### `Chart`<sup>Required</sup> <a name="Chart" id="@cdktn/provider-helm.release.ReleaseConfig.property.chart"></a>
 
 ```go
 Chart *string
@@ -2261,7 +2261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-helm.release.ReleaseConfig.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseConfig.property.name"></a>
 
 ```go
 Name *string
@@ -2275,7 +2275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Atomic`<sup>Optional</sup> <a name="Atomic" id="@cdktf/provider-helm.release.ReleaseConfig.property.atomic"></a>
+##### `Atomic`<sup>Optional</sup> <a name="Atomic" id="@cdktn/provider-helm.release.ReleaseConfig.property.atomic"></a>
 
 ```go
 Atomic interface{}
@@ -2289,7 +2289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `CleanupOnFail`<sup>Optional</sup> <a name="CleanupOnFail" id="@cdktf/provider-helm.release.ReleaseConfig.property.cleanupOnFail"></a>
+##### `CleanupOnFail`<sup>Optional</sup> <a name="CleanupOnFail" id="@cdktn/provider-helm.release.ReleaseConfig.property.cleanupOnFail"></a>
 
 ```go
 CleanupOnFail interface{}
@@ -2303,7 +2303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `CreateNamespace`<sup>Optional</sup> <a name="CreateNamespace" id="@cdktf/provider-helm.release.ReleaseConfig.property.createNamespace"></a>
+##### `CreateNamespace`<sup>Optional</sup> <a name="CreateNamespace" id="@cdktn/provider-helm.release.ReleaseConfig.property.createNamespace"></a>
 
 ```go
 CreateNamespace interface{}
@@ -2317,7 +2317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `DependencyUpdate`<sup>Optional</sup> <a name="DependencyUpdate" id="@cdktf/provider-helm.release.ReleaseConfig.property.dependencyUpdate"></a>
+##### `DependencyUpdate`<sup>Optional</sup> <a name="DependencyUpdate" id="@cdktn/provider-helm.release.ReleaseConfig.property.dependencyUpdate"></a>
 
 ```go
 DependencyUpdate interface{}
@@ -2331,7 +2331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-helm.release.ReleaseConfig.property.description"></a>
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktn/provider-helm.release.ReleaseConfig.property.description"></a>
 
 ```go
 Description *string
@@ -2345,7 +2345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Devel`<sup>Optional</sup> <a name="Devel" id="@cdktf/provider-helm.release.ReleaseConfig.property.devel"></a>
+##### `Devel`<sup>Optional</sup> <a name="Devel" id="@cdktn/provider-helm.release.ReleaseConfig.property.devel"></a>
 
 ```go
 Devel interface{}
@@ -2359,7 +2359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `DisableCrdHooks`<sup>Optional</sup> <a name="DisableCrdHooks" id="@cdktf/provider-helm.release.ReleaseConfig.property.disableCrdHooks"></a>
+##### `DisableCrdHooks`<sup>Optional</sup> <a name="DisableCrdHooks" id="@cdktn/provider-helm.release.ReleaseConfig.property.disableCrdHooks"></a>
 
 ```go
 DisableCrdHooks interface{}
@@ -2373,7 +2373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `DisableOpenapiValidation`<sup>Optional</sup> <a name="DisableOpenapiValidation" id="@cdktf/provider-helm.release.ReleaseConfig.property.disableOpenapiValidation"></a>
+##### `DisableOpenapiValidation`<sup>Optional</sup> <a name="DisableOpenapiValidation" id="@cdktn/provider-helm.release.ReleaseConfig.property.disableOpenapiValidation"></a>
 
 ```go
 DisableOpenapiValidation interface{}
@@ -2387,7 +2387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `DisableWebhooks`<sup>Optional</sup> <a name="DisableWebhooks" id="@cdktf/provider-helm.release.ReleaseConfig.property.disableWebhooks"></a>
+##### `DisableWebhooks`<sup>Optional</sup> <a name="DisableWebhooks" id="@cdktn/provider-helm.release.ReleaseConfig.property.disableWebhooks"></a>
 
 ```go
 DisableWebhooks interface{}
@@ -2401,7 +2401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ForceUpdate`<sup>Optional</sup> <a name="ForceUpdate" id="@cdktf/provider-helm.release.ReleaseConfig.property.forceUpdate"></a>
+##### `ForceUpdate`<sup>Optional</sup> <a name="ForceUpdate" id="@cdktn/provider-helm.release.ReleaseConfig.property.forceUpdate"></a>
 
 ```go
 ForceUpdate interface{}
@@ -2415,7 +2415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Keyring`<sup>Optional</sup> <a name="Keyring" id="@cdktf/provider-helm.release.ReleaseConfig.property.keyring"></a>
+##### `Keyring`<sup>Optional</sup> <a name="Keyring" id="@cdktn/provider-helm.release.ReleaseConfig.property.keyring"></a>
 
 ```go
 Keyring *string
@@ -2429,7 +2429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Lint`<sup>Optional</sup> <a name="Lint" id="@cdktf/provider-helm.release.ReleaseConfig.property.lint"></a>
+##### `Lint`<sup>Optional</sup> <a name="Lint" id="@cdktn/provider-helm.release.ReleaseConfig.property.lint"></a>
 
 ```go
 Lint interface{}
@@ -2443,7 +2443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `MaxHistory`<sup>Optional</sup> <a name="MaxHistory" id="@cdktf/provider-helm.release.ReleaseConfig.property.maxHistory"></a>
+##### `MaxHistory`<sup>Optional</sup> <a name="MaxHistory" id="@cdktn/provider-helm.release.ReleaseConfig.property.maxHistory"></a>
 
 ```go
 MaxHistory *f64
@@ -2457,7 +2457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktf/provider-helm.release.ReleaseConfig.property.namespace"></a>
+##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktn/provider-helm.release.ReleaseConfig.property.namespace"></a>
 
 ```go
 Namespace *string
@@ -2471,7 +2471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `PassCredentials`<sup>Optional</sup> <a name="PassCredentials" id="@cdktf/provider-helm.release.ReleaseConfig.property.passCredentials"></a>
+##### `PassCredentials`<sup>Optional</sup> <a name="PassCredentials" id="@cdktn/provider-helm.release.ReleaseConfig.property.passCredentials"></a>
 
 ```go
 PassCredentials interface{}
@@ -2485,13 +2485,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Postrender`<sup>Optional</sup> <a name="Postrender" id="@cdktf/provider-helm.release.ReleaseConfig.property.postrender"></a>
+##### `Postrender`<sup>Optional</sup> <a name="Postrender" id="@cdktn/provider-helm.release.ReleaseConfig.property.postrender"></a>
 
 ```go
 Postrender ReleasePostrender
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleasePostrender">ReleasePostrender</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleasePostrender">ReleasePostrender</a>
 
 Postrender command config.
 
@@ -2499,7 +2499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `RecreatePods`<sup>Optional</sup> <a name="RecreatePods" id="@cdktf/provider-helm.release.ReleaseConfig.property.recreatePods"></a>
+##### `RecreatePods`<sup>Optional</sup> <a name="RecreatePods" id="@cdktn/provider-helm.release.ReleaseConfig.property.recreatePods"></a>
 
 ```go
 RecreatePods interface{}
@@ -2513,7 +2513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `RenderSubchartNotes`<sup>Optional</sup> <a name="RenderSubchartNotes" id="@cdktf/provider-helm.release.ReleaseConfig.property.renderSubchartNotes"></a>
+##### `RenderSubchartNotes`<sup>Optional</sup> <a name="RenderSubchartNotes" id="@cdktn/provider-helm.release.ReleaseConfig.property.renderSubchartNotes"></a>
 
 ```go
 RenderSubchartNotes interface{}
@@ -2527,7 +2527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Replace`<sup>Optional</sup> <a name="Replace" id="@cdktf/provider-helm.release.ReleaseConfig.property.replace"></a>
+##### `Replace`<sup>Optional</sup> <a name="Replace" id="@cdktn/provider-helm.release.ReleaseConfig.property.replace"></a>
 
 ```go
 Replace interface{}
@@ -2541,7 +2541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Repository`<sup>Optional</sup> <a name="Repository" id="@cdktf/provider-helm.release.ReleaseConfig.property.repository"></a>
+##### `Repository`<sup>Optional</sup> <a name="Repository" id="@cdktn/provider-helm.release.ReleaseConfig.property.repository"></a>
 
 ```go
 Repository *string
@@ -2557,7 +2557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `RepositoryCaFile`<sup>Optional</sup> <a name="RepositoryCaFile" id="@cdktf/provider-helm.release.ReleaseConfig.property.repositoryCaFile"></a>
+##### `RepositoryCaFile`<sup>Optional</sup> <a name="RepositoryCaFile" id="@cdktn/provider-helm.release.ReleaseConfig.property.repositoryCaFile"></a>
 
 ```go
 RepositoryCaFile *string
@@ -2571,7 +2571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `RepositoryCertFile`<sup>Optional</sup> <a name="RepositoryCertFile" id="@cdktf/provider-helm.release.ReleaseConfig.property.repositoryCertFile"></a>
+##### `RepositoryCertFile`<sup>Optional</sup> <a name="RepositoryCertFile" id="@cdktn/provider-helm.release.ReleaseConfig.property.repositoryCertFile"></a>
 
 ```go
 RepositoryCertFile *string
@@ -2585,7 +2585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `RepositoryKeyFile`<sup>Optional</sup> <a name="RepositoryKeyFile" id="@cdktf/provider-helm.release.ReleaseConfig.property.repositoryKeyFile"></a>
+##### `RepositoryKeyFile`<sup>Optional</sup> <a name="RepositoryKeyFile" id="@cdktn/provider-helm.release.ReleaseConfig.property.repositoryKeyFile"></a>
 
 ```go
 RepositoryKeyFile *string
@@ -2599,7 +2599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `RepositoryPassword`<sup>Optional</sup> <a name="RepositoryPassword" id="@cdktf/provider-helm.release.ReleaseConfig.property.repositoryPassword"></a>
+##### `RepositoryPassword`<sup>Optional</sup> <a name="RepositoryPassword" id="@cdktn/provider-helm.release.ReleaseConfig.property.repositoryPassword"></a>
 
 ```go
 RepositoryPassword *string
@@ -2613,7 +2613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `RepositoryUsername`<sup>Optional</sup> <a name="RepositoryUsername" id="@cdktf/provider-helm.release.ReleaseConfig.property.repositoryUsername"></a>
+##### `RepositoryUsername`<sup>Optional</sup> <a name="RepositoryUsername" id="@cdktn/provider-helm.release.ReleaseConfig.property.repositoryUsername"></a>
 
 ```go
 RepositoryUsername *string
@@ -2627,7 +2627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ResetValues`<sup>Optional</sup> <a name="ResetValues" id="@cdktf/provider-helm.release.ReleaseConfig.property.resetValues"></a>
+##### `ResetValues`<sup>Optional</sup> <a name="ResetValues" id="@cdktn/provider-helm.release.ReleaseConfig.property.resetValues"></a>
 
 ```go
 ResetValues interface{}
@@ -2641,7 +2641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ReuseValues`<sup>Optional</sup> <a name="ReuseValues" id="@cdktf/provider-helm.release.ReleaseConfig.property.reuseValues"></a>
+##### `ReuseValues`<sup>Optional</sup> <a name="ReuseValues" id="@cdktn/provider-helm.release.ReleaseConfig.property.reuseValues"></a>
 
 ```go
 ReuseValues interface{}
@@ -2655,7 +2655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Set`<sup>Optional</sup> <a name="Set" id="@cdktf/provider-helm.release.ReleaseConfig.property.set"></a>
+##### `Set`<sup>Optional</sup> <a name="Set" id="@cdktn/provider-helm.release.ReleaseConfig.property.set"></a>
 
 ```go
 Set interface{}
@@ -2669,7 +2669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `SetList`<sup>Optional</sup> <a name="SetList" id="@cdktf/provider-helm.release.ReleaseConfig.property.setList"></a>
+##### `SetList`<sup>Optional</sup> <a name="SetList" id="@cdktn/provider-helm.release.ReleaseConfig.property.setList"></a>
 
 ```go
 SetList interface{}
@@ -2683,7 +2683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `SetSensitive`<sup>Optional</sup> <a name="SetSensitive" id="@cdktf/provider-helm.release.ReleaseConfig.property.setSensitive"></a>
+##### `SetSensitive`<sup>Optional</sup> <a name="SetSensitive" id="@cdktn/provider-helm.release.ReleaseConfig.property.setSensitive"></a>
 
 ```go
 SetSensitive interface{}
@@ -2697,7 +2697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `SetWo`<sup>Optional</sup> <a name="SetWo" id="@cdktf/provider-helm.release.ReleaseConfig.property.setWo"></a>
+##### `SetWo`<sup>Optional</sup> <a name="SetWo" id="@cdktn/provider-helm.release.ReleaseConfig.property.setWo"></a>
 
 ```go
 SetWo interface{}
@@ -2711,7 +2711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `SetWoRevision`<sup>Optional</sup> <a name="SetWoRevision" id="@cdktf/provider-helm.release.ReleaseConfig.property.setWoRevision"></a>
+##### `SetWoRevision`<sup>Optional</sup> <a name="SetWoRevision" id="@cdktn/provider-helm.release.ReleaseConfig.property.setWoRevision"></a>
 
 ```go
 SetWoRevision *f64
@@ -2727,7 +2727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `SkipCrds`<sup>Optional</sup> <a name="SkipCrds" id="@cdktf/provider-helm.release.ReleaseConfig.property.skipCrds"></a>
+##### `SkipCrds`<sup>Optional</sup> <a name="SkipCrds" id="@cdktn/provider-helm.release.ReleaseConfig.property.skipCrds"></a>
 
 ```go
 SkipCrds interface{}
@@ -2741,7 +2741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `TakeOwnership`<sup>Optional</sup> <a name="TakeOwnership" id="@cdktf/provider-helm.release.ReleaseConfig.property.takeOwnership"></a>
+##### `TakeOwnership`<sup>Optional</sup> <a name="TakeOwnership" id="@cdktn/provider-helm.release.ReleaseConfig.property.takeOwnership"></a>
 
 ```go
 TakeOwnership interface{}
@@ -2755,7 +2755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Timeout`<sup>Optional</sup> <a name="Timeout" id="@cdktf/provider-helm.release.ReleaseConfig.property.timeout"></a>
+##### `Timeout`<sup>Optional</sup> <a name="Timeout" id="@cdktn/provider-helm.release.ReleaseConfig.property.timeout"></a>
 
 ```go
 Timeout *f64
@@ -2769,19 +2769,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-helm.release.ReleaseConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-helm.release.ReleaseConfig.property.timeouts"></a>
 
 ```go
 Timeouts ReleaseTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleaseTimeouts">ReleaseTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleaseTimeouts">ReleaseTimeouts</a>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#timeouts Release#timeouts}.
 
 ---
 
-##### `UpgradeInstall`<sup>Optional</sup> <a name="UpgradeInstall" id="@cdktf/provider-helm.release.ReleaseConfig.property.upgradeInstall"></a>
+##### `UpgradeInstall`<sup>Optional</sup> <a name="UpgradeInstall" id="@cdktn/provider-helm.release.ReleaseConfig.property.upgradeInstall"></a>
 
 ```go
 UpgradeInstall interface{}
@@ -2797,7 +2797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Values`<sup>Optional</sup> <a name="Values" id="@cdktf/provider-helm.release.ReleaseConfig.property.values"></a>
+##### `Values`<sup>Optional</sup> <a name="Values" id="@cdktn/provider-helm.release.ReleaseConfig.property.values"></a>
 
 ```go
 Values *[]*string
@@ -2811,7 +2811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Verify`<sup>Optional</sup> <a name="Verify" id="@cdktf/provider-helm.release.ReleaseConfig.property.verify"></a>
+##### `Verify`<sup>Optional</sup> <a name="Verify" id="@cdktn/provider-helm.release.ReleaseConfig.property.verify"></a>
 
 ```go
 Verify interface{}
@@ -2825,7 +2825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Version`<sup>Optional</sup> <a name="Version" id="@cdktf/provider-helm.release.ReleaseConfig.property.version"></a>
+##### `Version`<sup>Optional</sup> <a name="Version" id="@cdktn/provider-helm.release.ReleaseConfig.property.version"></a>
 
 ```go
 Version *string
@@ -2839,7 +2839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Wait`<sup>Optional</sup> <a name="Wait" id="@cdktf/provider-helm.release.ReleaseConfig.property.wait"></a>
+##### `Wait`<sup>Optional</sup> <a name="Wait" id="@cdktn/provider-helm.release.ReleaseConfig.property.wait"></a>
 
 ```go
 Wait interface{}
@@ -2853,7 +2853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `WaitForJobs`<sup>Optional</sup> <a name="WaitForJobs" id="@cdktf/provider-helm.release.ReleaseConfig.property.waitForJobs"></a>
+##### `WaitForJobs`<sup>Optional</sup> <a name="WaitForJobs" id="@cdktn/provider-helm.release.ReleaseConfig.property.waitForJobs"></a>
 
 ```go
 WaitForJobs interface{}
@@ -2867,12 +2867,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ReleaseMetadata <a name="ReleaseMetadata" id="@cdktf/provider-helm.release.ReleaseMetadata"></a>
+### ReleaseMetadata <a name="ReleaseMetadata" id="@cdktn/provider-helm.release.ReleaseMetadata"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.release.ReleaseMetadata.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.release.ReleaseMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 &release.ReleaseMetadata {
 
@@ -2880,12 +2880,12 @@ import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
 ```
 
 
-### ReleasePostrender <a name="ReleasePostrender" id="@cdktf/provider-helm.release.ReleasePostrender"></a>
+### ReleasePostrender <a name="ReleasePostrender" id="@cdktn/provider-helm.release.ReleasePostrender"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.release.ReleasePostrender.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.release.ReleasePostrender.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 &release.ReleasePostrender {
 	BinaryPath: *string,
@@ -2897,12 +2897,12 @@ import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrender.property.binaryPath">BinaryPath</a></code> | <code>*string</code> | The common binary path. |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrender.property.args">Args</a></code> | <code>*[]*string</code> | An argument to the post-renderer (can specify multiple). |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrender.property.binaryPath">BinaryPath</a></code> | <code>*string</code> | The common binary path. |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrender.property.args">Args</a></code> | <code>*[]*string</code> | An argument to the post-renderer (can specify multiple). |
 
 ---
 
-##### `BinaryPath`<sup>Required</sup> <a name="BinaryPath" id="@cdktf/provider-helm.release.ReleasePostrender.property.binaryPath"></a>
+##### `BinaryPath`<sup>Required</sup> <a name="BinaryPath" id="@cdktn/provider-helm.release.ReleasePostrender.property.binaryPath"></a>
 
 ```go
 BinaryPath *string
@@ -2916,7 +2916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Args`<sup>Optional</sup> <a name="Args" id="@cdktf/provider-helm.release.ReleasePostrender.property.args"></a>
+##### `Args`<sup>Optional</sup> <a name="Args" id="@cdktn/provider-helm.release.ReleasePostrender.property.args"></a>
 
 ```go
 Args *[]*string
@@ -2930,12 +2930,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ReleaseSet <a name="ReleaseSet" id="@cdktf/provider-helm.release.ReleaseSet"></a>
+### ReleaseSet <a name="ReleaseSet" id="@cdktn/provider-helm.release.ReleaseSet"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.release.ReleaseSet.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.release.ReleaseSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 &release.ReleaseSet {
 	Name: *string,
@@ -2948,13 +2948,13 @@ import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSet.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#name Release#name}. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSet.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#type Release#type}. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSet.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#value Release#value}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSet.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#name Release#name}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSet.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#type Release#type}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSet.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#value Release#value}. |
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-helm.release.ReleaseSet.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseSet.property.name"></a>
 
 ```go
 Name *string
@@ -2966,7 +2966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-helm.release.ReleaseSet.property.type"></a>
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktn/provider-helm.release.ReleaseSet.property.type"></a>
 
 ```go
 Type *string
@@ -2978,7 +2978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktf/provider-helm.release.ReleaseSet.property.value"></a>
+##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktn/provider-helm.release.ReleaseSet.property.value"></a>
 
 ```go
 Value *string
@@ -2990,12 +2990,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ReleaseSetListStruct <a name="ReleaseSetListStruct" id="@cdktf/provider-helm.release.ReleaseSetListStruct"></a>
+### ReleaseSetListStruct <a name="ReleaseSetListStruct" id="@cdktn/provider-helm.release.ReleaseSetListStruct"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.release.ReleaseSetListStruct.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.release.ReleaseSetListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 &release.ReleaseSetListStruct {
 	Name: *string,
@@ -3007,12 +3007,12 @@ import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStruct.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#name Release#name}. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStruct.property.value">Value</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#value Release#value}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStruct.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#name Release#name}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStruct.property.value">Value</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#value Release#value}. |
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-helm.release.ReleaseSetListStruct.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseSetListStruct.property.name"></a>
 
 ```go
 Name *string
@@ -3024,7 +3024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-helm.release.ReleaseSetListStruct.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-helm.release.ReleaseSetListStruct.property.value"></a>
 
 ```go
 Value *[]*string
@@ -3036,12 +3036,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ReleaseSetSensitive <a name="ReleaseSetSensitive" id="@cdktf/provider-helm.release.ReleaseSetSensitive"></a>
+### ReleaseSetSensitive <a name="ReleaseSetSensitive" id="@cdktn/provider-helm.release.ReleaseSetSensitive"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.release.ReleaseSetSensitive.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.release.ReleaseSetSensitive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 &release.ReleaseSetSensitive {
 	Name: *string,
@@ -3054,13 +3054,13 @@ import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitive.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#name Release#name}. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitive.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#value Release#value}. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitive.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#type Release#type}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitive.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#name Release#name}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitive.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#value Release#value}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitive.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#type Release#type}. |
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-helm.release.ReleaseSetSensitive.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseSetSensitive.property.name"></a>
 
 ```go
 Name *string
@@ -3072,7 +3072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-helm.release.ReleaseSetSensitive.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-helm.release.ReleaseSetSensitive.property.value"></a>
 
 ```go
 Value *string
@@ -3084,7 +3084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-helm.release.ReleaseSetSensitive.property.type"></a>
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktn/provider-helm.release.ReleaseSetSensitive.property.type"></a>
 
 ```go
 Type *string
@@ -3096,12 +3096,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ReleaseSetWo <a name="ReleaseSetWo" id="@cdktf/provider-helm.release.ReleaseSetWo"></a>
+### ReleaseSetWo <a name="ReleaseSetWo" id="@cdktn/provider-helm.release.ReleaseSetWo"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.release.ReleaseSetWo.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.release.ReleaseSetWo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 &release.ReleaseSetWo {
 	Name: *string,
@@ -3114,13 +3114,13 @@ import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWo.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#name Release#name}. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWo.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#value Release#value}. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWo.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#type Release#type}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWo.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#name Release#name}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWo.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#value Release#value}. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWo.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release#type Release#type}. |
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-helm.release.ReleaseSetWo.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseSetWo.property.name"></a>
 
 ```go
 Name *string
@@ -3132,7 +3132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-helm.release.ReleaseSetWo.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-helm.release.ReleaseSetWo.property.value"></a>
 
 ```go
 Value *string
@@ -3144,7 +3144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-helm.release.ReleaseSetWo.property.type"></a>
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktn/provider-helm.release.ReleaseSetWo.property.type"></a>
 
 ```go
 Type *string
@@ -3156,12 +3156,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ReleaseTimeouts <a name="ReleaseTimeouts" id="@cdktf/provider-helm.release.ReleaseTimeouts"></a>
+### ReleaseTimeouts <a name="ReleaseTimeouts" id="@cdktn/provider-helm.release.ReleaseTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.release.ReleaseTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.release.ReleaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 &release.ReleaseTimeouts {
 	Create: *string,
@@ -3175,14 +3175,14 @@ import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeouts.property.create">Create</a></code> | <code>*string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeouts.property.delete">Delete</a></code> | <code>*string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeouts.property.read">Read</a></code> | <code>*string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeouts.property.update">Update</a></code> | <code>*string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeouts.property.create">Create</a></code> | <code>*string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeouts.property.delete">Delete</a></code> | <code>*string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeouts.property.read">Read</a></code> | <code>*string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeouts.property.update">Update</a></code> | <code>*string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-helm.release.ReleaseTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-helm.release.ReleaseTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -3196,7 +3196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-helm.release.ReleaseTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-helm.release.ReleaseTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -3210,7 +3210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-helm.release.ReleaseTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-helm.release.ReleaseTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -3224,7 +3224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-helm.release.ReleaseTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-helm.release.ReleaseTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -3240,32 +3240,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ReleaseMetadataOutputReference <a name="ReleaseMetadataOutputReference" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference"></a>
+### ReleaseMetadataOutputReference <a name="ReleaseMetadataOutputReference" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewReleaseMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReleaseMetadataOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -3277,149 +3277,149 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -3427,13 +3427,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -3448,23 +3448,23 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.appVersion">AppVersion</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.chart">Chart</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.firstDeployed">FirstDeployed</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.lastDeployed">LastDeployed</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.notes">Notes</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.revision">Revision</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.values">Values</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.version">Version</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-helm.release.ReleaseMetadata">ReleaseMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.appVersion">AppVersion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.chart">Chart</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.firstDeployed">FirstDeployed</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.lastDeployed">LastDeployed</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.notes">Notes</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.revision">Revision</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.values">Values</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.version">Version</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-helm.release.ReleaseMetadata">ReleaseMetadata</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -3478,7 +3478,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -3488,7 +3488,7 @@ func Fqn() *string
 
 ---
 
-##### `AppVersion`<sup>Required</sup> <a name="AppVersion" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.appVersion"></a>
+##### `AppVersion`<sup>Required</sup> <a name="AppVersion" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.appVersion"></a>
 
 ```go
 func AppVersion() *string
@@ -3498,7 +3498,7 @@ func AppVersion() *string
 
 ---
 
-##### `Chart`<sup>Required</sup> <a name="Chart" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.chart"></a>
+##### `Chart`<sup>Required</sup> <a name="Chart" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.chart"></a>
 
 ```go
 func Chart() *string
@@ -3508,7 +3508,7 @@ func Chart() *string
 
 ---
 
-##### `FirstDeployed`<sup>Required</sup> <a name="FirstDeployed" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.firstDeployed"></a>
+##### `FirstDeployed`<sup>Required</sup> <a name="FirstDeployed" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.firstDeployed"></a>
 
 ```go
 func FirstDeployed() *f64
@@ -3518,7 +3518,7 @@ func FirstDeployed() *f64
 
 ---
 
-##### `LastDeployed`<sup>Required</sup> <a name="LastDeployed" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.lastDeployed"></a>
+##### `LastDeployed`<sup>Required</sup> <a name="LastDeployed" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.lastDeployed"></a>
 
 ```go
 func LastDeployed() *f64
@@ -3528,7 +3528,7 @@ func LastDeployed() *f64
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -3538,7 +3538,7 @@ func Name() *string
 
 ---
 
-##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.namespace"></a>
+##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.namespace"></a>
 
 ```go
 func Namespace() *string
@@ -3548,7 +3548,7 @@ func Namespace() *string
 
 ---
 
-##### `Notes`<sup>Required</sup> <a name="Notes" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.notes"></a>
+##### `Notes`<sup>Required</sup> <a name="Notes" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.notes"></a>
 
 ```go
 func Notes() *string
@@ -3558,7 +3558,7 @@ func Notes() *string
 
 ---
 
-##### `Revision`<sup>Required</sup> <a name="Revision" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.revision"></a>
+##### `Revision`<sup>Required</sup> <a name="Revision" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.revision"></a>
 
 ```go
 func Revision() *f64
@@ -3568,7 +3568,7 @@ func Revision() *f64
 
 ---
 
-##### `Values`<sup>Required</sup> <a name="Values" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.values"></a>
+##### `Values`<sup>Required</sup> <a name="Values" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.values"></a>
 
 ```go
 func Values() *string
@@ -3578,7 +3578,7 @@ func Values() *string
 
 ---
 
-##### `Version`<sup>Required</sup> <a name="Version" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.version"></a>
+##### `Version`<sup>Required</sup> <a name="Version" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.version"></a>
 
 ```go
 func Version() *string
@@ -3588,43 +3588,43 @@ func Version() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-helm.release.ReleaseMetadataOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-helm.release.ReleaseMetadataOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() ReleaseMetadata
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.release.ReleaseMetadata">ReleaseMetadata</a>
+- *Type:* <a href="#@cdktn/provider-helm.release.ReleaseMetadata">ReleaseMetadata</a>
 
 ---
 
 
-### ReleasePostrenderOutputReference <a name="ReleasePostrenderOutputReference" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference"></a>
+### ReleasePostrenderOutputReference <a name="ReleasePostrenderOutputReference" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewReleasePostrenderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReleasePostrenderOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -3636,150 +3636,150 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.resetArgs">ResetArgs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.resetArgs">ResetArgs</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -3787,13 +3787,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -3803,7 +3803,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetArgs` <a name="ResetArgs" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.resetArgs"></a>
+##### `ResetArgs` <a name="ResetArgs" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.resetArgs"></a>
 
 ```go
 func ResetArgs()
@@ -3814,17 +3814,17 @@ func ResetArgs()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.argsInput">ArgsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.binaryPathInput">BinaryPathInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.args">Args</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.binaryPath">BinaryPath</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.argsInput">ArgsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.binaryPathInput">BinaryPathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.args">Args</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.binaryPath">BinaryPath</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -3838,7 +3838,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -3848,7 +3848,7 @@ func Fqn() *string
 
 ---
 
-##### `ArgsInput`<sup>Optional</sup> <a name="ArgsInput" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.argsInput"></a>
+##### `ArgsInput`<sup>Optional</sup> <a name="ArgsInput" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.argsInput"></a>
 
 ```go
 func ArgsInput() *[]*string
@@ -3858,7 +3858,7 @@ func ArgsInput() *[]*string
 
 ---
 
-##### `BinaryPathInput`<sup>Optional</sup> <a name="BinaryPathInput" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.binaryPathInput"></a>
+##### `BinaryPathInput`<sup>Optional</sup> <a name="BinaryPathInput" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.binaryPathInput"></a>
 
 ```go
 func BinaryPathInput() *string
@@ -3868,7 +3868,7 @@ func BinaryPathInput() *string
 
 ---
 
-##### `Args`<sup>Required</sup> <a name="Args" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.args"></a>
+##### `Args`<sup>Required</sup> <a name="Args" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.args"></a>
 
 ```go
 func Args() *[]*string
@@ -3878,7 +3878,7 @@ func Args() *[]*string
 
 ---
 
-##### `BinaryPath`<sup>Required</sup> <a name="BinaryPath" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.binaryPath"></a>
+##### `BinaryPath`<sup>Required</sup> <a name="BinaryPath" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.binaryPath"></a>
 
 ```go
 func BinaryPath() *string
@@ -3888,7 +3888,7 @@ func BinaryPath() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-helm.release.ReleasePostrenderOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-helm.release.ReleasePostrenderOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -3899,33 +3899,33 @@ func InternalValue() interface{}
 ---
 
 
-### ReleaseSetList <a name="ReleaseSetList" id="@cdktf/provider-helm.release.ReleaseSetList"></a>
+### ReleaseSetList <a name="ReleaseSetList" id="@cdktn/provider-helm.release.ReleaseSetList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.ReleaseSetList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.ReleaseSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewReleaseSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReleaseSetList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-helm.release.ReleaseSetList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-helm.release.ReleaseSetList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -3933,7 +3933,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-helm.release.ReleaseSetList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-helm.release.ReleaseSetList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -3945,15 +3945,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-helm.release.ReleaseSetList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-helm.release.ReleaseSetList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -3963,19 +3963,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-helm.release.ReleaseSetList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-helm.release.ReleaseSetList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-helm.release.ReleaseSetList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-helm.release.ReleaseSetList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-helm.release.ReleaseSetList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-helm.release.ReleaseSetList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -3983,13 +3983,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-helm.release.ReleaseSetList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-helm.release.ReleaseSetList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.ReleaseSetList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.ReleaseSetList.toString"></a>
 
 ```go
 func ToString() *string
@@ -3999,13 +3999,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-helm.release.ReleaseSetList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-helm.release.ReleaseSetList.get"></a>
 
 ```go
 func Get(index *f64) ReleaseSetOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-helm.release.ReleaseSetList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-helm.release.ReleaseSetList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -4018,13 +4018,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-helm.release.ReleaseSetList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-helm.release.ReleaseSetList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -4038,7 +4038,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.ReleaseSetList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.ReleaseSetList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -4048,7 +4048,7 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-helm.release.ReleaseSetList.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-helm.release.ReleaseSetList.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -4059,33 +4059,33 @@ func InternalValue() interface{}
 ---
 
 
-### ReleaseSetListStructList <a name="ReleaseSetListStructList" id="@cdktf/provider-helm.release.ReleaseSetListStructList"></a>
+### ReleaseSetListStructList <a name="ReleaseSetListStructList" id="@cdktn/provider-helm.release.ReleaseSetListStructList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.ReleaseSetListStructList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.ReleaseSetListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewReleaseSetListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReleaseSetListStructList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -4093,7 +4093,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-helm.release.ReleaseSetListStructList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -4105,15 +4105,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-helm.release.ReleaseSetListStructList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-helm.release.ReleaseSetListStructList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -4123,19 +4123,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-helm.release.ReleaseSetListStructList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-helm.release.ReleaseSetListStructList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-helm.release.ReleaseSetListStructList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-helm.release.ReleaseSetListStructList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-helm.release.ReleaseSetListStructList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-helm.release.ReleaseSetListStructList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -4143,13 +4143,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-helm.release.ReleaseSetListStructList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-helm.release.ReleaseSetListStructList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.ReleaseSetListStructList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.ReleaseSetListStructList.toString"></a>
 
 ```go
 func ToString() *string
@@ -4159,13 +4159,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-helm.release.ReleaseSetListStructList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-helm.release.ReleaseSetListStructList.get"></a>
 
 ```go
 func Get(index *f64) ReleaseSetListStructOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-helm.release.ReleaseSetListStructList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-helm.release.ReleaseSetListStructList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -4178,13 +4178,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-helm.release.ReleaseSetListStructList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-helm.release.ReleaseSetListStructList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -4198,7 +4198,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.ReleaseSetListStructList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.ReleaseSetListStructList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -4208,7 +4208,7 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-helm.release.ReleaseSetListStructList.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-helm.release.ReleaseSetListStructList.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -4219,34 +4219,34 @@ func InternalValue() interface{}
 ---
 
 
-### ReleaseSetListStructOutputReference <a name="ReleaseSetListStructOutputReference" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference"></a>
+### ReleaseSetListStructOutputReference <a name="ReleaseSetListStructOutputReference" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewReleaseSetListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReleaseSetListStructOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -4254,7 +4254,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -4262,7 +4262,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -4274,149 +4274,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -4424,13 +4424,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -4445,17 +4445,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.valueInput">ValueInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.value">Value</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.valueInput">ValueInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.value">Value</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -4469,7 +4469,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -4479,7 +4479,7 @@ func Fqn() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -4489,7 +4489,7 @@ func NameInput() *string
 
 ---
 
-##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.valueInput"></a>
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.valueInput"></a>
 
 ```go
 func ValueInput() *[]*string
@@ -4499,7 +4499,7 @@ func ValueInput() *[]*string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -4509,7 +4509,7 @@ func Name() *string
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.value"></a>
 
 ```go
 func Value() *[]*string
@@ -4519,7 +4519,7 @@ func Value() *[]*string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-helm.release.ReleaseSetListStructOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-helm.release.ReleaseSetListStructOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -4530,34 +4530,34 @@ func InternalValue() interface{}
 ---
 
 
-### ReleaseSetOutputReference <a name="ReleaseSetOutputReference" id="@cdktf/provider-helm.release.ReleaseSetOutputReference"></a>
+### ReleaseSetOutputReference <a name="ReleaseSetOutputReference" id="@cdktn/provider-helm.release.ReleaseSetOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewReleaseSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReleaseSetOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -4565,7 +4565,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -4573,7 +4573,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -4585,151 +4585,151 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.resetType">ResetType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.resetValue">ResetValue</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.resetType">ResetType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.resetValue">ResetValue</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -4737,13 +4737,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -4753,13 +4753,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetType` <a name="ResetType" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.resetType"></a>
+##### `ResetType` <a name="ResetType" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.resetType"></a>
 
 ```go
 func ResetType()
 ```
 
-##### `ResetValue` <a name="ResetValue" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.resetValue"></a>
+##### `ResetValue` <a name="ResetValue" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.resetValue"></a>
 
 ```go
 func ResetValue()
@@ -4770,19 +4770,19 @@ func ResetValue()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -4796,7 +4796,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -4806,7 +4806,7 @@ func Fqn() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -4816,7 +4816,7 @@ func NameInput() *string
 
 ---
 
-##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.property.typeInput"></a>
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.property.typeInput"></a>
 
 ```go
 func TypeInput() *string
@@ -4826,7 +4826,7 @@ func TypeInput() *string
 
 ---
 
-##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.property.valueInput"></a>
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.property.valueInput"></a>
 
 ```go
 func ValueInput() *string
@@ -4836,7 +4836,7 @@ func ValueInput() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -4846,7 +4846,7 @@ func Name() *string
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.property.type"></a>
 
 ```go
 func Type() *string
@@ -4856,7 +4856,7 @@ func Type() *string
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.property.value"></a>
 
 ```go
 func Value() *string
@@ -4866,7 +4866,7 @@ func Value() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-helm.release.ReleaseSetOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-helm.release.ReleaseSetOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -4877,33 +4877,33 @@ func InternalValue() interface{}
 ---
 
 
-### ReleaseSetSensitiveList <a name="ReleaseSetSensitiveList" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList"></a>
+### ReleaseSetSensitiveList <a name="ReleaseSetSensitiveList" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewReleaseSetSensitiveList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReleaseSetSensitiveList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -4911,7 +4911,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -4923,15 +4923,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -4941,19 +4941,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -4961,13 +4961,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.toString"></a>
 
 ```go
 func ToString() *string
@@ -4977,13 +4977,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.get"></a>
 
 ```go
 func Get(index *f64) ReleaseSetSensitiveOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -4996,13 +4996,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -5016,7 +5016,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -5026,7 +5026,7 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-helm.release.ReleaseSetSensitiveList.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-helm.release.ReleaseSetSensitiveList.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -5037,34 +5037,34 @@ func InternalValue() interface{}
 ---
 
 
-### ReleaseSetSensitiveOutputReference <a name="ReleaseSetSensitiveOutputReference" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference"></a>
+### ReleaseSetSensitiveOutputReference <a name="ReleaseSetSensitiveOutputReference" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewReleaseSetSensitiveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReleaseSetSensitiveOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -5072,7 +5072,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -5080,7 +5080,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -5092,150 +5092,150 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.resetType">ResetType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.resetType">ResetType</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -5243,13 +5243,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -5259,7 +5259,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetType` <a name="ResetType" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.resetType"></a>
+##### `ResetType` <a name="ResetType" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.resetType"></a>
 
 ```go
 func ResetType()
@@ -5270,19 +5270,19 @@ func ResetType()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -5296,7 +5296,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -5306,7 +5306,7 @@ func Fqn() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -5316,7 +5316,7 @@ func NameInput() *string
 
 ---
 
-##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.typeInput"></a>
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.typeInput"></a>
 
 ```go
 func TypeInput() *string
@@ -5326,7 +5326,7 @@ func TypeInput() *string
 
 ---
 
-##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.valueInput"></a>
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.valueInput"></a>
 
 ```go
 func ValueInput() *string
@@ -5336,7 +5336,7 @@ func ValueInput() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -5346,7 +5346,7 @@ func Name() *string
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.type"></a>
 
 ```go
 func Type() *string
@@ -5356,7 +5356,7 @@ func Type() *string
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.value"></a>
 
 ```go
 func Value() *string
@@ -5366,7 +5366,7 @@ func Value() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -5377,33 +5377,33 @@ func InternalValue() interface{}
 ---
 
 
-### ReleaseSetWoList <a name="ReleaseSetWoList" id="@cdktf/provider-helm.release.ReleaseSetWoList"></a>
+### ReleaseSetWoList <a name="ReleaseSetWoList" id="@cdktn/provider-helm.release.ReleaseSetWoList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.ReleaseSetWoList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.ReleaseSetWoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewReleaseSetWoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReleaseSetWoList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-helm.release.ReleaseSetWoList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-helm.release.ReleaseSetWoList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -5411,7 +5411,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-helm.release.ReleaseSetWoList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-helm.release.ReleaseSetWoList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -5423,15 +5423,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-helm.release.ReleaseSetWoList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-helm.release.ReleaseSetWoList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -5441,19 +5441,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-helm.release.ReleaseSetWoList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-helm.release.ReleaseSetWoList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-helm.release.ReleaseSetWoList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-helm.release.ReleaseSetWoList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-helm.release.ReleaseSetWoList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-helm.release.ReleaseSetWoList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -5461,13 +5461,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-helm.release.ReleaseSetWoList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-helm.release.ReleaseSetWoList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.ReleaseSetWoList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.ReleaseSetWoList.toString"></a>
 
 ```go
 func ToString() *string
@@ -5477,13 +5477,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-helm.release.ReleaseSetWoList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-helm.release.ReleaseSetWoList.get"></a>
 
 ```go
 func Get(index *f64) ReleaseSetWoOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-helm.release.ReleaseSetWoList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-helm.release.ReleaseSetWoList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -5496,13 +5496,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-helm.release.ReleaseSetWoList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-helm.release.ReleaseSetWoList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -5516,7 +5516,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.ReleaseSetWoList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.ReleaseSetWoList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -5526,7 +5526,7 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-helm.release.ReleaseSetWoList.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-helm.release.ReleaseSetWoList.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -5537,34 +5537,34 @@ func InternalValue() interface{}
 ---
 
 
-### ReleaseSetWoOutputReference <a name="ReleaseSetWoOutputReference" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference"></a>
+### ReleaseSetWoOutputReference <a name="ReleaseSetWoOutputReference" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewReleaseSetWoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReleaseSetWoOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -5572,7 +5572,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -5580,7 +5580,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -5592,150 +5592,150 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.resetType">ResetType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.resetType">ResetType</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -5743,13 +5743,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -5759,7 +5759,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetType` <a name="ResetType" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.resetType"></a>
+##### `ResetType` <a name="ResetType" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.resetType"></a>
 
 ```go
 func ResetType()
@@ -5770,19 +5770,19 @@ func ResetType()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -5796,7 +5796,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -5806,7 +5806,7 @@ func Fqn() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -5816,7 +5816,7 @@ func NameInput() *string
 
 ---
 
-##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.typeInput"></a>
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.typeInput"></a>
 
 ```go
 func TypeInput() *string
@@ -5826,7 +5826,7 @@ func TypeInput() *string
 
 ---
 
-##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.valueInput"></a>
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.valueInput"></a>
 
 ```go
 func ValueInput() *string
@@ -5836,7 +5836,7 @@ func ValueInput() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -5846,7 +5846,7 @@ func Name() *string
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.type"></a>
 
 ```go
 func Type() *string
@@ -5856,7 +5856,7 @@ func Type() *string
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.value"></a>
 
 ```go
 func Value() *string
@@ -5866,7 +5866,7 @@ func Value() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-helm.release.ReleaseSetWoOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -5877,32 +5877,32 @@ func InternalValue() interface{}
 ---
 
 
-### ReleaseTimeoutsOutputReference <a name="ReleaseTimeoutsOutputReference" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference"></a>
+### ReleaseTimeoutsOutputReference <a name="ReleaseTimeoutsOutputReference" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-helm-go/helm/v12/release"
+import "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release"
 
 release.NewReleaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReleaseTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -5914,153 +5914,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -6068,13 +6068,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -6084,25 +6084,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -6113,21 +6113,21 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -6141,7 +6141,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -6151,7 +6151,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -6161,7 +6161,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -6171,7 +6171,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -6181,7 +6181,7 @@ func ReadInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -6191,7 +6191,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -6201,7 +6201,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -6211,7 +6211,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -6221,7 +6221,7 @@ func Read() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -6231,7 +6231,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

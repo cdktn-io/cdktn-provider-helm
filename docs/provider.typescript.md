@@ -1,28 +1,28 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-helm.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-helm.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### HelmProvider <a name="HelmProvider" id="@cdktf/provider-helm.provider.HelmProvider"></a>
+### HelmProvider <a name="HelmProvider" id="@cdktn/provider-helm.provider.HelmProvider"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs helm}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.provider.HelmProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.provider.HelmProvider.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-helm'
+import { provider } from '@cdktn/provider-helm'
 
 new provider.HelmProvider(scope: Construct, id: string, config?: HelmProviderConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig">HelmProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig">HelmProviderConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderConfig">HelmProviderConfig</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderConfig">HelmProviderConfig</a>
 
 ---
 
@@ -50,29 +50,29 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetAlias">resetAlias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetBurstLimit">resetBurstLimit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetDebug">resetDebug</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetExperiments">resetExperiments</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetHelmDriver">resetHelmDriver</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetKubernetes">resetKubernetes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetPluginsPath">resetPluginsPath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetQps">resetQps</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetRegistries">resetRegistries</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetRegistryConfigPath">resetRegistryConfigPath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetRepositoryCache">resetRepositoryCache</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetRepositoryConfigPath">resetRepositoryConfigPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetAlias">resetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetBurstLimit">resetBurstLimit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetDebug">resetDebug</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetExperiments">resetExperiments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetHelmDriver">resetHelmDriver</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetKubernetes">resetKubernetes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetPluginsPath">resetPluginsPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetQps">resetQps</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetRegistries">resetRegistries</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetRegistryConfigPath">resetRegistryConfigPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetRepositoryCache">resetRepositoryCache</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetRepositoryConfigPath">resetRepositoryConfigPath</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-helm.provider.HelmProvider.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-helm.provider.HelmProvider.toString"></a>
 
 ```typescript
 public toString(): string
@@ -80,25 +80,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-helm.provider.HelmProvider.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-helm.provider.HelmProvider.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-helm.provider.HelmProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-helm.provider.HelmProvider.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-helm.provider.HelmProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.provider.HelmProvider.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-helm.provider.HelmProvider.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-helm.provider.HelmProvider.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -106,7 +106,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-helm.provider.HelmProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-helm.provider.HelmProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -114,7 +114,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-helm.provider.HelmProvider.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-helm.provider.HelmProvider.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -122,19 +122,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-helm.provider.HelmProvider.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-helm.provider.HelmProvider.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-helm.provider.HelmProvider.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-helm.provider.HelmProvider.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-helm.provider.HelmProvider.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-helm.provider.HelmProvider.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -142,73 +142,73 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `resetAlias` <a name="resetAlias" id="@cdktf/provider-helm.provider.HelmProvider.resetAlias"></a>
+##### `resetAlias` <a name="resetAlias" id="@cdktn/provider-helm.provider.HelmProvider.resetAlias"></a>
 
 ```typescript
 public resetAlias(): void
 ```
 
-##### `resetBurstLimit` <a name="resetBurstLimit" id="@cdktf/provider-helm.provider.HelmProvider.resetBurstLimit"></a>
+##### `resetBurstLimit` <a name="resetBurstLimit" id="@cdktn/provider-helm.provider.HelmProvider.resetBurstLimit"></a>
 
 ```typescript
 public resetBurstLimit(): void
 ```
 
-##### `resetDebug` <a name="resetDebug" id="@cdktf/provider-helm.provider.HelmProvider.resetDebug"></a>
+##### `resetDebug` <a name="resetDebug" id="@cdktn/provider-helm.provider.HelmProvider.resetDebug"></a>
 
 ```typescript
 public resetDebug(): void
 ```
 
-##### `resetExperiments` <a name="resetExperiments" id="@cdktf/provider-helm.provider.HelmProvider.resetExperiments"></a>
+##### `resetExperiments` <a name="resetExperiments" id="@cdktn/provider-helm.provider.HelmProvider.resetExperiments"></a>
 
 ```typescript
 public resetExperiments(): void
 ```
 
-##### `resetHelmDriver` <a name="resetHelmDriver" id="@cdktf/provider-helm.provider.HelmProvider.resetHelmDriver"></a>
+##### `resetHelmDriver` <a name="resetHelmDriver" id="@cdktn/provider-helm.provider.HelmProvider.resetHelmDriver"></a>
 
 ```typescript
 public resetHelmDriver(): void
 ```
 
-##### `resetKubernetes` <a name="resetKubernetes" id="@cdktf/provider-helm.provider.HelmProvider.resetKubernetes"></a>
+##### `resetKubernetes` <a name="resetKubernetes" id="@cdktn/provider-helm.provider.HelmProvider.resetKubernetes"></a>
 
 ```typescript
 public resetKubernetes(): void
 ```
 
-##### `resetPluginsPath` <a name="resetPluginsPath" id="@cdktf/provider-helm.provider.HelmProvider.resetPluginsPath"></a>
+##### `resetPluginsPath` <a name="resetPluginsPath" id="@cdktn/provider-helm.provider.HelmProvider.resetPluginsPath"></a>
 
 ```typescript
 public resetPluginsPath(): void
 ```
 
-##### `resetQps` <a name="resetQps" id="@cdktf/provider-helm.provider.HelmProvider.resetQps"></a>
+##### `resetQps` <a name="resetQps" id="@cdktn/provider-helm.provider.HelmProvider.resetQps"></a>
 
 ```typescript
 public resetQps(): void
 ```
 
-##### `resetRegistries` <a name="resetRegistries" id="@cdktf/provider-helm.provider.HelmProvider.resetRegistries"></a>
+##### `resetRegistries` <a name="resetRegistries" id="@cdktn/provider-helm.provider.HelmProvider.resetRegistries"></a>
 
 ```typescript
 public resetRegistries(): void
 ```
 
-##### `resetRegistryConfigPath` <a name="resetRegistryConfigPath" id="@cdktf/provider-helm.provider.HelmProvider.resetRegistryConfigPath"></a>
+##### `resetRegistryConfigPath` <a name="resetRegistryConfigPath" id="@cdktn/provider-helm.provider.HelmProvider.resetRegistryConfigPath"></a>
 
 ```typescript
 public resetRegistryConfigPath(): void
 ```
 
-##### `resetRepositoryCache` <a name="resetRepositoryCache" id="@cdktf/provider-helm.provider.HelmProvider.resetRepositoryCache"></a>
+##### `resetRepositoryCache` <a name="resetRepositoryCache" id="@cdktn/provider-helm.provider.HelmProvider.resetRepositoryCache"></a>
 
 ```typescript
 public resetRepositoryCache(): void
 ```
 
-##### `resetRepositoryConfigPath` <a name="resetRepositoryConfigPath" id="@cdktf/provider-helm.provider.HelmProvider.resetRepositoryConfigPath"></a>
+##### `resetRepositoryConfigPath` <a name="resetRepositoryConfigPath" id="@cdktn/provider-helm.provider.HelmProvider.resetRepositoryConfigPath"></a>
 
 ```typescript
 public resetRepositoryConfigPath(): void
@@ -218,17 +218,17 @@ public resetRepositoryConfigPath(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a HelmProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a HelmProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-helm.provider.HelmProvider.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-helm.provider.HelmProvider.isConstruct"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-helm'
+import { provider } from '@cdktn/provider-helm'
 
 provider.HelmProvider.isConstruct(x: any)
 ```
@@ -249,7 +249,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-helm.provider.HelmProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-helm.provider.HelmProvider.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -257,45 +257,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-helm.provider.HelmProvider.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-helm.provider.HelmProvider.isTerraformElement"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-helm'
+import { provider } from '@cdktn/provider-helm'
 
 provider.HelmProvider.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-helm.provider.HelmProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-helm.provider.HelmProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-helm.provider.HelmProvider.isTerraformProvider"></a>
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktn/provider-helm.provider.HelmProvider.isTerraformProvider"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-helm'
+import { provider } from '@cdktn/provider-helm'
 
 provider.HelmProvider.isTerraformProvider(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-helm.provider.HelmProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-helm.provider.HelmProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-helm'
+import { provider } from '@cdktn/provider-helm'
 
 provider.HelmProvider.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a HelmProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a HelmProvider resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -303,7 +303,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -311,7 +311,7 @@ The construct id used in the generated config for the HelmProvider to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -321,9 +321,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the HelmProvider to import is found.
 
@@ -333,42 +333,42 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.burstLimitInput">burstLimitInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.debugInput">debugInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.experimentsInput">experimentsInput</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.helmDriverInput">helmDriverInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.kubernetesInput">kubernetesInput</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.pluginsPathInput">pluginsPathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.qpsInput">qpsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.registriesInput">registriesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.registryConfigPathInput">registryConfigPathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.repositoryCacheInput">repositoryCacheInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.repositoryConfigPathInput">repositoryConfigPathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.burstLimit">burstLimit</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.debug">debug</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.experiments">experiments</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.helmDriver">helmDriver</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.kubernetes">kubernetes</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.pluginsPath">pluginsPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.qps">qps</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.registries">registries</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.registryConfigPath">registryConfigPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.repositoryCache">repositoryCache</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.repositoryConfigPath">repositoryConfigPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.burstLimitInput">burstLimitInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.debugInput">debugInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.experimentsInput">experimentsInput</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.helmDriverInput">helmDriverInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.kubernetesInput">kubernetesInput</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.pluginsPathInput">pluginsPathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.qpsInput">qpsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.registriesInput">registriesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.registryConfigPathInput">registryConfigPathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.repositoryCacheInput">repositoryCacheInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.repositoryConfigPathInput">repositoryConfigPathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.burstLimit">burstLimit</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.debug">debug</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.experiments">experiments</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.helmDriver">helmDriver</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.kubernetes">kubernetes</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.pluginsPath">pluginsPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.qps">qps</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.registries">registries</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.registryConfigPath">registryConfigPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.repositoryCache">repositoryCache</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.repositoryConfigPath">repositoryConfigPath</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-helm.provider.HelmProvider.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-helm.provider.HelmProvider.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -380,17 +380,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-helm.provider.HelmProvider.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-helm.provider.HelmProvider.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-helm.provider.HelmProvider.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-helm.provider.HelmProvider.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -400,7 +400,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-helm.provider.HelmProvider.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-helm.provider.HelmProvider.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -410,7 +410,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktf/provider-helm.provider.HelmProvider.property.metaAttributes"></a>
+##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktn/provider-helm.provider.HelmProvider.property.metaAttributes"></a>
 
 ```typescript
 public readonly metaAttributes: {[ key: string ]: any};
@@ -420,7 +420,7 @@ public readonly metaAttributes: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-helm.provider.HelmProvider.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-helm.provider.HelmProvider.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -430,17 +430,17 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-helm.provider.HelmProvider.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-helm.provider.HelmProvider.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktf/provider-helm.provider.HelmProvider.property.terraformProviderSource"></a>
+##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktn/provider-helm.provider.HelmProvider.property.terraformProviderSource"></a>
 
 ```typescript
 public readonly terraformProviderSource: string;
@@ -450,7 +450,7 @@ public readonly terraformProviderSource: string;
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-helm.provider.HelmProvider.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-helm.provider.HelmProvider.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -460,7 +460,7 @@ public readonly alias: string;
 
 ---
 
-##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktf/provider-helm.provider.HelmProvider.property.aliasInput"></a>
+##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktn/provider-helm.provider.HelmProvider.property.aliasInput"></a>
 
 ```typescript
 public readonly aliasInput: string;
@@ -470,7 +470,7 @@ public readonly aliasInput: string;
 
 ---
 
-##### `burstLimitInput`<sup>Optional</sup> <a name="burstLimitInput" id="@cdktf/provider-helm.provider.HelmProvider.property.burstLimitInput"></a>
+##### `burstLimitInput`<sup>Optional</sup> <a name="burstLimitInput" id="@cdktn/provider-helm.provider.HelmProvider.property.burstLimitInput"></a>
 
 ```typescript
 public readonly burstLimitInput: number;
@@ -480,27 +480,27 @@ public readonly burstLimitInput: number;
 
 ---
 
-##### `debugInput`<sup>Optional</sup> <a name="debugInput" id="@cdktf/provider-helm.provider.HelmProvider.property.debugInput"></a>
+##### `debugInput`<sup>Optional</sup> <a name="debugInput" id="@cdktn/provider-helm.provider.HelmProvider.property.debugInput"></a>
 
 ```typescript
 public readonly debugInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `experimentsInput`<sup>Optional</sup> <a name="experimentsInput" id="@cdktf/provider-helm.provider.HelmProvider.property.experimentsInput"></a>
+##### `experimentsInput`<sup>Optional</sup> <a name="experimentsInput" id="@cdktn/provider-helm.provider.HelmProvider.property.experimentsInput"></a>
 
 ```typescript
 public readonly experimentsInput: HelmProviderExperiments;
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
 
 ---
 
-##### `helmDriverInput`<sup>Optional</sup> <a name="helmDriverInput" id="@cdktf/provider-helm.provider.HelmProvider.property.helmDriverInput"></a>
+##### `helmDriverInput`<sup>Optional</sup> <a name="helmDriverInput" id="@cdktn/provider-helm.provider.HelmProvider.property.helmDriverInput"></a>
 
 ```typescript
 public readonly helmDriverInput: string;
@@ -510,17 +510,17 @@ public readonly helmDriverInput: string;
 
 ---
 
-##### `kubernetesInput`<sup>Optional</sup> <a name="kubernetesInput" id="@cdktf/provider-helm.provider.HelmProvider.property.kubernetesInput"></a>
+##### `kubernetesInput`<sup>Optional</sup> <a name="kubernetesInput" id="@cdktn/provider-helm.provider.HelmProvider.property.kubernetesInput"></a>
 
 ```typescript
 public readonly kubernetesInput: HelmProviderKubernetes;
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
 
 ---
 
-##### `pluginsPathInput`<sup>Optional</sup> <a name="pluginsPathInput" id="@cdktf/provider-helm.provider.HelmProvider.property.pluginsPathInput"></a>
+##### `pluginsPathInput`<sup>Optional</sup> <a name="pluginsPathInput" id="@cdktn/provider-helm.provider.HelmProvider.property.pluginsPathInput"></a>
 
 ```typescript
 public readonly pluginsPathInput: string;
@@ -530,7 +530,7 @@ public readonly pluginsPathInput: string;
 
 ---
 
-##### `qpsInput`<sup>Optional</sup> <a name="qpsInput" id="@cdktf/provider-helm.provider.HelmProvider.property.qpsInput"></a>
+##### `qpsInput`<sup>Optional</sup> <a name="qpsInput" id="@cdktn/provider-helm.provider.HelmProvider.property.qpsInput"></a>
 
 ```typescript
 public readonly qpsInput: number;
@@ -540,17 +540,17 @@ public readonly qpsInput: number;
 
 ---
 
-##### `registriesInput`<sup>Optional</sup> <a name="registriesInput" id="@cdktf/provider-helm.provider.HelmProvider.property.registriesInput"></a>
+##### `registriesInput`<sup>Optional</sup> <a name="registriesInput" id="@cdktn/provider-helm.provider.HelmProvider.property.registriesInput"></a>
 
 ```typescript
 public readonly registriesInput: IResolvable | HelmProviderRegistries[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]
 
 ---
 
-##### `registryConfigPathInput`<sup>Optional</sup> <a name="registryConfigPathInput" id="@cdktf/provider-helm.provider.HelmProvider.property.registryConfigPathInput"></a>
+##### `registryConfigPathInput`<sup>Optional</sup> <a name="registryConfigPathInput" id="@cdktn/provider-helm.provider.HelmProvider.property.registryConfigPathInput"></a>
 
 ```typescript
 public readonly registryConfigPathInput: string;
@@ -560,7 +560,7 @@ public readonly registryConfigPathInput: string;
 
 ---
 
-##### `repositoryCacheInput`<sup>Optional</sup> <a name="repositoryCacheInput" id="@cdktf/provider-helm.provider.HelmProvider.property.repositoryCacheInput"></a>
+##### `repositoryCacheInput`<sup>Optional</sup> <a name="repositoryCacheInput" id="@cdktn/provider-helm.provider.HelmProvider.property.repositoryCacheInput"></a>
 
 ```typescript
 public readonly repositoryCacheInput: string;
@@ -570,7 +570,7 @@ public readonly repositoryCacheInput: string;
 
 ---
 
-##### `repositoryConfigPathInput`<sup>Optional</sup> <a name="repositoryConfigPathInput" id="@cdktf/provider-helm.provider.HelmProvider.property.repositoryConfigPathInput"></a>
+##### `repositoryConfigPathInput`<sup>Optional</sup> <a name="repositoryConfigPathInput" id="@cdktn/provider-helm.provider.HelmProvider.property.repositoryConfigPathInput"></a>
 
 ```typescript
 public readonly repositoryConfigPathInput: string;
@@ -580,7 +580,7 @@ public readonly repositoryConfigPathInput: string;
 
 ---
 
-##### `burstLimit`<sup>Optional</sup> <a name="burstLimit" id="@cdktf/provider-helm.provider.HelmProvider.property.burstLimit"></a>
+##### `burstLimit`<sup>Optional</sup> <a name="burstLimit" id="@cdktn/provider-helm.provider.HelmProvider.property.burstLimit"></a>
 
 ```typescript
 public readonly burstLimit: number;
@@ -590,27 +590,27 @@ public readonly burstLimit: number;
 
 ---
 
-##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktf/provider-helm.provider.HelmProvider.property.debug"></a>
+##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktn/provider-helm.provider.HelmProvider.property.debug"></a>
 
 ```typescript
 public readonly debug: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktf/provider-helm.provider.HelmProvider.property.experiments"></a>
+##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktn/provider-helm.provider.HelmProvider.property.experiments"></a>
 
 ```typescript
 public readonly experiments: HelmProviderExperiments;
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
 
 ---
 
-##### `helmDriver`<sup>Optional</sup> <a name="helmDriver" id="@cdktf/provider-helm.provider.HelmProvider.property.helmDriver"></a>
+##### `helmDriver`<sup>Optional</sup> <a name="helmDriver" id="@cdktn/provider-helm.provider.HelmProvider.property.helmDriver"></a>
 
 ```typescript
 public readonly helmDriver: string;
@@ -620,17 +620,17 @@ public readonly helmDriver: string;
 
 ---
 
-##### `kubernetes`<sup>Optional</sup> <a name="kubernetes" id="@cdktf/provider-helm.provider.HelmProvider.property.kubernetes"></a>
+##### `kubernetes`<sup>Optional</sup> <a name="kubernetes" id="@cdktn/provider-helm.provider.HelmProvider.property.kubernetes"></a>
 
 ```typescript
 public readonly kubernetes: HelmProviderKubernetes;
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
 
 ---
 
-##### `pluginsPath`<sup>Optional</sup> <a name="pluginsPath" id="@cdktf/provider-helm.provider.HelmProvider.property.pluginsPath"></a>
+##### `pluginsPath`<sup>Optional</sup> <a name="pluginsPath" id="@cdktn/provider-helm.provider.HelmProvider.property.pluginsPath"></a>
 
 ```typescript
 public readonly pluginsPath: string;
@@ -640,7 +640,7 @@ public readonly pluginsPath: string;
 
 ---
 
-##### `qps`<sup>Optional</sup> <a name="qps" id="@cdktf/provider-helm.provider.HelmProvider.property.qps"></a>
+##### `qps`<sup>Optional</sup> <a name="qps" id="@cdktn/provider-helm.provider.HelmProvider.property.qps"></a>
 
 ```typescript
 public readonly qps: number;
@@ -650,17 +650,17 @@ public readonly qps: number;
 
 ---
 
-##### `registries`<sup>Optional</sup> <a name="registries" id="@cdktf/provider-helm.provider.HelmProvider.property.registries"></a>
+##### `registries`<sup>Optional</sup> <a name="registries" id="@cdktn/provider-helm.provider.HelmProvider.property.registries"></a>
 
 ```typescript
 public readonly registries: IResolvable | HelmProviderRegistries[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]
 
 ---
 
-##### `registryConfigPath`<sup>Optional</sup> <a name="registryConfigPath" id="@cdktf/provider-helm.provider.HelmProvider.property.registryConfigPath"></a>
+##### `registryConfigPath`<sup>Optional</sup> <a name="registryConfigPath" id="@cdktn/provider-helm.provider.HelmProvider.property.registryConfigPath"></a>
 
 ```typescript
 public readonly registryConfigPath: string;
@@ -670,7 +670,7 @@ public readonly registryConfigPath: string;
 
 ---
 
-##### `repositoryCache`<sup>Optional</sup> <a name="repositoryCache" id="@cdktf/provider-helm.provider.HelmProvider.property.repositoryCache"></a>
+##### `repositoryCache`<sup>Optional</sup> <a name="repositoryCache" id="@cdktn/provider-helm.provider.HelmProvider.property.repositoryCache"></a>
 
 ```typescript
 public readonly repositoryCache: string;
@@ -680,7 +680,7 @@ public readonly repositoryCache: string;
 
 ---
 
-##### `repositoryConfigPath`<sup>Optional</sup> <a name="repositoryConfigPath" id="@cdktf/provider-helm.provider.HelmProvider.property.repositoryConfigPath"></a>
+##### `repositoryConfigPath`<sup>Optional</sup> <a name="repositoryConfigPath" id="@cdktn/provider-helm.provider.HelmProvider.property.repositoryConfigPath"></a>
 
 ```typescript
 public readonly repositoryConfigPath: string;
@@ -694,11 +694,11 @@ public readonly repositoryConfigPath: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-helm.provider.HelmProvider.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-helm.provider.HelmProvider.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -710,12 +710,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### HelmProviderConfig <a name="HelmProviderConfig" id="@cdktf/provider-helm.provider.HelmProviderConfig"></a>
+### HelmProviderConfig <a name="HelmProviderConfig" id="@cdktn/provider-helm.provider.HelmProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.provider.HelmProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.provider.HelmProviderConfig.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-helm'
+import { provider } from '@cdktn/provider-helm'
 
 const helmProviderConfig: provider.HelmProviderConfig = { ... }
 ```
@@ -724,22 +724,22 @@ const helmProviderConfig: provider.HelmProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.burstLimit">burstLimit</a></code> | <code>number</code> | Helm burst limit. Increase this if you have a cluster with many CRDs. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.debug">debug</a></code> | <code>boolean \| cdktf.IResolvable</code> | Debug indicates whether or not Helm is running in Debug mode. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.experiments">experiments</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | Enable and disable experimental features. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.helmDriver">helmDriver</a></code> | <code>string</code> | The backend storage driver. Values are: configmap, secret, memory, sql. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.kubernetes">kubernetes</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | Kubernetes Configuration. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.pluginsPath">pluginsPath</a></code> | <code>string</code> | The path to the helm plugins directory. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.qps">qps</a></code> | <code>number</code> | Queries per second used when communicating with the Kubernetes API. Can be used to avoid throttling. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.registries">registries</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]</code> | RegistryClient configuration. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.registryConfigPath">registryConfigPath</a></code> | <code>string</code> | The path to the registry config file. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.repositoryCache">repositoryCache</a></code> | <code>string</code> | The path to the file containing cached repository indexes. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.repositoryConfigPath">repositoryConfigPath</a></code> | <code>string</code> | The path to the file containing repository names and URLs. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.burstLimit">burstLimit</a></code> | <code>number</code> | Helm burst limit. Increase this if you have a cluster with many CRDs. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.debug">debug</a></code> | <code>boolean \| cdktn.IResolvable</code> | Debug indicates whether or not Helm is running in Debug mode. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.experiments">experiments</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | Enable and disable experimental features. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.helmDriver">helmDriver</a></code> | <code>string</code> | The backend storage driver. Values are: configmap, secret, memory, sql. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.kubernetes">kubernetes</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | Kubernetes Configuration. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.pluginsPath">pluginsPath</a></code> | <code>string</code> | The path to the helm plugins directory. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.qps">qps</a></code> | <code>number</code> | Queries per second used when communicating with the Kubernetes API. Can be used to avoid throttling. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.registries">registries</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]</code> | RegistryClient configuration. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.registryConfigPath">registryConfigPath</a></code> | <code>string</code> | The path to the registry config file. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.repositoryCache">repositoryCache</a></code> | <code>string</code> | The path to the file containing cached repository indexes. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.repositoryConfigPath">repositoryConfigPath</a></code> | <code>string</code> | The path to the file containing repository names and URLs. |
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -753,7 +753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `burstLimit`<sup>Optional</sup> <a name="burstLimit" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.burstLimit"></a>
+##### `burstLimit`<sup>Optional</sup> <a name="burstLimit" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.burstLimit"></a>
 
 ```typescript
 public readonly burstLimit: number;
@@ -767,13 +767,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.debug"></a>
+##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.debug"></a>
 
 ```typescript
 public readonly debug: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Debug indicates whether or not Helm is running in Debug mode.
 
@@ -781,13 +781,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.experiments"></a>
+##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.experiments"></a>
 
 ```typescript
 public readonly experiments: HelmProviderExperiments;
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
 
 Enable and disable experimental features.
 
@@ -795,7 +795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `helmDriver`<sup>Optional</sup> <a name="helmDriver" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.helmDriver"></a>
+##### `helmDriver`<sup>Optional</sup> <a name="helmDriver" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.helmDriver"></a>
 
 ```typescript
 public readonly helmDriver: string;
@@ -809,13 +809,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `kubernetes`<sup>Optional</sup> <a name="kubernetes" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.kubernetes"></a>
+##### `kubernetes`<sup>Optional</sup> <a name="kubernetes" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.kubernetes"></a>
 
 ```typescript
 public readonly kubernetes: HelmProviderKubernetes;
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
 
 Kubernetes Configuration.
 
@@ -823,7 +823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `pluginsPath`<sup>Optional</sup> <a name="pluginsPath" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.pluginsPath"></a>
+##### `pluginsPath`<sup>Optional</sup> <a name="pluginsPath" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.pluginsPath"></a>
 
 ```typescript
 public readonly pluginsPath: string;
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `qps`<sup>Optional</sup> <a name="qps" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.qps"></a>
+##### `qps`<sup>Optional</sup> <a name="qps" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.qps"></a>
 
 ```typescript
 public readonly qps: number;
@@ -851,13 +851,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `registries`<sup>Optional</sup> <a name="registries" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.registries"></a>
+##### `registries`<sup>Optional</sup> <a name="registries" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.registries"></a>
 
 ```typescript
 public readonly registries: IResolvable | HelmProviderRegistries[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>[]
 
 RegistryClient configuration.
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `registryConfigPath`<sup>Optional</sup> <a name="registryConfigPath" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.registryConfigPath"></a>
+##### `registryConfigPath`<sup>Optional</sup> <a name="registryConfigPath" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.registryConfigPath"></a>
 
 ```typescript
 public readonly registryConfigPath: string;
@@ -879,7 +879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `repositoryCache`<sup>Optional</sup> <a name="repositoryCache" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.repositoryCache"></a>
+##### `repositoryCache`<sup>Optional</sup> <a name="repositoryCache" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.repositoryCache"></a>
 
 ```typescript
 public readonly repositoryCache: string;
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `repositoryConfigPath`<sup>Optional</sup> <a name="repositoryConfigPath" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.repositoryConfigPath"></a>
+##### `repositoryConfigPath`<sup>Optional</sup> <a name="repositoryConfigPath" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.repositoryConfigPath"></a>
 
 ```typescript
 public readonly repositoryConfigPath: string;
@@ -907,12 +907,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### HelmProviderExperiments <a name="HelmProviderExperiments" id="@cdktf/provider-helm.provider.HelmProviderExperiments"></a>
+### HelmProviderExperiments <a name="HelmProviderExperiments" id="@cdktn/provider-helm.provider.HelmProviderExperiments"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.provider.HelmProviderExperiments.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.provider.HelmProviderExperiments.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-helm'
+import { provider } from '@cdktn/provider-helm'
 
 const helmProviderExperiments: provider.HelmProviderExperiments = { ... }
 ```
@@ -921,17 +921,17 @@ const helmProviderExperiments: provider.HelmProviderExperiments = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderExperiments.property.manifest">manifest</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable full diff by storing the rendered manifest in the state. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderExperiments.property.manifest">manifest</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable full diff by storing the rendered manifest in the state. |
 
 ---
 
-##### `manifest`<sup>Optional</sup> <a name="manifest" id="@cdktf/provider-helm.provider.HelmProviderExperiments.property.manifest"></a>
+##### `manifest`<sup>Optional</sup> <a name="manifest" id="@cdktn/provider-helm.provider.HelmProviderExperiments.property.manifest"></a>
 
 ```typescript
 public readonly manifest: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable full diff by storing the rendered manifest in the state.
 
@@ -939,12 +939,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### HelmProviderKubernetes <a name="HelmProviderKubernetes" id="@cdktf/provider-helm.provider.HelmProviderKubernetes"></a>
+### HelmProviderKubernetes <a name="HelmProviderKubernetes" id="@cdktn/provider-helm.provider.HelmProviderKubernetes"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-helm'
+import { provider } from '@cdktn/provider-helm'
 
 const helmProviderKubernetes: provider.HelmProviderKubernetes = { ... }
 ```
@@ -953,26 +953,26 @@ const helmProviderKubernetes: provider.HelmProviderKubernetes = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clientCertificate">clientCertificate</a></code> | <code>string</code> | PEM-encoded client certificate for TLS authentication. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clientKey">clientKey</a></code> | <code>string</code> | PEM-encoded client certificate key for TLS authentication. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clusterCaCertificate">clusterCaCertificate</a></code> | <code>string</code> | PEM-encoded root certificates bundle for TLS authentication. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContext">configContext</a></code> | <code>string</code> | Context to choose from the config file. Can be sourced from KUBE_CTX. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContextAuthInfo">configContextAuthInfo</a></code> | <code>string</code> | Authentication info context of the kube config (name of the kubeconfig user, --user flag in kubectl). |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContextCluster">configContextCluster</a></code> | <code>string</code> | Cluster context of the kube config (name of the kubeconfig cluster, --cluster flag in kubectl). |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configPath">configPath</a></code> | <code>string</code> | Path to the kube config file. Can be set with KUBE_CONFIG_PATH. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configPaths">configPaths</a></code> | <code>string[]</code> | A list of paths to kube config files. Can be set with KUBE_CONFIG_PATHS environment variable. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.exec">exec</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec">HelmProviderKubernetesExec</a></code> | Exec configuration for Kubernetes authentication. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.host">host</a></code> | <code>string</code> | The hostname (in form of URI) of kubernetes master. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.insecure">insecure</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.password">password</a></code> | <code>string</code> | The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.proxyUrl">proxyUrl</a></code> | <code>string</code> | URL to the proxy to be used for all API requests. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.tlsServerName">tlsServerName</a></code> | <code>string</code> | Server name passed to the server for SNI and is used in the client to check server certificates against. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.token">token</a></code> | <code>string</code> | Token to authenticate a service account. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.username">username</a></code> | <code>string</code> | The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clientCertificate">clientCertificate</a></code> | <code>string</code> | PEM-encoded client certificate for TLS authentication. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clientKey">clientKey</a></code> | <code>string</code> | PEM-encoded client certificate key for TLS authentication. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clusterCaCertificate">clusterCaCertificate</a></code> | <code>string</code> | PEM-encoded root certificates bundle for TLS authentication. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContext">configContext</a></code> | <code>string</code> | Context to choose from the config file. Can be sourced from KUBE_CTX. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContextAuthInfo">configContextAuthInfo</a></code> | <code>string</code> | Authentication info context of the kube config (name of the kubeconfig user, --user flag in kubectl). |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContextCluster">configContextCluster</a></code> | <code>string</code> | Cluster context of the kube config (name of the kubeconfig cluster, --cluster flag in kubectl). |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configPath">configPath</a></code> | <code>string</code> | Path to the kube config file. Can be set with KUBE_CONFIG_PATH. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configPaths">configPaths</a></code> | <code>string[]</code> | A list of paths to kube config files. Can be set with KUBE_CONFIG_PATHS environment variable. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.exec">exec</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec">HelmProviderKubernetesExec</a></code> | Exec configuration for Kubernetes authentication. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.host">host</a></code> | <code>string</code> | The hostname (in form of URI) of kubernetes master. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.insecure">insecure</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.password">password</a></code> | <code>string</code> | The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.proxyUrl">proxyUrl</a></code> | <code>string</code> | URL to the proxy to be used for all API requests. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.tlsServerName">tlsServerName</a></code> | <code>string</code> | Server name passed to the server for SNI and is used in the client to check server certificates against. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.token">token</a></code> | <code>string</code> | Token to authenticate a service account. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.username">username</a></code> | <code>string</code> | The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
 
 ---
 
-##### `clientCertificate`<sup>Optional</sup> <a name="clientCertificate" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clientCertificate"></a>
+##### `clientCertificate`<sup>Optional</sup> <a name="clientCertificate" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clientCertificate"></a>
 
 ```typescript
 public readonly clientCertificate: string;
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `clientKey`<sup>Optional</sup> <a name="clientKey" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clientKey"></a>
+##### `clientKey`<sup>Optional</sup> <a name="clientKey" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clientKey"></a>
 
 ```typescript
 public readonly clientKey: string;
@@ -1000,7 +1000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `clusterCaCertificate`<sup>Optional</sup> <a name="clusterCaCertificate" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clusterCaCertificate"></a>
+##### `clusterCaCertificate`<sup>Optional</sup> <a name="clusterCaCertificate" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clusterCaCertificate"></a>
 
 ```typescript
 public readonly clusterCaCertificate: string;
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `configContext`<sup>Optional</sup> <a name="configContext" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContext"></a>
+##### `configContext`<sup>Optional</sup> <a name="configContext" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContext"></a>
 
 ```typescript
 public readonly configContext: string;
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `configContextAuthInfo`<sup>Optional</sup> <a name="configContextAuthInfo" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContextAuthInfo"></a>
+##### `configContextAuthInfo`<sup>Optional</sup> <a name="configContextAuthInfo" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContextAuthInfo"></a>
 
 ```typescript
 public readonly configContextAuthInfo: string;
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `configContextCluster`<sup>Optional</sup> <a name="configContextCluster" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContextCluster"></a>
+##### `configContextCluster`<sup>Optional</sup> <a name="configContextCluster" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContextCluster"></a>
 
 ```typescript
 public readonly configContextCluster: string;
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `configPath`<sup>Optional</sup> <a name="configPath" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configPath"></a>
+##### `configPath`<sup>Optional</sup> <a name="configPath" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configPath"></a>
 
 ```typescript
 public readonly configPath: string;
@@ -1074,7 +1074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `configPaths`<sup>Optional</sup> <a name="configPaths" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configPaths"></a>
+##### `configPaths`<sup>Optional</sup> <a name="configPaths" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configPaths"></a>
 
 ```typescript
 public readonly configPaths: string[];
@@ -1088,13 +1088,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `exec`<sup>Optional</sup> <a name="exec" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.exec"></a>
+##### `exec`<sup>Optional</sup> <a name="exec" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.exec"></a>
 
 ```typescript
 public readonly exec: HelmProviderKubernetesExec;
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec">HelmProviderKubernetesExec</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec">HelmProviderKubernetesExec</a>
 
 Exec configuration for Kubernetes authentication.
 
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.host"></a>
 
 ```typescript
 public readonly host: string;
@@ -1116,13 +1116,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.insecure"></a>
+##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.insecure"></a>
 
 ```typescript
 public readonly insecure: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether server should be accessed without verifying the TLS certificate.
 
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.password"></a>
 
 ```typescript
 public readonly password: string;
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `proxyUrl`<sup>Optional</sup> <a name="proxyUrl" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.proxyUrl"></a>
+##### `proxyUrl`<sup>Optional</sup> <a name="proxyUrl" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.proxyUrl"></a>
 
 ```typescript
 public readonly proxyUrl: string;
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `tlsServerName`<sup>Optional</sup> <a name="tlsServerName" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.tlsServerName"></a>
+##### `tlsServerName`<sup>Optional</sup> <a name="tlsServerName" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.tlsServerName"></a>
 
 ```typescript
 public readonly tlsServerName: string;
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.token"></a>
 
 ```typescript
 public readonly token: string;
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.username"></a>
 
 ```typescript
 public readonly username: string;
@@ -1200,12 +1200,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### HelmProviderKubernetesExec <a name="HelmProviderKubernetesExec" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec"></a>
+### HelmProviderKubernetesExec <a name="HelmProviderKubernetesExec" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-helm'
+import { provider } from '@cdktn/provider-helm'
 
 const helmProviderKubernetesExec: provider.HelmProviderKubernetesExec = { ... }
 ```
@@ -1214,14 +1214,14 @@ const helmProviderKubernetesExec: provider.HelmProviderKubernetesExec = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.apiVersion">apiVersion</a></code> | <code>string</code> | API version for the exec plugin. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.command">command</a></code> | <code>string</code> | Command to run for Kubernetes exec plugin. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.args">args</a></code> | <code>string[]</code> | Arguments for the exec plugin. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | Environment variables for the exec plugin. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.apiVersion">apiVersion</a></code> | <code>string</code> | API version for the exec plugin. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.command">command</a></code> | <code>string</code> | Command to run for Kubernetes exec plugin. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.args">args</a></code> | <code>string[]</code> | Arguments for the exec plugin. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | Environment variables for the exec plugin. |
 
 ---
 
-##### `apiVersion`<sup>Required</sup> <a name="apiVersion" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.apiVersion"></a>
+##### `apiVersion`<sup>Required</sup> <a name="apiVersion" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.apiVersion"></a>
 
 ```typescript
 public readonly apiVersion: string;
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `command`<sup>Required</sup> <a name="command" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.command"></a>
+##### `command`<sup>Required</sup> <a name="command" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.command"></a>
 
 ```typescript
 public readonly command: string;
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `args`<sup>Optional</sup> <a name="args" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.args"></a>
+##### `args`<sup>Optional</sup> <a name="args" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.args"></a>
 
 ```typescript
 public readonly args: string[];
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.env"></a>
 
 ```typescript
 public readonly env: {[ key: string ]: string};
@@ -1277,12 +1277,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### HelmProviderRegistries <a name="HelmProviderRegistries" id="@cdktf/provider-helm.provider.HelmProviderRegistries"></a>
+### HelmProviderRegistries <a name="HelmProviderRegistries" id="@cdktn/provider-helm.provider.HelmProviderRegistries"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.provider.HelmProviderRegistries.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.provider.HelmProviderRegistries.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-helm'
+import { provider } from '@cdktn/provider-helm'
 
 const helmProviderRegistries: provider.HelmProviderRegistries = { ... }
 ```
@@ -1291,13 +1291,13 @@ const helmProviderRegistries: provider.HelmProviderRegistries = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderRegistries.property.password">password</a></code> | <code>string</code> | The password to use for the OCI HTTP basic authentication when accessing the Kubernetes master endpoint. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderRegistries.property.url">url</a></code> | <code>string</code> | OCI URL in form of oci://host:port or oci://host. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderRegistries.property.username">username</a></code> | <code>string</code> | The username to use for the OCI HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderRegistries.property.password">password</a></code> | <code>string</code> | The password to use for the OCI HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderRegistries.property.url">url</a></code> | <code>string</code> | OCI URL in form of oci://host:port or oci://host. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderRegistries.property.username">username</a></code> | <code>string</code> | The username to use for the OCI HTTP basic authentication when accessing the Kubernetes master endpoint. |
 
 ---
 
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-helm.provider.HelmProviderRegistries.property.password"></a>
+##### `password`<sup>Required</sup> <a name="password" id="@cdktn/provider-helm.provider.HelmProviderRegistries.property.password"></a>
 
 ```typescript
 public readonly password: string;
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-helm.provider.HelmProviderRegistries.property.url"></a>
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-helm.provider.HelmProviderRegistries.property.url"></a>
 
 ```typescript
 public readonly url: string;
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-helm.provider.HelmProviderRegistries.property.username"></a>
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-helm.provider.HelmProviderRegistries.property.username"></a>
 
 ```typescript
 public readonly username: string;
