@@ -14,7 +14,7 @@
       "type": "build"
     },
     {
-      "name": "@cdktf/provider-project",
+      "name": "@cdktn/provider-project",
       "version": "^0.7.0",
       "type": "build"
     },
@@ -24,12 +24,12 @@
       "type": "build"
     },
     {
-      "name": "cdktf-cli",
+      "name": "cdktn-cli",
       "version": "^0.21.0",
       "type": "build"
     },
     {
-      "name": "cdktf",
+      "name": "cdktn",
       "version": "^0.21.0",
       "type": "build"
     },
@@ -76,6 +76,11 @@
       "type": "build"
     },
     {
+      "name": "semver",
+      "version": "^7.5.3",
+      "type": "build"
+    },
+    {
       "name": "typescript",
       "version": "~5.8.0",
       "type": "build"
@@ -86,7 +91,7 @@
       "type": "override"
     },
     {
-      "name": "cdktf",
+      "name": "cdktn",
       "version": "^0.21.0",
       "type": "peer"
     },

@@ -1,15 +1,15 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-helm.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-helm.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### HelmProvider <a name="HelmProvider" id="@cdktf/provider-helm.provider.HelmProvider"></a>
+### HelmProvider <a name="HelmProvider" id="@cdktn/provider-helm.provider.HelmProvider"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs helm}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-helm.provider.HelmProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-helm.provider.HelmProvider.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_helm import provider
+from cdktn_provider_helm import provider
 
 provider.HelmProvider(
   scope: Construct,
@@ -31,24 +31,24 @@ provider.HelmProvider(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.burstLimit">burst_limit</a></code> | <code>typing.Union[int, float]</code> | Helm burst limit. Increase this if you have a cluster with many CRDs. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.debug">debug</a></code> | <code>bool \| cdktf.IResolvable</code> | Debug indicates whether or not Helm is running in Debug mode. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.experiments">experiments</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | Enable and disable experimental features. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.helmDriver">helm_driver</a></code> | <code>str</code> | The backend storage driver. Values are: configmap, secret, memory, sql. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.kubernetes">kubernetes</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | Kubernetes Configuration. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.pluginsPath">plugins_path</a></code> | <code>str</code> | The path to the helm plugins directory. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.qps">qps</a></code> | <code>typing.Union[int, float]</code> | Queries per second used when communicating with the Kubernetes API. Can be used to avoid throttling. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.registries">registries</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]</code> | RegistryClient configuration. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.registryConfigPath">registry_config_path</a></code> | <code>str</code> | The path to the registry config file. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.repositoryCache">repository_cache</a></code> | <code>str</code> | The path to the file containing cached repository indexes. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.repositoryConfigPath">repository_config_path</a></code> | <code>str</code> | The path to the file containing repository names and URLs. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.burstLimit">burst_limit</a></code> | <code>typing.Union[int, float]</code> | Helm burst limit. Increase this if you have a cluster with many CRDs. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.debug">debug</a></code> | <code>bool \| cdktn.IResolvable</code> | Debug indicates whether or not Helm is running in Debug mode. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.experiments">experiments</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | Enable and disable experimental features. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.helmDriver">helm_driver</a></code> | <code>str</code> | The backend storage driver. Values are: configmap, secret, memory, sql. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.kubernetes">kubernetes</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | Kubernetes Configuration. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.pluginsPath">plugins_path</a></code> | <code>str</code> | The path to the helm plugins directory. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.qps">qps</a></code> | <code>typing.Union[int, float]</code> | Queries per second used when communicating with the Kubernetes API. Can be used to avoid throttling. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.registries">registries</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]</code> | RegistryClient configuration. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.registryConfigPath">registry_config_path</a></code> | <code>str</code> | The path to the registry config file. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.repositoryCache">repository_cache</a></code> | <code>str</code> | The path to the file containing cached repository indexes. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.repositoryConfigPath">repository_config_path</a></code> | <code>str</code> | The path to the file containing repository names and URLs. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -56,7 +56,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -66,7 +66,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.alias"></a>
 
 - *Type:* str
 
@@ -76,7 +76,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `burst_limit`<sup>Optional</sup> <a name="burst_limit" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.burstLimit"></a>
+##### `burst_limit`<sup>Optional</sup> <a name="burst_limit" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.burstLimit"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -86,9 +86,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.debug"></a>
+##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.debug"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Debug indicates whether or not Helm is running in Debug mode.
 
@@ -96,9 +96,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.experiments"></a>
+##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.experiments"></a>
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
 
 Enable and disable experimental features.
 
@@ -106,7 +106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `helm_driver`<sup>Optional</sup> <a name="helm_driver" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.helmDriver"></a>
+##### `helm_driver`<sup>Optional</sup> <a name="helm_driver" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.helmDriver"></a>
 
 - *Type:* str
 
@@ -116,9 +116,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `kubernetes`<sup>Optional</sup> <a name="kubernetes" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.kubernetes"></a>
+##### `kubernetes`<sup>Optional</sup> <a name="kubernetes" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.kubernetes"></a>
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
 
 Kubernetes Configuration.
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `plugins_path`<sup>Optional</sup> <a name="plugins_path" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.pluginsPath"></a>
+##### `plugins_path`<sup>Optional</sup> <a name="plugins_path" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.pluginsPath"></a>
 
 - *Type:* str
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `qps`<sup>Optional</sup> <a name="qps" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.qps"></a>
+##### `qps`<sup>Optional</sup> <a name="qps" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.qps"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -146,9 +146,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `registries`<sup>Optional</sup> <a name="registries" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.registries"></a>
+##### `registries`<sup>Optional</sup> <a name="registries" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.registries"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]
 
 RegistryClient configuration.
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `registry_config_path`<sup>Optional</sup> <a name="registry_config_path" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.registryConfigPath"></a>
+##### `registry_config_path`<sup>Optional</sup> <a name="registry_config_path" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.registryConfigPath"></a>
 
 - *Type:* str
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `repository_cache`<sup>Optional</sup> <a name="repository_cache" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.repositoryCache"></a>
+##### `repository_cache`<sup>Optional</sup> <a name="repository_cache" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.repositoryCache"></a>
 
 - *Type:* str
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `repository_config_path`<sup>Optional</sup> <a name="repository_config_path" id="@cdktf/provider-helm.provider.HelmProvider.Initializer.parameter.repositoryConfigPath"></a>
+##### `repository_config_path`<sup>Optional</sup> <a name="repository_config_path" id="@cdktn/provider-helm.provider.HelmProvider.Initializer.parameter.repositoryConfigPath"></a>
 
 - *Type:* str
 
@@ -190,29 +190,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetAlias">reset_alias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetBurstLimit">reset_burst_limit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetDebug">reset_debug</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetExperiments">reset_experiments</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetHelmDriver">reset_helm_driver</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetKubernetes">reset_kubernetes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetPluginsPath">reset_plugins_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetQps">reset_qps</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetRegistries">reset_registries</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetRegistryConfigPath">reset_registry_config_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetRepositoryCache">reset_repository_cache</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.resetRepositoryConfigPath">reset_repository_config_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetAlias">reset_alias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetBurstLimit">reset_burst_limit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetDebug">reset_debug</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetExperiments">reset_experiments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetHelmDriver">reset_helm_driver</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetKubernetes">reset_kubernetes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetPluginsPath">reset_plugins_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetQps">reset_qps</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetRegistries">reset_registries</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetRegistryConfigPath">reset_registry_config_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetRepositoryCache">reset_repository_cache</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.resetRepositoryConfigPath">reset_repository_config_path</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-helm.provider.HelmProvider.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-helm.provider.HelmProvider.toString"></a>
 
 ```python
 def to_string() -> str
@@ -220,7 +220,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-helm.provider.HelmProvider.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-helm.provider.HelmProvider.addOverride"></a>
 
 ```python
 def add_override(
@@ -229,19 +229,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-helm.provider.HelmProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-helm.provider.HelmProvider.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-helm.provider.HelmProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.provider.HelmProvider.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-helm.provider.HelmProvider.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-helm.provider.HelmProvider.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -251,7 +251,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-helm.provider.HelmProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-helm.provider.HelmProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -259,7 +259,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-helm.provider.HelmProvider.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-helm.provider.HelmProvider.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -267,19 +267,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-helm.provider.HelmProvider.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-helm.provider.HelmProvider.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-helm.provider.HelmProvider.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-helm.provider.HelmProvider.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-helm.provider.HelmProvider.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-helm.provider.HelmProvider.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -287,73 +287,73 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `reset_alias` <a name="reset_alias" id="@cdktf/provider-helm.provider.HelmProvider.resetAlias"></a>
+##### `reset_alias` <a name="reset_alias" id="@cdktn/provider-helm.provider.HelmProvider.resetAlias"></a>
 
 ```python
 def reset_alias() -> None
 ```
 
-##### `reset_burst_limit` <a name="reset_burst_limit" id="@cdktf/provider-helm.provider.HelmProvider.resetBurstLimit"></a>
+##### `reset_burst_limit` <a name="reset_burst_limit" id="@cdktn/provider-helm.provider.HelmProvider.resetBurstLimit"></a>
 
 ```python
 def reset_burst_limit() -> None
 ```
 
-##### `reset_debug` <a name="reset_debug" id="@cdktf/provider-helm.provider.HelmProvider.resetDebug"></a>
+##### `reset_debug` <a name="reset_debug" id="@cdktn/provider-helm.provider.HelmProvider.resetDebug"></a>
 
 ```python
 def reset_debug() -> None
 ```
 
-##### `reset_experiments` <a name="reset_experiments" id="@cdktf/provider-helm.provider.HelmProvider.resetExperiments"></a>
+##### `reset_experiments` <a name="reset_experiments" id="@cdktn/provider-helm.provider.HelmProvider.resetExperiments"></a>
 
 ```python
 def reset_experiments() -> None
 ```
 
-##### `reset_helm_driver` <a name="reset_helm_driver" id="@cdktf/provider-helm.provider.HelmProvider.resetHelmDriver"></a>
+##### `reset_helm_driver` <a name="reset_helm_driver" id="@cdktn/provider-helm.provider.HelmProvider.resetHelmDriver"></a>
 
 ```python
 def reset_helm_driver() -> None
 ```
 
-##### `reset_kubernetes` <a name="reset_kubernetes" id="@cdktf/provider-helm.provider.HelmProvider.resetKubernetes"></a>
+##### `reset_kubernetes` <a name="reset_kubernetes" id="@cdktn/provider-helm.provider.HelmProvider.resetKubernetes"></a>
 
 ```python
 def reset_kubernetes() -> None
 ```
 
-##### `reset_plugins_path` <a name="reset_plugins_path" id="@cdktf/provider-helm.provider.HelmProvider.resetPluginsPath"></a>
+##### `reset_plugins_path` <a name="reset_plugins_path" id="@cdktn/provider-helm.provider.HelmProvider.resetPluginsPath"></a>
 
 ```python
 def reset_plugins_path() -> None
 ```
 
-##### `reset_qps` <a name="reset_qps" id="@cdktf/provider-helm.provider.HelmProvider.resetQps"></a>
+##### `reset_qps` <a name="reset_qps" id="@cdktn/provider-helm.provider.HelmProvider.resetQps"></a>
 
 ```python
 def reset_qps() -> None
 ```
 
-##### `reset_registries` <a name="reset_registries" id="@cdktf/provider-helm.provider.HelmProvider.resetRegistries"></a>
+##### `reset_registries` <a name="reset_registries" id="@cdktn/provider-helm.provider.HelmProvider.resetRegistries"></a>
 
 ```python
 def reset_registries() -> None
 ```
 
-##### `reset_registry_config_path` <a name="reset_registry_config_path" id="@cdktf/provider-helm.provider.HelmProvider.resetRegistryConfigPath"></a>
+##### `reset_registry_config_path` <a name="reset_registry_config_path" id="@cdktn/provider-helm.provider.HelmProvider.resetRegistryConfigPath"></a>
 
 ```python
 def reset_registry_config_path() -> None
 ```
 
-##### `reset_repository_cache` <a name="reset_repository_cache" id="@cdktf/provider-helm.provider.HelmProvider.resetRepositoryCache"></a>
+##### `reset_repository_cache` <a name="reset_repository_cache" id="@cdktn/provider-helm.provider.HelmProvider.resetRepositoryCache"></a>
 
 ```python
 def reset_repository_cache() -> None
 ```
 
-##### `reset_repository_config_path` <a name="reset_repository_config_path" id="@cdktf/provider-helm.provider.HelmProvider.resetRepositoryConfigPath"></a>
+##### `reset_repository_config_path` <a name="reset_repository_config_path" id="@cdktn/provider-helm.provider.HelmProvider.resetRepositoryConfigPath"></a>
 
 ```python
 def reset_repository_config_path() -> None
@@ -363,17 +363,17 @@ def reset_repository_config_path() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a HelmProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a HelmProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-helm.provider.HelmProvider.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-helm.provider.HelmProvider.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_helm import provider
+from cdktn_provider_helm import provider
 
 provider.HelmProvider.is_construct(
   x: typing.Any
@@ -396,7 +396,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-helm.provider.HelmProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-helm.provider.HelmProvider.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -404,42 +404,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-helm.provider.HelmProvider.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-helm.provider.HelmProvider.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_helm import provider
+from cdktn_provider_helm import provider
 
 provider.HelmProvider.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-helm.provider.HelmProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-helm.provider.HelmProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_provider` <a name="is_terraform_provider" id="@cdktf/provider-helm.provider.HelmProvider.isTerraformProvider"></a>
+##### `is_terraform_provider` <a name="is_terraform_provider" id="@cdktn/provider-helm.provider.HelmProvider.isTerraformProvider"></a>
 
 ```python
-from cdktf_cdktf_provider_helm import provider
+from cdktn_provider_helm import provider
 
 provider.HelmProvider.is_terraform_provider(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-helm.provider.HelmProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-helm.provider.HelmProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_helm import provider
+from cdktn_provider_helm import provider
 
 provider.HelmProvider.generate_config_for_import(
   scope: Construct,
@@ -449,9 +449,9 @@ provider.HelmProvider.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a HelmProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a HelmProvider resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -459,7 +459,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the HelmProvider to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -477,9 +477,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-helm.provider.HelmProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the HelmProvider to import is found.
 
@@ -489,42 +489,42 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.burstLimitInput">burst_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.debugInput">debug_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.experimentsInput">experiments_input</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.helmDriverInput">helm_driver_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.kubernetesInput">kubernetes_input</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.pluginsPathInput">plugins_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.qpsInput">qps_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.registriesInput">registries_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.registryConfigPathInput">registry_config_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.repositoryCacheInput">repository_cache_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.repositoryConfigPathInput">repository_config_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.burstLimit">burst_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.debug">debug</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.experiments">experiments</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.helmDriver">helm_driver</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.kubernetes">kubernetes</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.pluginsPath">plugins_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.qps">qps</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.registries">registries</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.registryConfigPath">registry_config_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.repositoryCache">repository_cache</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.repositoryConfigPath">repository_config_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.burstLimitInput">burst_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.debugInput">debug_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.experimentsInput">experiments_input</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.helmDriverInput">helm_driver_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.kubernetesInput">kubernetes_input</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.pluginsPathInput">plugins_path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.qpsInput">qps_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.registriesInput">registries_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.registryConfigPathInput">registry_config_path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.repositoryCacheInput">repository_cache_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.repositoryConfigPathInput">repository_config_path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.burstLimit">burst_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.debug">debug</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.experiments">experiments</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.helmDriver">helm_driver</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.kubernetes">kubernetes</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.pluginsPath">plugins_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.qps">qps</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.registries">registries</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.registryConfigPath">registry_config_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.repositoryCache">repository_cache</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.repositoryConfigPath">repository_config_path</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-helm.provider.HelmProvider.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-helm.provider.HelmProvider.property.node"></a>
 
 ```python
 node: Node
@@ -536,17 +536,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-helm.provider.HelmProvider.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-helm.provider.HelmProvider.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-helm.provider.HelmProvider.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-helm.provider.HelmProvider.property.fqn"></a>
 
 ```python
 fqn: str
@@ -556,7 +556,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-helm.provider.HelmProvider.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-helm.provider.HelmProvider.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -566,7 +566,7 @@ friendly_unique_id: str
 
 ---
 
-##### `meta_attributes`<sup>Required</sup> <a name="meta_attributes" id="@cdktf/provider-helm.provider.HelmProvider.property.metaAttributes"></a>
+##### `meta_attributes`<sup>Required</sup> <a name="meta_attributes" id="@cdktn/provider-helm.provider.HelmProvider.property.metaAttributes"></a>
 
 ```python
 meta_attributes: typing.Mapping[typing.Any]
@@ -576,7 +576,7 @@ meta_attributes: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-helm.provider.HelmProvider.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-helm.provider.HelmProvider.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -586,17 +586,17 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-helm.provider.HelmProvider.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-helm.provider.HelmProvider.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `terraform_provider_source`<sup>Optional</sup> <a name="terraform_provider_source" id="@cdktf/provider-helm.provider.HelmProvider.property.terraformProviderSource"></a>
+##### `terraform_provider_source`<sup>Optional</sup> <a name="terraform_provider_source" id="@cdktn/provider-helm.provider.HelmProvider.property.terraformProviderSource"></a>
 
 ```python
 terraform_provider_source: str
@@ -606,7 +606,7 @@ terraform_provider_source: str
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-helm.provider.HelmProvider.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-helm.provider.HelmProvider.property.alias"></a>
 
 ```python
 alias: str
@@ -616,7 +616,7 @@ alias: str
 
 ---
 
-##### `alias_input`<sup>Optional</sup> <a name="alias_input" id="@cdktf/provider-helm.provider.HelmProvider.property.aliasInput"></a>
+##### `alias_input`<sup>Optional</sup> <a name="alias_input" id="@cdktn/provider-helm.provider.HelmProvider.property.aliasInput"></a>
 
 ```python
 alias_input: str
@@ -626,7 +626,7 @@ alias_input: str
 
 ---
 
-##### `burst_limit_input`<sup>Optional</sup> <a name="burst_limit_input" id="@cdktf/provider-helm.provider.HelmProvider.property.burstLimitInput"></a>
+##### `burst_limit_input`<sup>Optional</sup> <a name="burst_limit_input" id="@cdktn/provider-helm.provider.HelmProvider.property.burstLimitInput"></a>
 
 ```python
 burst_limit_input: typing.Union[int, float]
@@ -636,27 +636,27 @@ burst_limit_input: typing.Union[int, float]
 
 ---
 
-##### `debug_input`<sup>Optional</sup> <a name="debug_input" id="@cdktf/provider-helm.provider.HelmProvider.property.debugInput"></a>
+##### `debug_input`<sup>Optional</sup> <a name="debug_input" id="@cdktn/provider-helm.provider.HelmProvider.property.debugInput"></a>
 
 ```python
 debug_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `experiments_input`<sup>Optional</sup> <a name="experiments_input" id="@cdktf/provider-helm.provider.HelmProvider.property.experimentsInput"></a>
+##### `experiments_input`<sup>Optional</sup> <a name="experiments_input" id="@cdktn/provider-helm.provider.HelmProvider.property.experimentsInput"></a>
 
 ```python
 experiments_input: HelmProviderExperiments
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
 
 ---
 
-##### `helm_driver_input`<sup>Optional</sup> <a name="helm_driver_input" id="@cdktf/provider-helm.provider.HelmProvider.property.helmDriverInput"></a>
+##### `helm_driver_input`<sup>Optional</sup> <a name="helm_driver_input" id="@cdktn/provider-helm.provider.HelmProvider.property.helmDriverInput"></a>
 
 ```python
 helm_driver_input: str
@@ -666,17 +666,17 @@ helm_driver_input: str
 
 ---
 
-##### `kubernetes_input`<sup>Optional</sup> <a name="kubernetes_input" id="@cdktf/provider-helm.provider.HelmProvider.property.kubernetesInput"></a>
+##### `kubernetes_input`<sup>Optional</sup> <a name="kubernetes_input" id="@cdktn/provider-helm.provider.HelmProvider.property.kubernetesInput"></a>
 
 ```python
 kubernetes_input: HelmProviderKubernetes
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
 
 ---
 
-##### `plugins_path_input`<sup>Optional</sup> <a name="plugins_path_input" id="@cdktf/provider-helm.provider.HelmProvider.property.pluginsPathInput"></a>
+##### `plugins_path_input`<sup>Optional</sup> <a name="plugins_path_input" id="@cdktn/provider-helm.provider.HelmProvider.property.pluginsPathInput"></a>
 
 ```python
 plugins_path_input: str
@@ -686,7 +686,7 @@ plugins_path_input: str
 
 ---
 
-##### `qps_input`<sup>Optional</sup> <a name="qps_input" id="@cdktf/provider-helm.provider.HelmProvider.property.qpsInput"></a>
+##### `qps_input`<sup>Optional</sup> <a name="qps_input" id="@cdktn/provider-helm.provider.HelmProvider.property.qpsInput"></a>
 
 ```python
 qps_input: typing.Union[int, float]
@@ -696,17 +696,17 @@ qps_input: typing.Union[int, float]
 
 ---
 
-##### `registries_input`<sup>Optional</sup> <a name="registries_input" id="@cdktf/provider-helm.provider.HelmProvider.property.registriesInput"></a>
+##### `registries_input`<sup>Optional</sup> <a name="registries_input" id="@cdktn/provider-helm.provider.HelmProvider.property.registriesInput"></a>
 
 ```python
 registries_input: IResolvable | typing.List[HelmProviderRegistries]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]
 
 ---
 
-##### `registry_config_path_input`<sup>Optional</sup> <a name="registry_config_path_input" id="@cdktf/provider-helm.provider.HelmProvider.property.registryConfigPathInput"></a>
+##### `registry_config_path_input`<sup>Optional</sup> <a name="registry_config_path_input" id="@cdktn/provider-helm.provider.HelmProvider.property.registryConfigPathInput"></a>
 
 ```python
 registry_config_path_input: str
@@ -716,7 +716,7 @@ registry_config_path_input: str
 
 ---
 
-##### `repository_cache_input`<sup>Optional</sup> <a name="repository_cache_input" id="@cdktf/provider-helm.provider.HelmProvider.property.repositoryCacheInput"></a>
+##### `repository_cache_input`<sup>Optional</sup> <a name="repository_cache_input" id="@cdktn/provider-helm.provider.HelmProvider.property.repositoryCacheInput"></a>
 
 ```python
 repository_cache_input: str
@@ -726,7 +726,7 @@ repository_cache_input: str
 
 ---
 
-##### `repository_config_path_input`<sup>Optional</sup> <a name="repository_config_path_input" id="@cdktf/provider-helm.provider.HelmProvider.property.repositoryConfigPathInput"></a>
+##### `repository_config_path_input`<sup>Optional</sup> <a name="repository_config_path_input" id="@cdktn/provider-helm.provider.HelmProvider.property.repositoryConfigPathInput"></a>
 
 ```python
 repository_config_path_input: str
@@ -736,7 +736,7 @@ repository_config_path_input: str
 
 ---
 
-##### `burst_limit`<sup>Optional</sup> <a name="burst_limit" id="@cdktf/provider-helm.provider.HelmProvider.property.burstLimit"></a>
+##### `burst_limit`<sup>Optional</sup> <a name="burst_limit" id="@cdktn/provider-helm.provider.HelmProvider.property.burstLimit"></a>
 
 ```python
 burst_limit: typing.Union[int, float]
@@ -746,27 +746,27 @@ burst_limit: typing.Union[int, float]
 
 ---
 
-##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktf/provider-helm.provider.HelmProvider.property.debug"></a>
+##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktn/provider-helm.provider.HelmProvider.property.debug"></a>
 
 ```python
 debug: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktf/provider-helm.provider.HelmProvider.property.experiments"></a>
+##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktn/provider-helm.provider.HelmProvider.property.experiments"></a>
 
 ```python
 experiments: HelmProviderExperiments
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
 
 ---
 
-##### `helm_driver`<sup>Optional</sup> <a name="helm_driver" id="@cdktf/provider-helm.provider.HelmProvider.property.helmDriver"></a>
+##### `helm_driver`<sup>Optional</sup> <a name="helm_driver" id="@cdktn/provider-helm.provider.HelmProvider.property.helmDriver"></a>
 
 ```python
 helm_driver: str
@@ -776,17 +776,17 @@ helm_driver: str
 
 ---
 
-##### `kubernetes`<sup>Optional</sup> <a name="kubernetes" id="@cdktf/provider-helm.provider.HelmProvider.property.kubernetes"></a>
+##### `kubernetes`<sup>Optional</sup> <a name="kubernetes" id="@cdktn/provider-helm.provider.HelmProvider.property.kubernetes"></a>
 
 ```python
 kubernetes: HelmProviderKubernetes
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
 
 ---
 
-##### `plugins_path`<sup>Optional</sup> <a name="plugins_path" id="@cdktf/provider-helm.provider.HelmProvider.property.pluginsPath"></a>
+##### `plugins_path`<sup>Optional</sup> <a name="plugins_path" id="@cdktn/provider-helm.provider.HelmProvider.property.pluginsPath"></a>
 
 ```python
 plugins_path: str
@@ -796,7 +796,7 @@ plugins_path: str
 
 ---
 
-##### `qps`<sup>Optional</sup> <a name="qps" id="@cdktf/provider-helm.provider.HelmProvider.property.qps"></a>
+##### `qps`<sup>Optional</sup> <a name="qps" id="@cdktn/provider-helm.provider.HelmProvider.property.qps"></a>
 
 ```python
 qps: typing.Union[int, float]
@@ -806,17 +806,17 @@ qps: typing.Union[int, float]
 
 ---
 
-##### `registries`<sup>Optional</sup> <a name="registries" id="@cdktf/provider-helm.provider.HelmProvider.property.registries"></a>
+##### `registries`<sup>Optional</sup> <a name="registries" id="@cdktn/provider-helm.provider.HelmProvider.property.registries"></a>
 
 ```python
 registries: IResolvable | typing.List[HelmProviderRegistries]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]
 
 ---
 
-##### `registry_config_path`<sup>Optional</sup> <a name="registry_config_path" id="@cdktf/provider-helm.provider.HelmProvider.property.registryConfigPath"></a>
+##### `registry_config_path`<sup>Optional</sup> <a name="registry_config_path" id="@cdktn/provider-helm.provider.HelmProvider.property.registryConfigPath"></a>
 
 ```python
 registry_config_path: str
@@ -826,7 +826,7 @@ registry_config_path: str
 
 ---
 
-##### `repository_cache`<sup>Optional</sup> <a name="repository_cache" id="@cdktf/provider-helm.provider.HelmProvider.property.repositoryCache"></a>
+##### `repository_cache`<sup>Optional</sup> <a name="repository_cache" id="@cdktn/provider-helm.provider.HelmProvider.property.repositoryCache"></a>
 
 ```python
 repository_cache: str
@@ -836,7 +836,7 @@ repository_cache: str
 
 ---
 
-##### `repository_config_path`<sup>Optional</sup> <a name="repository_config_path" id="@cdktf/provider-helm.provider.HelmProvider.property.repositoryConfigPath"></a>
+##### `repository_config_path`<sup>Optional</sup> <a name="repository_config_path" id="@cdktn/provider-helm.provider.HelmProvider.property.repositoryConfigPath"></a>
 
 ```python
 repository_config_path: str
@@ -850,11 +850,11 @@ repository_config_path: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProvider.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProvider.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-helm.provider.HelmProvider.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-helm.provider.HelmProvider.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -866,12 +866,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### HelmProviderConfig <a name="HelmProviderConfig" id="@cdktf/provider-helm.provider.HelmProviderConfig"></a>
+### HelmProviderConfig <a name="HelmProviderConfig" id="@cdktn/provider-helm.provider.HelmProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.provider.HelmProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.provider.HelmProviderConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_helm import provider
+from cdktn_provider_helm import provider
 
 provider.HelmProviderConfig(
   alias: str = None,
@@ -893,22 +893,22 @@ provider.HelmProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.burstLimit">burst_limit</a></code> | <code>typing.Union[int, float]</code> | Helm burst limit. Increase this if you have a cluster with many CRDs. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.debug">debug</a></code> | <code>bool \| cdktf.IResolvable</code> | Debug indicates whether or not Helm is running in Debug mode. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.experiments">experiments</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | Enable and disable experimental features. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.helmDriver">helm_driver</a></code> | <code>str</code> | The backend storage driver. Values are: configmap, secret, memory, sql. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.kubernetes">kubernetes</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | Kubernetes Configuration. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.pluginsPath">plugins_path</a></code> | <code>str</code> | The path to the helm plugins directory. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.qps">qps</a></code> | <code>typing.Union[int, float]</code> | Queries per second used when communicating with the Kubernetes API. Can be used to avoid throttling. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.registries">registries</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]</code> | RegistryClient configuration. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.registryConfigPath">registry_config_path</a></code> | <code>str</code> | The path to the registry config file. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.repositoryCache">repository_cache</a></code> | <code>str</code> | The path to the file containing cached repository indexes. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderConfig.property.repositoryConfigPath">repository_config_path</a></code> | <code>str</code> | The path to the file containing repository names and URLs. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.burstLimit">burst_limit</a></code> | <code>typing.Union[int, float]</code> | Helm burst limit. Increase this if you have a cluster with many CRDs. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.debug">debug</a></code> | <code>bool \| cdktn.IResolvable</code> | Debug indicates whether or not Helm is running in Debug mode. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.experiments">experiments</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a></code> | Enable and disable experimental features. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.helmDriver">helm_driver</a></code> | <code>str</code> | The backend storage driver. Values are: configmap, secret, memory, sql. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.kubernetes">kubernetes</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a></code> | Kubernetes Configuration. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.pluginsPath">plugins_path</a></code> | <code>str</code> | The path to the helm plugins directory. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.qps">qps</a></code> | <code>typing.Union[int, float]</code> | Queries per second used when communicating with the Kubernetes API. Can be used to avoid throttling. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.registries">registries</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]</code> | RegistryClient configuration. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.registryConfigPath">registry_config_path</a></code> | <code>str</code> | The path to the registry config file. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.repositoryCache">repository_cache</a></code> | <code>str</code> | The path to the file containing cached repository indexes. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderConfig.property.repositoryConfigPath">repository_config_path</a></code> | <code>str</code> | The path to the file containing repository names and URLs. |
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.alias"></a>
 
 ```python
 alias: str
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `burst_limit`<sup>Optional</sup> <a name="burst_limit" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.burstLimit"></a>
+##### `burst_limit`<sup>Optional</sup> <a name="burst_limit" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.burstLimit"></a>
 
 ```python
 burst_limit: typing.Union[int, float]
@@ -936,13 +936,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.debug"></a>
+##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.debug"></a>
 
 ```python
 debug: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Debug indicates whether or not Helm is running in Debug mode.
 
@@ -950,13 +950,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.experiments"></a>
+##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.experiments"></a>
 
 ```python
 experiments: HelmProviderExperiments
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderExperiments">HelmProviderExperiments</a>
 
 Enable and disable experimental features.
 
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `helm_driver`<sup>Optional</sup> <a name="helm_driver" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.helmDriver"></a>
+##### `helm_driver`<sup>Optional</sup> <a name="helm_driver" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.helmDriver"></a>
 
 ```python
 helm_driver: str
@@ -978,13 +978,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `kubernetes`<sup>Optional</sup> <a name="kubernetes" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.kubernetes"></a>
+##### `kubernetes`<sup>Optional</sup> <a name="kubernetes" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.kubernetes"></a>
 
 ```python
 kubernetes: HelmProviderKubernetes
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes">HelmProviderKubernetes</a>
 
 Kubernetes Configuration.
 
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `plugins_path`<sup>Optional</sup> <a name="plugins_path" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.pluginsPath"></a>
+##### `plugins_path`<sup>Optional</sup> <a name="plugins_path" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.pluginsPath"></a>
 
 ```python
 plugins_path: str
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `qps`<sup>Optional</sup> <a name="qps" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.qps"></a>
+##### `qps`<sup>Optional</sup> <a name="qps" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.qps"></a>
 
 ```python
 qps: typing.Union[int, float]
@@ -1020,13 +1020,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `registries`<sup>Optional</sup> <a name="registries" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.registries"></a>
+##### `registries`<sup>Optional</sup> <a name="registries" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.registries"></a>
 
 ```python
 registries: IResolvable | typing.List[HelmProviderRegistries]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-helm.provider.HelmProviderRegistries">HelmProviderRegistries</a>]
 
 RegistryClient configuration.
 
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `registry_config_path`<sup>Optional</sup> <a name="registry_config_path" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.registryConfigPath"></a>
+##### `registry_config_path`<sup>Optional</sup> <a name="registry_config_path" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.registryConfigPath"></a>
 
 ```python
 registry_config_path: str
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `repository_cache`<sup>Optional</sup> <a name="repository_cache" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.repositoryCache"></a>
+##### `repository_cache`<sup>Optional</sup> <a name="repository_cache" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.repositoryCache"></a>
 
 ```python
 repository_cache: str
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `repository_config_path`<sup>Optional</sup> <a name="repository_config_path" id="@cdktf/provider-helm.provider.HelmProviderConfig.property.repositoryConfigPath"></a>
+##### `repository_config_path`<sup>Optional</sup> <a name="repository_config_path" id="@cdktn/provider-helm.provider.HelmProviderConfig.property.repositoryConfigPath"></a>
 
 ```python
 repository_config_path: str
@@ -1076,12 +1076,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### HelmProviderExperiments <a name="HelmProviderExperiments" id="@cdktf/provider-helm.provider.HelmProviderExperiments"></a>
+### HelmProviderExperiments <a name="HelmProviderExperiments" id="@cdktn/provider-helm.provider.HelmProviderExperiments"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.provider.HelmProviderExperiments.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.provider.HelmProviderExperiments.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_helm import provider
+from cdktn_provider_helm import provider
 
 provider.HelmProviderExperiments(
   manifest: bool | IResolvable = None
@@ -1092,17 +1092,17 @@ provider.HelmProviderExperiments(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderExperiments.property.manifest">manifest</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable full diff by storing the rendered manifest in the state. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderExperiments.property.manifest">manifest</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable full diff by storing the rendered manifest in the state. |
 
 ---
 
-##### `manifest`<sup>Optional</sup> <a name="manifest" id="@cdktf/provider-helm.provider.HelmProviderExperiments.property.manifest"></a>
+##### `manifest`<sup>Optional</sup> <a name="manifest" id="@cdktn/provider-helm.provider.HelmProviderExperiments.property.manifest"></a>
 
 ```python
 manifest: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable full diff by storing the rendered manifest in the state.
 
@@ -1110,12 +1110,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### HelmProviderKubernetes <a name="HelmProviderKubernetes" id="@cdktf/provider-helm.provider.HelmProviderKubernetes"></a>
+### HelmProviderKubernetes <a name="HelmProviderKubernetes" id="@cdktn/provider-helm.provider.HelmProviderKubernetes"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_helm import provider
+from cdktn_provider_helm import provider
 
 provider.HelmProviderKubernetes(
   client_certificate: str = None,
@@ -1141,26 +1141,26 @@ provider.HelmProviderKubernetes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clientCertificate">client_certificate</a></code> | <code>str</code> | PEM-encoded client certificate for TLS authentication. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clientKey">client_key</a></code> | <code>str</code> | PEM-encoded client certificate key for TLS authentication. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clusterCaCertificate">cluster_ca_certificate</a></code> | <code>str</code> | PEM-encoded root certificates bundle for TLS authentication. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContext">config_context</a></code> | <code>str</code> | Context to choose from the config file. Can be sourced from KUBE_CTX. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContextAuthInfo">config_context_auth_info</a></code> | <code>str</code> | Authentication info context of the kube config (name of the kubeconfig user, --user flag in kubectl). |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContextCluster">config_context_cluster</a></code> | <code>str</code> | Cluster context of the kube config (name of the kubeconfig cluster, --cluster flag in kubectl). |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configPath">config_path</a></code> | <code>str</code> | Path to the kube config file. Can be set with KUBE_CONFIG_PATH. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configPaths">config_paths</a></code> | <code>typing.List[str]</code> | A list of paths to kube config files. Can be set with KUBE_CONFIG_PATHS environment variable. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.exec">exec</a></code> | <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec">HelmProviderKubernetesExec</a></code> | Exec configuration for Kubernetes authentication. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.host">host</a></code> | <code>str</code> | The hostname (in form of URI) of kubernetes master. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.password">password</a></code> | <code>str</code> | The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.proxyUrl">proxy_url</a></code> | <code>str</code> | URL to the proxy to be used for all API requests. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.tlsServerName">tls_server_name</a></code> | <code>str</code> | Server name passed to the server for SNI and is used in the client to check server certificates against. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.token">token</a></code> | <code>str</code> | Token to authenticate a service account. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetes.property.username">username</a></code> | <code>str</code> | The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clientCertificate">client_certificate</a></code> | <code>str</code> | PEM-encoded client certificate for TLS authentication. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clientKey">client_key</a></code> | <code>str</code> | PEM-encoded client certificate key for TLS authentication. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clusterCaCertificate">cluster_ca_certificate</a></code> | <code>str</code> | PEM-encoded root certificates bundle for TLS authentication. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContext">config_context</a></code> | <code>str</code> | Context to choose from the config file. Can be sourced from KUBE_CTX. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContextAuthInfo">config_context_auth_info</a></code> | <code>str</code> | Authentication info context of the kube config (name of the kubeconfig user, --user flag in kubectl). |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContextCluster">config_context_cluster</a></code> | <code>str</code> | Cluster context of the kube config (name of the kubeconfig cluster, --cluster flag in kubectl). |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configPath">config_path</a></code> | <code>str</code> | Path to the kube config file. Can be set with KUBE_CONFIG_PATH. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configPaths">config_paths</a></code> | <code>typing.List[str]</code> | A list of paths to kube config files. Can be set with KUBE_CONFIG_PATHS environment variable. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.exec">exec</a></code> | <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec">HelmProviderKubernetesExec</a></code> | Exec configuration for Kubernetes authentication. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.host">host</a></code> | <code>str</code> | The hostname (in form of URI) of kubernetes master. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.insecure">insecure</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.password">password</a></code> | <code>str</code> | The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.proxyUrl">proxy_url</a></code> | <code>str</code> | URL to the proxy to be used for all API requests. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.tlsServerName">tls_server_name</a></code> | <code>str</code> | Server name passed to the server for SNI and is used in the client to check server certificates against. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.token">token</a></code> | <code>str</code> | Token to authenticate a service account. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetes.property.username">username</a></code> | <code>str</code> | The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
 
 ---
 
-##### `client_certificate`<sup>Optional</sup> <a name="client_certificate" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clientCertificate"></a>
+##### `client_certificate`<sup>Optional</sup> <a name="client_certificate" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clientCertificate"></a>
 
 ```python
 client_certificate: str
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `client_key`<sup>Optional</sup> <a name="client_key" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clientKey"></a>
+##### `client_key`<sup>Optional</sup> <a name="client_key" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clientKey"></a>
 
 ```python
 client_key: str
@@ -1188,7 +1188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cluster_ca_certificate`<sup>Optional</sup> <a name="cluster_ca_certificate" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.clusterCaCertificate"></a>
+##### `cluster_ca_certificate`<sup>Optional</sup> <a name="cluster_ca_certificate" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.clusterCaCertificate"></a>
 
 ```python
 cluster_ca_certificate: str
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_context`<sup>Optional</sup> <a name="config_context" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContext"></a>
+##### `config_context`<sup>Optional</sup> <a name="config_context" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContext"></a>
 
 ```python
 config_context: str
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_context_auth_info`<sup>Optional</sup> <a name="config_context_auth_info" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContextAuthInfo"></a>
+##### `config_context_auth_info`<sup>Optional</sup> <a name="config_context_auth_info" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContextAuthInfo"></a>
 
 ```python
 config_context_auth_info: str
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_context_cluster`<sup>Optional</sup> <a name="config_context_cluster" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configContextCluster"></a>
+##### `config_context_cluster`<sup>Optional</sup> <a name="config_context_cluster" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configContextCluster"></a>
 
 ```python
 config_context_cluster: str
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_path`<sup>Optional</sup> <a name="config_path" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configPath"></a>
+##### `config_path`<sup>Optional</sup> <a name="config_path" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configPath"></a>
 
 ```python
 config_path: str
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_paths`<sup>Optional</sup> <a name="config_paths" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.configPaths"></a>
+##### `config_paths`<sup>Optional</sup> <a name="config_paths" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.configPaths"></a>
 
 ```python
 config_paths: typing.List[str]
@@ -1276,13 +1276,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `exec`<sup>Optional</sup> <a name="exec" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.exec"></a>
+##### `exec`<sup>Optional</sup> <a name="exec" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.exec"></a>
 
 ```python
 exec: HelmProviderKubernetesExec
 ```
 
-- *Type:* <a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec">HelmProviderKubernetesExec</a>
+- *Type:* <a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec">HelmProviderKubernetesExec</a>
 
 Exec configuration for Kubernetes authentication.
 
@@ -1290,7 +1290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.host"></a>
 
 ```python
 host: str
@@ -1304,13 +1304,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.insecure"></a>
+##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.insecure"></a>
 
 ```python
 insecure: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether server should be accessed without verifying the TLS certificate.
 
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.password"></a>
 
 ```python
 password: str
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `proxy_url`<sup>Optional</sup> <a name="proxy_url" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.proxyUrl"></a>
+##### `proxy_url`<sup>Optional</sup> <a name="proxy_url" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.proxyUrl"></a>
 
 ```python
 proxy_url: str
@@ -1346,7 +1346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `tls_server_name`<sup>Optional</sup> <a name="tls_server_name" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.tlsServerName"></a>
+##### `tls_server_name`<sup>Optional</sup> <a name="tls_server_name" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.tlsServerName"></a>
 
 ```python
 tls_server_name: str
@@ -1360,7 +1360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.token"></a>
 
 ```python
 token: str
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-helm.provider.HelmProviderKubernetes.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-helm.provider.HelmProviderKubernetes.property.username"></a>
 
 ```python
 username: str
@@ -1388,12 +1388,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### HelmProviderKubernetesExec <a name="HelmProviderKubernetesExec" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec"></a>
+### HelmProviderKubernetesExec <a name="HelmProviderKubernetesExec" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_helm import provider
+from cdktn_provider_helm import provider
 
 provider.HelmProviderKubernetesExec(
   api_version: str,
@@ -1407,14 +1407,14 @@ provider.HelmProviderKubernetesExec(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.apiVersion">api_version</a></code> | <code>str</code> | API version for the exec plugin. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.command">command</a></code> | <code>str</code> | Command to run for Kubernetes exec plugin. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.args">args</a></code> | <code>typing.List[str]</code> | Arguments for the exec plugin. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.env">env</a></code> | <code>typing.Mapping[str]</code> | Environment variables for the exec plugin. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.apiVersion">api_version</a></code> | <code>str</code> | API version for the exec plugin. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.command">command</a></code> | <code>str</code> | Command to run for Kubernetes exec plugin. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.args">args</a></code> | <code>typing.List[str]</code> | Arguments for the exec plugin. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.env">env</a></code> | <code>typing.Mapping[str]</code> | Environment variables for the exec plugin. |
 
 ---
 
-##### `api_version`<sup>Required</sup> <a name="api_version" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.apiVersion"></a>
+##### `api_version`<sup>Required</sup> <a name="api_version" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.apiVersion"></a>
 
 ```python
 api_version: str
@@ -1428,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `command`<sup>Required</sup> <a name="command" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.command"></a>
+##### `command`<sup>Required</sup> <a name="command" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.command"></a>
 
 ```python
 command: str
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `args`<sup>Optional</sup> <a name="args" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.args"></a>
+##### `args`<sup>Optional</sup> <a name="args" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.args"></a>
 
 ```python
 args: typing.List[str]
@@ -1456,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-helm.provider.HelmProviderKubernetesExec.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@cdktn/provider-helm.provider.HelmProviderKubernetesExec.property.env"></a>
 
 ```python
 env: typing.Mapping[str]
@@ -1470,12 +1470,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### HelmProviderRegistries <a name="HelmProviderRegistries" id="@cdktf/provider-helm.provider.HelmProviderRegistries"></a>
+### HelmProviderRegistries <a name="HelmProviderRegistries" id="@cdktn/provider-helm.provider.HelmProviderRegistries"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-helm.provider.HelmProviderRegistries.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-helm.provider.HelmProviderRegistries.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_helm import provider
+from cdktn_provider_helm import provider
 
 provider.HelmProviderRegistries(
   password: str,
@@ -1488,13 +1488,13 @@ provider.HelmProviderRegistries(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderRegistries.property.password">password</a></code> | <code>str</code> | The password to use for the OCI HTTP basic authentication when accessing the Kubernetes master endpoint. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderRegistries.property.url">url</a></code> | <code>str</code> | OCI URL in form of oci://host:port or oci://host. |
-| <code><a href="#@cdktf/provider-helm.provider.HelmProviderRegistries.property.username">username</a></code> | <code>str</code> | The username to use for the OCI HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderRegistries.property.password">password</a></code> | <code>str</code> | The password to use for the OCI HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderRegistries.property.url">url</a></code> | <code>str</code> | OCI URL in form of oci://host:port or oci://host. |
+| <code><a href="#@cdktn/provider-helm.provider.HelmProviderRegistries.property.username">username</a></code> | <code>str</code> | The username to use for the OCI HTTP basic authentication when accessing the Kubernetes master endpoint. |
 
 ---
 
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-helm.provider.HelmProviderRegistries.property.password"></a>
+##### `password`<sup>Required</sup> <a name="password" id="@cdktn/provider-helm.provider.HelmProviderRegistries.property.password"></a>
 
 ```python
 password: str
@@ -1508,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-helm.provider.HelmProviderRegistries.property.url"></a>
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-helm.provider.HelmProviderRegistries.property.url"></a>
 
 ```python
 url: str
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-helm.provider.HelmProviderRegistries.property.username"></a>
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-helm.provider.HelmProviderRegistries.property.username"></a>
 
 ```python
 username: str
