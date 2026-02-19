@@ -123,20 +123,20 @@
     nan "^2.14.2"
     prebuild-install "^7.1.3"
 
-"@cdktn/cli-core@0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@cdktn/cli-core/-/cli-core-0.21.0.tgz#d204a834c9542515d77262eb0c09075e82fdb969"
-  integrity sha512-EXGsOxgf3ACaWQjvIxWtpbsI0jD79Q2bNBAXrz+m4ejxA8BeLzhfdw4QMIkY0cZnhhPFPTt2PY5f7g/V4M68yA==
+"@cdktn/cli-core@0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@cdktn/cli-core/-/cli-core-0.22.0.tgz#dd31b09a41d1ba297a301768c05aaaa21fae2ffd"
+  integrity sha512-3e5H9fCVLztdoXl1MF4IoSim7UNCYSM93TW39LyBidbDNuJjuW5cKM8QCqAzDDw3pryvPvf3Hm9KF9tHAoedKw==
   dependencies:
     "@cdktf/node-pty-prebuilt-multiarch" "^0.10.2"
-    "@cdktn/commons" "0.21.0"
-    "@cdktn/hcl-tools" "0.21.0"
-    "@cdktn/hcl2cdk" "0.21.0"
-    "@cdktn/hcl2json" "0.21.0"
-    "@cdktn/provider-schema" "0.21.0"
+    "@cdktn/commons" "0.22.0"
+    "@cdktn/hcl-tools" "0.22.0"
+    "@cdktn/hcl2cdk" "0.22.0"
+    "@cdktn/hcl2json" "0.22.0"
+    "@cdktn/provider-schema" "0.22.0"
     "@sentry/node" "7.120.3"
     archiver "7.0.1"
-    cdktn "0.21.0"
+    cdktn "0.22.0"
     chalk "4.1.2"
     chokidar "3.6.0"
     cli-spinners "2.9.2"
@@ -178,13 +178,13 @@
     yoga-layout-prebuilt "1.10.0"
     zod "3.24.4"
 
-"@cdktn/commons@0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@cdktn/commons/-/commons-0.21.0.tgz#51c429b27f7bae04308ddc1bfffbcbd1ee5ae2d8"
-  integrity sha512-KKpK6VftPnGS2snbZvghMNSADi5r4BgqdXZN/OF8Degct7aww57wwW4VNI5XxtWK0nHHYJeD7soE4szkbCKzPw==
+"@cdktn/commons@0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@cdktn/commons/-/commons-0.22.0.tgz#4c52346af7982c3c22ce28d86aa47857d9c768fb"
+  integrity sha512-xwGZCpWF/gYh+ivixiTCvp9pIUp84vfWNtynT01jc5MPOlsvJZTjZfMYQY90LPGqhDOEv3H1qpmNVhQWcLPIGQ==
   dependencies:
     "@sentry/node" "7.120.3"
-    cdktn "0.21.0"
+    cdktn "0.22.0"
     ci-info "3.9.0"
     codemaker "1.112.0"
     cross-spawn "7.0.6"
@@ -195,27 +195,27 @@
     uuid "9.0.1"
     validator "13.15.0"
 
-"@cdktn/hcl-tools@0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@cdktn/hcl-tools/-/hcl-tools-0.21.0.tgz#7fbd8539e9a1a605c29df6629abc87e71cd39a6b"
-  integrity sha512-+bX3Am3yH5AYRSJd3oFpW/rlpguK3YG2nTtBHdjquU9PHftVT8+bCNpTseaQOkZtLSA8HU0Tj0JOhmuVIo1eOA==
+"@cdktn/hcl-tools@0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@cdktn/hcl-tools/-/hcl-tools-0.22.0.tgz#32bd47408584d8d8cc277d07951d76eab2af305e"
+  integrity sha512-4r8nFktV6WAE/yVEdMAh8vTO0W4kt8OWfKyKXdZ5RC8zKA0NyV7hMYafYH1tBlmEF9Xg/Rl6aK9UejtSRhadeA==
   dependencies:
     fs-extra "^11.3.0"
 
-"@cdktn/hcl2cdk@0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@cdktn/hcl2cdk/-/hcl2cdk-0.21.0.tgz#2d7fdabf2801dfe933798e87095bce5ee5a68556"
-  integrity sha512-6vMo3XmBe9rLd2sT+RclkiQkZsiErfYczu7iZEwOEK6HC+a/lWBYVVQJYpFQK3k2DXkAuTNZsyRXNK1isESIng==
+"@cdktn/hcl2cdk@0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@cdktn/hcl2cdk/-/hcl2cdk-0.22.0.tgz#93643acfae92b9756f2805bdce4545b2153fbff4"
+  integrity sha512-6l9y0rROY45yrSoNuZFd7OkadcryvS85CiK9WZ3F/6/yJP8DExy5x/0fcxSsTn7PKmWJ0jB8Ia8lhsyY8/+q3w==
   dependencies:
     "@babel/generator" "7.27.1"
     "@babel/template" "7.27.2"
     "@babel/types" "7.27.1"
-    "@cdktn/commons" "0.21.0"
-    "@cdktn/hcl2json" "0.21.0"
-    "@cdktn/provider-generator" "0.21.0"
-    "@cdktn/provider-schema" "0.21.0"
+    "@cdktn/commons" "0.22.0"
+    "@cdktn/hcl2json" "0.22.0"
+    "@cdktn/provider-generator" "0.22.0"
+    "@cdktn/provider-schema" "0.22.0"
     camelcase "6.3.0"
-    cdktn "0.21.0"
+    cdktn "0.22.0"
     codemaker "1.112.0"
     deep-equal "2.2.3"
     glob "10.4.5"
@@ -226,20 +226,20 @@
     reserved-words "0.1.2"
     zod "3.24.4"
 
-"@cdktn/hcl2json@0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@cdktn/hcl2json/-/hcl2json-0.21.0.tgz#a0163a4acca5a5088be91c50fb9d45aa2fcbeecb"
-  integrity sha512-7bTsrJ0wCZbOVrkZY/EgrDf+MPiSnvCVb+JPceF70ABdtuQwTQzFWcN67mLHLmrEKvonT6eu+qz2OmXVmEJKdg==
+"@cdktn/hcl2json@0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@cdktn/hcl2json/-/hcl2json-0.22.0.tgz#4f975637185b1aaf78475357570725da57c946dd"
+  integrity sha512-zkDghfbz7VEWNTn9GLVVOTTCs2db1XZRWmaYyHiu1/mdFq/t6SwtvO6BFxhFH4Wy7SEflxP80sKIMblbvuwBHg==
   dependencies:
     fs-extra "11.3.0"
 
-"@cdktn/provider-generator@0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@cdktn/provider-generator/-/provider-generator-0.21.0.tgz#dd9714e2ec1b931c60e6dacdfd453010adb5d529"
-  integrity sha512-ZElcB5grtBMTwDvbjQWemZ2qZA8gFMFXAyw4ZKVBFMEt1LNnz+Kye7z5iBWX+tUZ8sSLLcPQdgDxcAnuJN3ajQ==
+"@cdktn/provider-generator@0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@cdktn/provider-generator/-/provider-generator-0.22.0.tgz#77898f9a6b89c9979ec943e527b2e59925ba2d2e"
+  integrity sha512-mt8bZ8+dol/wRRe84g7SKOgKnHAS8DNXQg7EQlYoRFt2xeJDr8V9cv+u4lOPrvUNZEHUxBEO75tpcMqJN/zm3Q==
   dependencies:
-    "@cdktn/commons" "0.21.0"
-    "@cdktn/provider-schema" "0.21.0"
+    "@cdktn/commons" "0.22.0"
+    "@cdktn/provider-schema" "0.22.0"
     "@types/node" "18.19.101"
     codemaker "1.112.0"
     fs-extra "8.1.0"
@@ -253,13 +253,13 @@
     change-case "^4.1.2"
     fs-extra "^10.1.0"
 
-"@cdktn/provider-schema@0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@cdktn/provider-schema/-/provider-schema-0.21.0.tgz#1cacbbdafe85888574e51ef708e304527dce121d"
-  integrity sha512-i9TRk67Kqxh5Rb21VDRt+DMw7haxmA3WagFBAs8lCDYQ9w5jgsvTnAPGDsNTqZ3/ibBgxwro/9vfzct+3ke2zw==
+"@cdktn/provider-schema@0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@cdktn/provider-schema/-/provider-schema-0.22.0.tgz#028bdaaa6c031dbd456707b09582193549fd5968"
+  integrity sha512-UpEr/YVca0MuRBodXGQlNa1LXEJnYT953zagoAF99G0k28X9bW8+0btxV4jbbufxftNGoZZyNYO6cuVpwk368Q==
   dependencies:
-    "@cdktn/commons" "0.21.0"
-    "@cdktn/hcl2json" "0.21.0"
+    "@cdktn/commons" "0.22.0"
+    "@cdktn/hcl2json" "0.22.0"
     deepmerge "4.3.1"
     fs-extra "11.3.0"
 
@@ -1033,19 +1033,19 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdktn-cli@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/cdktn-cli/-/cdktn-cli-0.21.0.tgz#721c1fa9cb4e3baeccb469f74ffb9d2e34567afd"
-  integrity sha512-FBaqUM1qFE/N3T1EYFf7NlpSBAm9A80kWEkGjqg5o+tF9J+CwoGHRetIpCEe3mmoTmHdM2UzMr1mdXDo1q0jpw==
+cdktn-cli@^0.22.0:
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/cdktn-cli/-/cdktn-cli-0.22.0.tgz#6144e3925a9e4f1e5900973f0bfd86dd6df60eaa"
+  integrity sha512-XDG6ab4hQwWl8d80zHzSlX7X+hKfSygKvYueUFbk5wUpKCnQBteE0O4M19MbXpviMQyCF451uQyXh8Q9vGlbRQ==
   dependencies:
-    "@cdktn/cli-core" "0.21.0"
-    "@cdktn/commons" "0.21.0"
-    "@cdktn/hcl-tools" "0.21.0"
-    "@cdktn/hcl2cdk" "0.21.0"
-    "@cdktn/hcl2json" "0.21.0"
+    "@cdktn/cli-core" "0.22.0"
+    "@cdktn/commons" "0.22.0"
+    "@cdktn/hcl-tools" "0.22.0"
+    "@cdktn/hcl2cdk" "0.22.0"
+    "@cdktn/hcl2json" "0.22.0"
     "@inquirer/prompts" "2.3.1"
     "@sentry/node" "7.120.3"
-    cdktn "0.21.0"
+    cdktn "0.22.0"
     ci-info "3.9.0"
     codemaker "1.112.0"
     constructs "10.4.2"
@@ -1066,10 +1066,10 @@ cdktn-cli@^0.21.0:
     yoga-layout-prebuilt "1.10.0"
     zod "3.24.4"
 
-cdktn@0.21.0, cdktn@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/cdktn/-/cdktn-0.21.0.tgz#f5b107750acfe14b82a44179ddb549658d9b5a6b"
-  integrity sha512-ungCpzYjBD8gfuW6WRuWMbzygmdlyt6cpIIBW5f9RIHkFBM7yffXaR0z6n6Odn+8jZCUC1m0ALcJTkcu0x2mDg==
+cdktn@0.22.0, cdktn@^0.22.0:
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/cdktn/-/cdktn-0.22.0.tgz#01a3a538b35f6fe6fd3e3e9e3cef552081d3bf9f"
+  integrity sha512-6TU45r6kuK8Gy1TwD9ls/NHVhpiomJrseFRL8K2X0lWzzuc4Ycvn7s6Ft3BK2lAeCYFG8phUGflmZzwrOyp9lA==
   dependencies:
     archiver "7.0.1"
     json-stable-stringify "1.3.0"
