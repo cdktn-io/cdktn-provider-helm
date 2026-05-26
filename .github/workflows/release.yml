@@ -140,13 +140,14 @@ jobs:
     needs: release
     runs-on: ubuntu-latest
     permissions:
+      id-token: write
       contents: read
       issues: write
     if: needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha
     steps:
       - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
-          node-version: 20.16.0
+          node-version: 24.x
           package-manager-cache: false
       - name: Download build artifacts
         uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
@@ -174,7 +175,7 @@ jobs:
         env:
           NPM_DIST_TAG: latest
           NPM_REGISTRY: registry.npmjs.org
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TRUSTED_PUBLISHER: "true"
           PUBLIB_DRYRUN: ${{ inputs.dry_run }}
         run: npx -p publib@latest publib-npm
       - name: Extract Version
