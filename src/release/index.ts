@@ -1116,6 +1116,9 @@ export class ReleaseSetWoOutputReference extends cdktn.ComplexObject {
 
   // name - computed: false, optional: false, required: true
   private _name?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -1129,6 +1132,9 @@ export class ReleaseSetWoOutputReference extends cdktn.ComplexObject {
 
   // type - computed: false, optional: true, required: false
   private _type?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -1145,6 +1151,9 @@ export class ReleaseSetWoOutputReference extends cdktn.ComplexObject {
 
   // value - computed: false, optional: false, required: true
   private _value?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get value() {
     return this.getStringAttribute('value');
   }
@@ -2009,6 +2018,9 @@ export class Release extends cdktn.TerraformResource {
 
   // set_wo - computed: false, optional: true, required: false
   private _setWo = new ReleaseSetWoList(this, "set_wo", false);
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get setWo() {
     return this._setWo;
   }
@@ -2242,7 +2254,7 @@ export class Release extends cdktn.TerraformResource {
       set: cdktn.listMapper(releaseSetToTerraform, false)(this._set.internalValue),
       set_list: cdktn.listMapper(releaseSetListStructToTerraform, false)(this._setList.internalValue),
       set_sensitive: cdktn.listMapper(releaseSetSensitiveToTerraform, false)(this._setSensitive.internalValue),
-      set_wo: cdktn.listMapper(releaseSetWoToTerraform, false)(this._setWo.internalValue),
+      set_wo: this.markWriteOnlyAttribute(cdktn.listMapper(releaseSetWoToTerraform, false)(this._setWo.internalValue)),
       set_wo_revision: cdktn.numberToTerraform(this._setWoRevision),
       skip_crds: cdktn.booleanToTerraform(this._skipCrds),
       take_ownership: cdktn.booleanToTerraform(this._takeOwnership),
@@ -2452,7 +2464,7 @@ export class Release extends cdktn.TerraformResource {
         storageClassType: "ReleaseSetSensitiveList",
       },
       set_wo: {
-        value: cdktn.listMapperHcl(releaseSetWoToHclTerraform, false)(this._setWo.internalValue),
+        value: this.markWriteOnlyAttribute(cdktn.listMapperHcl(releaseSetWoToHclTerraform, false)(this._setWo.internalValue)),
         isBlock: true,
         type: "list",
         storageClassType: "ReleaseSetWoList",
