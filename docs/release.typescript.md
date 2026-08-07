@@ -384,7 +384,7 @@ public moveFromId(id: string): void
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-helm.release.Release.moveFromId.parameter.id"></a>
 
@@ -1209,7 +1209,9 @@ public readonly setSensitive: ReleaseSetSensitiveList;
 
 ---
 
-##### `setWo`<sup>Required</sup> <a name="setWo" id="@cdktn/provider-helm.release.Release.property.setWo"></a>
+##### ~~`setWo`~~<sup>Required</sup> <a name="setWo" id="@cdktn/provider-helm.release.Release.property.setWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly setWo: ReleaseSetWoList;
@@ -5781,7 +5783,9 @@ public readonly valueInput: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.name"></a>
+##### ~~`name`~~<sup>Required</sup> <a name="name" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.name"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly name: string;
@@ -5791,7 +5795,9 @@ public readonly name: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.type"></a>
+##### ~~`type`~~<sup>Required</sup> <a name="type" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.type"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly type: string;
@@ -5801,7 +5807,9 @@ public readonly type: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.value"></a>
+##### ~~`value`~~<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.value"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly value: string;

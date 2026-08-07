@@ -384,7 +384,7 @@ private void MoveFromId(string Id)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-helm.release.Release.moveFromId.parameter.id"></a>
 
@@ -1209,7 +1209,9 @@ public ReleaseSetSensitiveList SetSensitive { get; }
 
 ---
 
-##### `SetWo`<sup>Required</sup> <a name="SetWo" id="@cdktn/provider-helm.release.Release.property.setWo"></a>
+##### ~~`SetWo`~~<sup>Required</sup> <a name="SetWo" id="@cdktn/provider-helm.release.Release.property.setWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public ReleaseSetWoList SetWo { get; }
@@ -5858,7 +5860,9 @@ public string ValueInput { get; }
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.name"></a>
+##### ~~`Name`~~<sup>Required</sup> <a name="Name" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.name"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public string Name { get; }
@@ -5868,7 +5872,9 @@ public string Name { get; }
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.type"></a>
+##### ~~`Type`~~<sup>Required</sup> <a name="Type" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.type"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public string Type { get; }
@@ -5878,7 +5884,9 @@ public string Type { get; }
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.value"></a>
+##### ~~`Value`~~<sup>Required</sup> <a name="Value" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.value"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public string Value { get; }

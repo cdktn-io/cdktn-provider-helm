@@ -1002,7 +1002,7 @@ def move_from_id(
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-helm.release.Release.moveFromId.parameter.id"></a>
 
@@ -1907,7 +1907,9 @@ set_sensitive: ReleaseSetSensitiveList
 
 ---
 
-##### `set_wo`<sup>Required</sup> <a name="set_wo" id="@cdktn/provider-helm.release.Release.property.setWo"></a>
+##### ~~`set_wo`~~<sup>Required</sup> <a name="set_wo" id="@cdktn/provider-helm.release.Release.property.setWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 set_wo: ReleaseSetWoList
@@ -6752,7 +6754,9 @@ value_input: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.name"></a>
+##### ~~`name`~~<sup>Required</sup> <a name="name" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.name"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 name: str
@@ -6762,7 +6766,9 @@ name: str
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.type"></a>
+##### ~~`type`~~<sup>Required</sup> <a name="type" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.type"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 type: str
@@ -6772,7 +6778,9 @@ type: str
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.value"></a>
+##### ~~`value`~~<sup>Required</sup> <a name="value" id="@cdktn/provider-helm.release.ReleaseSetWoOutputReference.property.value"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 value: str
